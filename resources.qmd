@@ -26,8 +26,6 @@ Image sequences examples acquired with the in situ soil imaging device.
 ::: resource-card
 [{{< fa video >}}]{.resource-icon} [Video]{.block-label}
 
-### They’re talking about the scanners
-
 ### The scanners in the spotlight
 
 **Article.** The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: [Observer la biodiversité des sols à l'ère du numérique](https://pepr-solsvivants.fr/a-la-une2/observer-la-biodiversite-des-sols-a-l-ere-du-numerique) 
