@@ -1,5 +1,38 @@
 ---
-title: "resources"
+title: "Related resources"
 format: html
 ---
 
+::: resource-card
+[{{< fa graduation-cap >}}]{.resource-icon} [PhD defence]{.block-label}
+
+### My thesis defence
+
+Recording of my PhD defence.
+
+{{< video https://youtu.be/uVyEWw9MaCw >}}
+:::
+
+::: resource-card
+[{{< fa database >}}]{.resource-icon} [Open resources]{.block-label}
+
+### Soil imaging image sequences
+
+Image sequences examples acquired with the in situ soil imaging device.
+
+[Access the dataset {{< fa arrow-up-right-from-square >}}](https://doi.org/10.57745/PTOXYT){.resource-link}
+:::
+
+::: resource-card
+[{{< fa video >}}]{.resource-icon} [Video]{.block-label}
+
+### They’re talking about the scanners
+
+### The scanners in the spotlight
+
+**Article.** The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: [Observer la biodiversité des sols à l'ère du numérique](https://pepr-solsvivants.fr/a-la-une2/observer-la-biodiversite-des-sols-a-l-ere-du-numerique) 
+
+**Video.** An accessible introduction to the history of buried scanners and the new research opportunities they have opened up:
+
+{{< video https://www.youtube.com/embed/GgDehGNkYNM >}}
+:::

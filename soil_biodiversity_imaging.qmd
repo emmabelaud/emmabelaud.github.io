@@ -1,5 +1,4 @@
 ---
-title: "soil_biodiversity_imaging"
+title: "Soil biodiversity imaging"
 format: html
 ---
-
