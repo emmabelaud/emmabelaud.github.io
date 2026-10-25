@@ -1,125 +1,30 @@
-/* css styles */
+/* ==========================================================
+   STYLES DU SITE
+   Sections : Variables · Global · Publications · CV ·
+              Soil biodiversity imaging · Ressources · Contact
+   ========================================================== */
 
-## Publication
-/* --- Publications --- */
-.pub-entry {
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.9rem;
-  border-left: 4px solid #2c7a4b;
-  background: rgba(127, 127, 127, 0.08);
-  border-radius: 0 6px 6px 0;
-  line-height: 1.5;
+
+/* ---------- Variables ---------- */
+:root {
+  --accent: #2c7a4b;
+  --accent-soft: rgba(44, 122, 75, 0.12);
+  --accent-line: rgba(44, 122, 75, 0.35);
+  --card-bg: rgba(127, 127, 127, 0.08);
+  --card-border: rgba(127, 127, 127, 0.2);
 }
 
-.pub-entry.submitted { border-left-color: #d4a017; }
-.pub-entry.resubmit  { border-left-color: #d9822b; }
-.pub-entry.inprep    { border-left-color: #8a8f98; }
 
-.pub-entry a {
-  word-break: break-all;
-}
+/* ---------- Global ---------- */
 
-## Resources 
-/* --- Page ressources --- */
-.resource-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.5rem;
-  margin: 1rem 0 1.5rem;
-}
-
-.resource-card {
-  padding: 1.3rem 1.5rem;
-  margin-bottom: 1.5rem;
-  border-radius: 12px;
-  background: rgba(127, 127, 127, 0.08);
-  border: 1px solid rgba(127, 127, 127, 0.2);
-  line-height: 1.55;
-}
-
-.resource-grid .resource-card { margin-bottom: 0; }
-
-.resource-icon {
-  display: inline-block;
-  color: #2c7a4b;
-  font-size: 1.6rem;
-  margin-bottom: 0.2rem;
-}
-
-.resource-card h3 {
-  margin-top: 0.2rem;
-  font-size: 1.2rem;
-}
-
-.resource-card .quarto-video,
-.resource-card iframe {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.resource-link {
-  font-weight: 600;
-  color: #2c7a4b;
-  text-decoration: none;
-}
-
-.resource-link:hover { text-decoration: underline; }
-
-## CV
-/* --- Titres de section --- */
+/* Titres de section (toutes les pages) */
 h2 {
   margin-top: 2.5rem;
   padding-bottom: 0.3rem;
-  border-bottom: 2px solid #2c7a4b;
+  border-bottom: 2px solid var(--accent);
 }
 
-/* --- Frise chronologique --- */
-.cv-entry {
-  position: relative;
-  margin: 0 0 1.3rem 0.6rem;
-  padding: 0.1rem 0 0.1rem 1.5rem;
-  border-left: 2px solid rgba(44, 122, 75, 0.35);
-  background: none;
-  border-radius: 0;
-  line-height: 1.55;
-}
-
-/* Le point sur la frise */
-.cv-entry::before {
-  content: "";
-  position: absolute;
-  left: -8px;
-  top: 0.45rem;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: #2c7a4b;
-  box-shadow: 0 0 0 4px rgba(44, 122, 75, 0.15);
-}
-
-/* La date en pastille */
-.cv-date {
-  float: right;
-  margin-left: 1rem;
-  padding: 0.15rem 0.7rem;
-  border-radius: 999px;
-  background: rgba(44, 122, 75, 0.12);
-  color: #2c7a4b;
-  font-size: 0.8rem;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.cv-entry em { opacity: 0.8; }
-
-## Contact
-/* --- Contact : e-mail en tête --- */
-.contact-intro {
-  padding-left: 1rem;
-  margin: 1rem 0 2.5rem;
-  border-left: 4px solid #2c7a4b;
-}
-
+/* Petit libellé en majuscules (Contact, Ressources, ...) */
 .block-label {
   display: block;
   font-size: 0.8rem;
@@ -129,7 +34,125 @@ h2 {
   margin-bottom: 0.4rem;
 }
 
-.mail-icon { color: #2c7a4b; font-size: 1.3rem; margin-right: 0.3rem; }
+/* Carte générique (Ressources, Soil biodiversity imaging) */
+.card-block {
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  line-height: 1.55;
+}
+
+.card-block h3 {
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+}
+
+/* Lien d'action en vert (Ressources, Contact) */
+.accent-link {
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.accent-link:hover { text-decoration: underline; }
+
+/* Grille de cartes responsive */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.card-grid .card-block { margin-bottom: 0; }
+
+.card-icon {
+  display: inline-block;
+  color: var(--accent);
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+
+/* ---------- Publications ---------- */
+.pub-entry {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.9rem;
+  border-left: 4px solid var(--accent);
+  background: var(--card-bg);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.5;
+}
+
+.pub-entry.submitted { border-left-color: #d4a017; }
+.pub-entry.resubmit  { border-left-color: #d9822b; }
+.pub-entry.inprep    { border-left-color: #8a8f98; }
+
+.pub-entry a { word-break: break-all; }
+
+
+/* ---------- CV : frise chronologique ---------- */
+.cv-entry {
+  position: relative;
+  margin: 0 0 1.3rem 0.6rem;
+  padding: 0.1rem 0 0.1rem 1.5rem;
+  border-left: 2px solid var(--accent-line);
+  line-height: 1.55;
+}
+
+/* Point sur la frise */
+.cv-entry::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0.45rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+/* Date en pastille */
+.cv-date {
+  float: right;
+  margin-left: 1rem;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.cv-entry em { opacity: 0.8; }
+
+
+/* ---------- Ressources ---------- */
+.resource-card iframe,
+.resource-card .quarto-video {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+
+/* ---------- Contact ---------- */
+
+/* E-mail en tête */
+.contact-intro {
+  padding-left: 1rem;
+  margin: 1rem 0 2.5rem;
+  border-left: 4px solid var(--accent);
+}
+
+.mail-icon {
+  color: var(--accent);
+  font-size: 1.3rem;
+  margin-right: 0.3rem;
+}
 
 .mail-link {
   font-size: 1.35rem;
@@ -139,7 +162,7 @@ h2 {
 
 .mail-link:hover { text-decoration: underline; }
 
-/* --- Deux colonnes --- */
+/* Deux colonnes : affiliation / profils */
 .contact-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -152,15 +175,7 @@ h2 {
   border-top: 1px solid rgba(127, 127, 127, 0.3);
 }
 
-.lab-link {
-  font-weight: 600;
-  color: #2c7a4b;
-  text-decoration: none;
-}
-
-.lab-link:hover { text-decoration: underline; }
-
-/* --- Liste des profils --- */
+/* Liste des profils en ligne */
 .profile-list ul {
   list-style: none;
   padding-left: 0;
@@ -172,14 +187,15 @@ h2 {
 .profile-icon {
   display: inline-block;
   width: 1.6rem;
-  color: #2c7a4b;
+  color: var(--accent);
   font-size: 1.15rem;
 }
 
 .profile-list a { font-weight: 600; text-decoration: none; }
 .profile-list a:hover { text-decoration: underline; }
 
-/* Mobile : une seule colonne */
+
+/* ---------- Mobile ---------- */
 @media (max-width: 700px) {
   .contact-columns { grid-template-columns: 1fr; gap: 1.5rem; }
 }

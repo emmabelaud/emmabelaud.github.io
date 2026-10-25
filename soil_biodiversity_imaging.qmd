@@ -2,3 +2,50 @@
 title: "Soil biodiversity imaging"
 format: html
 ---
+
+A short introduction to the in situ soil imaging approach: what it is, what it makes visible, and why it matters.
+
+## The approach
+
+::: card-grid
+
+::: card-block
+[{{< fa camera >}}]{.card-icon}
+[Principle]{.block-label}
+
+### Buried flatbed scanners
+
+Short description of the device and how it acquires images of the soil over time.
+:::
+
+::: card-block
+[{{< fa microchip >}}]{.card-icon}
+[Pipeline]{.block-label}
+
+### From images to data
+
+Short description of the image analysis pipeline (acquisition, detection, quantification).
+:::
+
+::: card-block
+[{{< fa seedling >}}]{.card-icon}
+[Applications]{.block-label}
+
+### What it reveals
+
+Short description of the ecological questions addressed: roots, soil fauna, temporal and spatial dynamics.
+:::
+
+:::
+
+## Illustrations
+
+Images, image sequences or short videos of the device and of the data.
+
+## Key results
+
+Main findings, with links to the corresponding publications.
+
+## Related
+
+Links to the [publications](publications.qmd) and [resources](resources.qmd).
