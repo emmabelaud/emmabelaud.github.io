@@ -6,24 +6,19 @@ format: html
 ## Education
 
 ::: cv-entry
-**Agricultural Engineering degree (Ingénieure agronome)** [2022 · 5 years]{.cv-date}\
+**PhD in soil ecology** [2023 – 2026]{.cv-date}\
+*Doctoral school GAIA · Institut Agro Montpellier · UMR Eco&Sols, Montpellier, France*\
+"Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring". 
+Funded by : CIRAD and INRAE BIOSEFAIR metaprogram
+:::
+
+::: cv-entry
+**Agricultural Engineering degree (Ingénieure agronome)** [2017 - 2022]{.cv-date}\
 *École Supérieure d'Agricultures, Angers, France*\
 Specialisation: plant production and agroecology. Honours: Excellent.
 :::
 
-::: cv-entry
-**Baccalauréat (French high-school diploma)** [2017 · 3 years]{.cv-date}\
-*Lycée Joubert-Emilien Maillard, Ancenis, France*\
-Life and Earth Sciences track. Honours: Très Bien.
-:::
-
 ## Professional experience
-
-::: cv-entry
-**PhD student** [2023 · 3 years]{.cv-date}\
-*UMR Eco&Sols, Montpellier, France*\
-Structuring of edaphic biological activity in relation to soil multifunctionality in agroforestry systems of Mediterranean and semi-arid tropical environments.
-:::
 
 ::: cv-entry
 **Research engineer** [2023 · 5 months]{.cv-date}\
@@ -42,6 +37,7 @@ Potential of in situ imaging for monitoring biological activity in soils. Writin
 *UMR Eco&Sols, Montpellier, France*\
 Potential of in situ imaging for monitoring biological activity in soils. Study of the activity of soil biological communities (fauna, plants, fungi) in a truffle-growing soil using image analysis.
 :::
+
 
 ## Supervision
 
@@ -116,14 +112,19 @@ Presentation: "The potential of in situ imaging for studying biological activity
 ## Conferences
 
 ::: cv-entry
+**TDWG 2026** [2026 · 1 week]{.cv-date}\
+*Oslo, Norway*\
+:::
+
+::: cv-entry
 **Rhizosphere6** [2025 · 1 week]{.cv-date}\
-*International Steering Committee, Edinburgh, United Kingdom*\
+*Edinburgh, United Kingdom*\
 Poster: "Roots, the fuel for soil fauna activity".
 :::
 
 ::: cv-entry
 **12th International Symposium of the International Society of Root Research** [2024 · 1 week]{.cv-date}\
-*International Society of Root Research, Leipzig, Germany*\
+*Leipzig, Germany*\
 Poster: "In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota around the roots". 
 :::
 

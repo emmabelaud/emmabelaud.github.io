@@ -15,21 +15,51 @@
 .pub-entry.inprep    { border-left-color: #8a8f98; }
 
 ## CV
-.cv-entry {
-  padding: 0.7rem 1rem;
-  margin-bottom: 0.8rem;
-  border-left: 4px solid #2c7a4b;
-  background: rgba(127, 127, 127, 0.08);
-  border-radius: 0 6px 6px 0;
-  line-height: 1.5;
+/* --- Titres de section --- */
+h2 {
+  margin-top: 2.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 2px solid #2c7a4b;
 }
 
+/* --- Frise chronologique --- */
+.cv-entry {
+  position: relative;
+  margin: 0 0 1.3rem 0.6rem;
+  padding: 0.1rem 0 0.1rem 1.5rem;
+  border-left: 2px solid rgba(44, 122, 75, 0.35);
+  background: none;
+  border-radius: 0;
+  line-height: 1.55;
+}
+
+/* Le point sur la frise */
+.cv-entry::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 0.45rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #2c7a4b;
+  box-shadow: 0 0 0 4px rgba(44, 122, 75, 0.15);
+}
+
+/* La date en pastille */
 .cv-date {
   float: right;
-  font-size: 0.9em;
-  opacity: 0.75;
   margin-left: 1rem;
+  padding: 0.15rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(44, 122, 75, 0.12);
+  color: #2c7a4b;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
 }
+
+.cv-entry em { opacity: 0.8; }
 
 ## Contact
 /* --- Contact : e-mail en tête --- */
