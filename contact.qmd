@@ -1,5 +1,35 @@
 ---
-title: "contact"
+title: "Contact and information"
 format: html
 ---
 
+::: contact-intro
+[Preferred contact]{.block-label}
+
+[{{< fa envelope >}}]{.mail-icon} [emmabelaud1@gmail.com](mailto:emmabelaud1@gmail.com){.mail-link}
+:::
+
+::: contact-columns
+
+::: contact-block
+[Affiliation]{.block-label}
+
+**UMR Eco&Sols**\
+Campus La Gaillarde, Institut Agro-INRAE\
+Bât. 12 & 13, 2 place Viala\
+34060 Montpellier Cedex 2, France
+
+[Lab website {{< fa arrow-up-right-from-square >}}](https://www.umr-ecosols.fr/){.lab-link}
+:::
+
+::: contact-block
+[Online profiles]{.block-label}
+
+::: profile-list
+- [{{< fa brands orcid >}}]{.profile-icon} [ORCID](https://orcid.org/0009-0003-8023-5140)
+- [{{< fa brands researchgate >}}]{.profile-icon} [ResearchGate](https://www.researchgate.net/profile/Emma-Belaud)
+- [{{< fa brands github >}}]{.profile-icon} [GitHub](https://github.com/emmabelaud)
+:::
+:::
+
+:::

@@ -1,5 +1,6 @@
 /* css styles */
 
+## Publication
 .pub-entry {
   padding: 0.8rem 1rem;
   margin-bottom: 0.9rem;
@@ -12,3 +13,92 @@
 .pub-entry.submitted { border-left-color: #d4a017; }
 .pub-entry.resubmit  { border-left-color: #d9822b; }
 .pub-entry.inprep    { border-left-color: #8a8f98; }
+
+## CV
+.cv-entry {
+  padding: 0.7rem 1rem;
+  margin-bottom: 0.8rem;
+  border-left: 4px solid #2c7a4b;
+  background: rgba(127, 127, 127, 0.08);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.5;
+}
+
+.cv-date {
+  float: right;
+  font-size: 0.9em;
+  opacity: 0.75;
+  margin-left: 1rem;
+}
+
+## Contact
+/* --- Contact : e-mail en tête --- */
+.contact-intro {
+  padding-left: 1rem;
+  margin: 1rem 0 2.5rem;
+  border-left: 4px solid #2c7a4b;
+}
+
+.block-label {
+  display: block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.65;
+  margin-bottom: 0.4rem;
+}
+
+.mail-icon { color: #2c7a4b; font-size: 1.3rem; margin-right: 0.3rem; }
+
+.mail-link {
+  font-size: 1.35rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mail-link:hover { text-decoration: underline; }
+
+/* --- Deux colonnes --- */
+.contact-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.contact-block {
+  line-height: 1.6;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(127, 127, 127, 0.3);
+}
+
+.lab-link {
+  font-weight: 600;
+  color: #2c7a4b;
+  text-decoration: none;
+}
+
+.lab-link:hover { text-decoration: underline; }
+
+/* --- Liste des profils --- */
+.profile-list ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.profile-list li { margin-bottom: 0.6rem; }
+
+.profile-icon {
+  display: inline-block;
+  width: 1.6rem;
+  color: #2c7a4b;
+  font-size: 1.15rem;
+}
+
+.profile-list a { font-weight: 600; text-decoration: none; }
+.profile-list a:hover { text-decoration: underline; }
+
+/* Mobile : une seule colonne */
+@media (max-width: 700px) {
+  .contact-columns { grid-template-columns: 1fr; gap: 1.5rem; }
+}
