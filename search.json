@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "soil_biodiversity_imaging.html",
+    "href": "soil_biodiversity_imaging.html",
+    "title": "Soil biodiversity imaging",
+    "section": "",
+    "text": "A short introduction to the in situ soil imaging approach: what it is, what it makes visible, and why it matters."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#the-approach",
+    "href": "soil_biodiversity_imaging.html#the-approach",
+    "title": "Soil biodiversity imaging",
+    "section": "The approach",
+    "text": "The approach\n\n\n Principle\n\nBuried flatbed scanners\nShort description of the device and how it acquires images of the soil over time.\n\n\n\n Pipeline\n\nFrom images to data\nShort description of the image analysis pipeline (acquisition, detection, quantification).\n\n\n\n Applications\n\nWhat it reveals\nShort description of the ecological questions addressed: roots, soil fauna, temporal and spatial dynamics."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#illustrations",
+    "href": "soil_biodiversity_imaging.html#illustrations",
+    "title": "Soil biodiversity imaging",
+    "section": "Illustrations",
+    "text": "Illustrations\nImages, image sequences or short videos of the device and of the data."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#key-results",
+    "href": "soil_biodiversity_imaging.html#key-results",
+    "title": "Soil biodiversity imaging",
+    "section": "Key results",
+    "text": "Key results\nMain findings, with links to the corresponding publications."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#related",
+    "href": "soil_biodiversity_imaging.html#related",
+    "title": "Soil biodiversity imaging",
+    "section": "Related",
+    "text": "Related\nLinks to the publications and resources."
+  },
+  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",
@@ -102,6 +137,6 @@
     "href": "resources.html",
     "title": "Related resources",
     "section": "",
-    "text": "PhD defence\n\nMy thesis defence\nRecording of my PhD defence.\n\n\n\n\n Open resources\n\nSoil imaging image sequences\nImage sequences examples acquired with the in situ soil imaging device.\nAccess the dataset \n\n\n\n Video\n\nThe scanners in the spotlight\nArticle. The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: Observer la biodiversité des sols à l’ère du numérique\nVideo. An accessible introduction to the history of buried scanners and the new research opportunities they have opened up:"
+    "text": "PhD defence\n\nMy thesis defence\nRecording of my PhD defence.\n\n\n\n\n Open resources\n\nSoil imaging image sequences\nExample image sequences acquired with the in situ soil imaging device.\nAccess the dataset \n\n\n\n Video and article\n\nThe scanners in the spotlight\nArticle. The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: Observer la biodiversité des sols à l’ère du numérique.\nVideo. An accessible introduction to the history of buried scanners and the new research opportunities they have opened up:"
   }
 ]
