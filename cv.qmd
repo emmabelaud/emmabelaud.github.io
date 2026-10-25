@@ -43,24 +43,6 @@ Potential of in situ imaging for monitoring biological activity in soils. Writin
 Potential of in situ imaging for monitoring biological activity in soils. Study of the activity of soil biological communities (fauna, plants, fungi) in a truffle-growing soil using image analysis.
 :::
 
-::: cv-entry
-**Internship** [2021 · 3 months]{.cv-date}\
-*Agroscope, Nyon, Switzerland*\
-Promotion of functional biodiversity in sugar beet crops to regulate green peach aphid (*Myzus persicae*) populations. Set-up of a pilot project testing the efficacy of agroecological infrastructures to promote beneficial insects in farmers' fields.
-:::
-
-::: cv-entry
-**Internship** [2019 · 3 months]{.cv-date}\
-*CAES Piura, Piura, Peru*\
-Monitoring of acrylamide in the cane sugar manufacturing process. Participation in a research mission on the origin of acrylamide formation and management levers during sugarcane processing.
-:::
-
-::: cv-entry
-**Internship** [2018 · 2 months]{.cv-date}\
-*Fitzgibbon farm, Charleville, Ireland*\
-Farm labour on a dairy farm and study of the production system.
-:::
-
 ## Supervision
 
 ::: cv-entry
@@ -78,7 +60,7 @@ Development of an in situ imaging method to monitor edaphic activity: effects of
 ::: cv-entry
 **M2 internship: Marion Lebeau** [2024 · 6 months]{.cv-date}\
 *UniLaSalle Beauvais, hosted in Montpellier, France*\
-Characterisation of distribution patterns of soil invertebrate communities in an agroforestry system. Supervision throughout the six months: scientific reflection (redefinition of objectives), technical training (data acquisition and management methods), analysis (choice of methods, interpretation of results) and writing (manuscript review).
+Characterisation of distribution patterns of soil invertebrate communities in an agroforestry system. 
 :::
 
 ## Communications
@@ -86,31 +68,31 @@ Characterisation of distribution patterns of soil invertebrate communities in an
 ::: cv-entry
 **Journées Métaprogramme BIOSEFAIR** [2026 · 2 days]{.cv-date}\
 *INRAE, Lyon, France*\
-Presentation of the buried scanners: "In situ, high-throughput imaging of edaphic activity".
+Presentation: "In situ, high-throughput imaging of edaphic activity".
 :::
 
 ::: cv-entry
 **Journées de l'observatoire ORCHAMPS** [2025 · 1 day]{.cv-date}\
 *ORCHAMPS observatory, Grenoble, France*\
-Presentation of the buried scanners: "A new window on the activity of soil organisms".
+Presentation: "A new window on the activity of soil organisms".
 :::
 
 ::: cv-entry
 **IMPACTS working group** [2025 · 1 week]{.cv-date}\
 *CESAB, Grenoble, France*\
-Presentation of a thesis chapter: "From pixels to patterns: High-throughput soil imaging unveils edaphic fauna dynamics".
+Presentation: "From pixels to patterns: High-throughput soil imaging unveils edaphic fauna dynamics".
 :::
 
 ::: cv-entry
 **IMPACTS working group** [2025 · 1 week]{.cv-date}\
 *CESAB, Montpellier, France*\
-Presentation of my thesis: "Seeing the temporal and spatial organization of edaphic activity".
+Presentation: "Seeing the temporal and spatial organization of edaphic activity".
 :::
 
 ::: cv-entry
 **Café des techniques** [2024 · 3 hours]{.cv-date}\
 *CIRAD, online*\
-Presentation of the scanner system: "Development of soil imaging systems: automated control of image acquisition and processing".
+Presentation: "Development of soil imaging systems: automated control of image acquisition and processing".
 :::
 
 ::: cv-entry
@@ -122,13 +104,13 @@ Round table, my perspective as a PhD student: "Doing a PhD in ecology and evolut
 ::: cv-entry
 **CIRAD stand, Salon International de l'Agriculture** [2024 · 1 week]{.cv-date}\
 *CIRAD, Paris, France*\
-Scientific outreach activities on the CIRAD stand, whose theme was "soil", at the 2024 International Agricultural Show. Science communication to diverse audiences. Topic: "Development of an in situ soil imaging system for monitoring edaphic activity: fauna, plants and fungi".
+Scientific outreach activities on the CIRAD stand at the 2024 Salon International de l'Agriculture. Science communication to diverse audiences.
 :::
 
 ::: cv-entry
 **Workshop: Contributions, benefits and limits of sensors for monitoring biodiversity** [2022 · 1 week]{.cv-date}\
 *INRAE, Lyon, France*\
-Presentation of the buried scanners: "The potential of in situ imaging for studying biological activity in soil".
+Presentation: "The potential of in situ imaging for studying biological activity in soil".
 :::
 
 ## Conferences
@@ -142,7 +124,7 @@ Poster: "Roots, the fuel for soil fauna activity".
 ::: cv-entry
 **12th International Symposium of the International Society of Root Research** [2024 · 1 week]{.cv-date}\
 *International Society of Root Research, Leipzig, Germany*\
-Poster: "In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota around the roots". Scientific knowledge gained through conferences on root ecophysiology; development of English-language communication skills.
+Poster: "In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota around the roots". 
 :::
 
 ## Scientific meetings and seminars
@@ -150,35 +132,21 @@ Poster: "In situ soil imaging, a tool for monitoring the hourly to monthly tempo
 ::: cv-entry
 **Soil Imaging Network meeting** [2024 · 4 hours]{.cv-date}\
 *INRAE Soil Imaging Network, Montpellier, France*\
-Talks on microscopy imaging (tools, methods and applications across disciplines) and a round table on data management and open science. Scientific monitoring of soil imaging techniques and projects. Flash talk on the in situ imaging technique I work on: "In situ soil imaging for monitoring edaphic biological activity".
+Presentation: "In situ soil imaging for monitoring edaphic biological activity".
 :::
 
 ::: cv-entry
 **12th Scientific and Technical Days of the Microscopists network** [2024 · 3 days]{.cv-date}\
 *INRAE Microscopists network, Montpellier, France*\
-Talks on microscopy imaging and a round table on data management and open science. Technical knowledge of imaging techniques in biology and scientific data management. Oral dissemination skills (pedagogy, outreach) through a workshop on innovative imaging techniques at UMR Eco&Sols.
 :::
 
 ::: cv-entry
 **12th Scientific Days of the TEBIS network** [2024 · 3 days]{.cv-date}\
 *TEBIS network, Montpellier, France*\
-Presentation: "Development of an in situ imaging method to monitor the phenology of edaphic activity", on perspectives for building phenological traits for soil fauna. Statistical training in multivariate trait analysis, macro-video digitisation workshop on soil mesofauna, and conferences on traits in soil ecology.
+Presentation: "Development of an in situ imaging method to monitor the phenology of edaphic activity", on perspectives for building phenological traits for soil fauna. 
 :::
 
 ::: cv-entry
 **Seminar: Contributions, benefits and limits of remote sensing for better understanding biodiversity** [2023 · 2 days]{.cv-date}\
 *BIOSEFAIR INRAE metaprogramme, Castelnau-le-Lez, France*\
-Presentations of projects using remote sensing to monitor biodiversity, and of tools and methodologies used to address ecological questions. Exchange session between ecologists and remote-sensing specialists on the needs of each discipline for biodiversity monitoring projects.
-:::
-
-## Training
-
-::: cv-entry
-**MOOC Research ethics** [2024 · 15 hours]{.cv-date}\
-*Université de Montpellier, online*
-:::
-
-::: cv-entry
-**MOOC Scientific integrity in research professions** [2024 · 15 hours]{.cv-date}\
-*Université de Montpellier, online*
 :::
