@@ -1,6 +1,7 @@
 /* css styles */
 
 ## Publication
+/* --- Publications --- */
 .pub-entry {
   padding: 0.8rem 1rem;
   margin-bottom: 0.9rem;
@@ -13,6 +14,56 @@
 .pub-entry.submitted { border-left-color: #d4a017; }
 .pub-entry.resubmit  { border-left-color: #d9822b; }
 .pub-entry.inprep    { border-left-color: #8a8f98; }
+
+.pub-entry a {
+  word-break: break-all;
+}
+
+## Resources 
+/* --- Page ressources --- */
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.resource-card {
+  padding: 1.3rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 12px;
+  background: rgba(127, 127, 127, 0.08);
+  border: 1px solid rgba(127, 127, 127, 0.2);
+  line-height: 1.55;
+}
+
+.resource-grid .resource-card { margin-bottom: 0; }
+
+.resource-icon {
+  display: inline-block;
+  color: #2c7a4b;
+  font-size: 1.6rem;
+  margin-bottom: 0.2rem;
+}
+
+.resource-card h3 {
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.resource-card .quarto-video,
+.resource-card iframe {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.resource-link {
+  font-weight: 600;
+  color: #2c7a4b;
+  text-decoration: none;
+}
+
+.resource-link:hover { text-decoration: underline; }
 
 ## CV
 /* --- Titres de section --- */
