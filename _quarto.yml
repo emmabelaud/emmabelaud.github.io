@@ -1,0 +1,27 @@
+project:
+  type: website
+
+website:
+  title: "Emma Belaud"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Emma BELAUD
+      - href: publications.qmd
+        text: Publications
+      - href: soil_biodiversity_imaging.qmd
+        text: Soil biodiversity imaging
+      - href: resources.qmd
+        text: Resources
+      - href: cv.qmd
+        text: CV
+      - href: contact.qmd
+        text: Contact
+    right:
+      - icon: github
+        href: https://github.com/emmabelaud
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
