@@ -1,12 +1,18 @@
 ---
-title: "Emma Belaud"
+title: "About me"
 about:
   template: jolla
-  image: images/profil_image.jpeg
+  image: images/profil_image.jpg
   links:
     - icon: github
       text: GitHub
       href: https://github.com/emmabelaud
+    - icon: mortarboard
+      text: ResearchGate
+      href: https://www.researchgate.net/profile/Emma-Belaud
+    - icon: person-badge
+      text: ORCID
+      href: https://orcid.org/0009-0003-8023-5140
 ---
 
 I contribute to the development of a new in-situ soil imaging method to dynamically, integratively, and non-invasively monitor the activity of roots and soil invertebrates. I explore the potential offered by this innovative method to study the spatio-temporal organization of soil activity across ecological, spatial, and temporal scales.

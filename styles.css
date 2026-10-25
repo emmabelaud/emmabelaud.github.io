@@ -1,1 +1,14 @@
 /* css styles */
+
+.pub-entry {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.9rem;
+  border-left: 4px solid #2c7a4b;
+  background: rgba(127, 127, 127, 0.08);
+  border-radius: 0 6px 6px 0;
+  line-height: 1.5;
+}
+
+.pub-entry.submitted { border-left-color: #d4a017; }
+.pub-entry.resubmit  { border-left-color: #d9822b; }
+.pub-entry.inprep    { border-left-color: #8a8f98; }

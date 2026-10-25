@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "About me",
+    "section": "",
+    "text": "I contribute to the development of a new in-situ soil imaging method to dynamically, integratively, and non-invasively monitor the activity of roots and soil invertebrates. I explore the potential offered by this innovative method to study the spatio-temporal organization of soil activity across ecological, spatial, and temporal scales."
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. https://doi.org/10.1007/s11104-026-08694-2\n\n\nGérard, S., Marsden, C., Belaud, E., Biryol, C., Capowiez, Y., Estopinan, J., Ferchaud, F., Forest, M., Ngao, J., Goury, R., Masson, A.-S., Orrière, S., & Hedde, M. (2026). Evaluating the delayed, causal effects of summer irrigation on winter earthworm communities in a Mediterranean agroforestry trial. Agriculture, Ecosystems & Environment, 408, 110455. https://doi.org/10.1016/j.agee.2026.110455\n\n\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. https://doi.org/10.1007/s00374-024-01851-8\n\n\nPruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, B., Jourdan, C., Belaud, E., & Hedde, M. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE, 1–6. http://dx.doi.org/10.1109/EUVIP53989.2022.9922675"
+  },
+  {
+    "objectID": "publications.html#published-articles",
+    "href": "publications.html#published-articles",
+    "title": "Publications",
+    "section": "",
+    "text": "Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. https://doi.org/10.1007/s11104-026-08694-2\n\n\nGérard, S., Marsden, C., Belaud, E., Biryol, C., Capowiez, Y., Estopinan, J., Ferchaud, F., Forest, M., Ngao, J., Goury, R., Masson, A.-S., Orrière, S., & Hedde, M. (2026). Evaluating the delayed, causal effects of summer irrigation on winter earthworm communities in a Mediterranean agroforestry trial. Agriculture, Ecosystems & Environment, 408, 110455. https://doi.org/10.1016/j.agee.2026.110455\n\n\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. https://doi.org/10.1007/s00374-024-01851-8\n\n\nPruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, B., Jourdan, C., Belaud, E., & Hedde, M. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE, 1–6. http://dx.doi.org/10.1109/EUVIP53989.2022.9922675"
+  },
+  {
+    "objectID": "publications.html#submitted-manuscripts",
+    "href": "publications.html#submitted-manuscripts",
+    "title": "Publications",
+    "section": "Submitted manuscripts",
+    "text": "Submitted manuscripts\n\nBelaud, E.*, Hendrikx, H.*, Postic, F., Scalabrino, M., Lebeau, M., Le Maire, G., Jourdan, C., Gallet, P., Hedde, M. Linking automated image analysis to ecological inference: high-throughput monitoring of soil fauna. (*Co-first authors). Submitted to Methods in Ecology and Evolution.\n\n\nBelaud, E., Beugnon, R., Frangne, E., Gallet, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. Land-use effects on soil fauna are temporally unstable. Submitted to Global Change Biology."
+  },
+  {
+    "objectID": "publications.html#manuscripts-to-be-resubmitted",
+    "href": "publications.html#manuscripts-to-be-resubmitted",
+    "title": "Publications",
+    "section": "Manuscripts to be resubmitted",
+    "text": "Manuscripts to be resubmitted\n\nBelaud, E., Labrosse, J., Jourdan, C., Gallet, P., Hendrikx, H., Le Maire, G., Postic, F., Hedde, M. In situ scanner-based imaging to monitor soil mesofauna activity: trade-offs between spatial resolution and temporal frequency. Rejected by Methods in Ecology and Evolution; to be resubmitted to Ecography.\n\n\nBelaud, E., Dray, S., Gallet, P., Hinsinger, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. A new dimension of the rhizosphere: Microscale spatial organization of soil invertebrates around roots. Rejected by Ecology Letters; to be resubmitted to Journal of Ecology."
+  },
+  {
+    "objectID": "publications.html#manuscripts-in-preparation",
+    "href": "publications.html#manuscripts-in-preparation",
+    "title": "Publications",
+    "section": "Manuscripts in preparation",
+    "text": "Manuscripts in preparation\n\nHedde, M., Cortet, J., Aubert, M., Belaud, E., Capowiez, Y., Biryol, C., Ganault, P., Joly, F.-X., Marsden, C., Trap, J., Nahmani, J. Trait-based ecology of soil fauna: progress, blind spots and future directions. In preparation for Functional Ecology."
+  }
+]

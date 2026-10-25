@@ -6,7 +6,7 @@ website:
   navbar:
     left:
       - href: index.qmd
-        text: Emma BELAUD
+        text: About me
       - href: publications.qmd
         text: Publications
       - href: soil_biodiversity_imaging.qmd
