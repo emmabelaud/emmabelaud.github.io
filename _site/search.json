@@ -1,5 +1,40 @@
 [
   {
+    "objectID": "soil_biodiversity_imaging.html",
+    "href": "soil_biodiversity_imaging.html",
+    "title": "Soil biodiversity imaging",
+    "section": "",
+    "text": "A short introduction to the in situ soil imaging approach: what it is, what it makes visible, and why it matters."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#the-approach",
+    "href": "soil_biodiversity_imaging.html#the-approach",
+    "title": "Soil biodiversity imaging",
+    "section": "The approach",
+    "text": "The approach\n\n\n Principle\n\nBuried flatbed scanners\nShort description of the device and how it acquires images of the soil over time.\n\n\n\n Pipeline\n\nFrom images to data\nShort description of the image analysis pipeline (acquisition, detection, quantification).\n\n\n\n Applications\n\nWhat it reveals\nShort description of the ecological questions addressed: roots, soil fauna, temporal and spatial dynamics."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#illustrations",
+    "href": "soil_biodiversity_imaging.html#illustrations",
+    "title": "Soil biodiversity imaging",
+    "section": "Illustrations",
+    "text": "Illustrations\nImages, image sequences or short videos of the device and of the data."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#key-results",
+    "href": "soil_biodiversity_imaging.html#key-results",
+    "title": "Soil biodiversity imaging",
+    "section": "Key results",
+    "text": "Key results\nMain findings, with links to the corresponding publications."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#related",
+    "href": "soil_biodiversity_imaging.html#related",
+    "title": "Soil biodiversity imaging",
+    "section": "Related",
+    "text": "Related\nLinks to the publications and resources."
+  },
+  {
     "objectID": "publications.html",
     "href": "publications.html",
     "title": "Publications",

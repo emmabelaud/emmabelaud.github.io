@@ -3,6 +3,11 @@ project:
 
 website:
   title: "Emma Belaud"
+  site-url: https://emmabelaud.github.io
+  description: "Emma Belaud, soil ecologist"
+  open-graph: true
+  twitter-card: true
+  favicon: images/favicon.png
   navbar:
     left:
       - href: index.qmd

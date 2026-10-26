@@ -1,5 +1,6 @@
 ---
 title: "About me"
+pagetitle: "Emma Belaud | Soil ecology researcher"
 about:
   template: jolla
   image: images/profil_image.jpg
