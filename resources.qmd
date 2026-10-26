@@ -24,11 +24,7 @@ Example image sequences acquired with the in situ soil imaging device.
 :::
 
 ::: {.card-block .resource-card}
-[{{< fa video >}}]{.card-icon} [Video and article]{.block-label}
-
-### Webinaire
-
-
+[{{< fa video >}}]{.card-icon} [Videos and article]{.block-label}
 
 ### The scanners in the spotlight
 
