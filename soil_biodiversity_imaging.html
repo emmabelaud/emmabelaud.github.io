@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Soil biodiversity imaging – Emma Belaud</title>
+<title>Soil biodiversity imaging | Emma Belaud – Emma Belaud</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -47,6 +47,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -80,12 +82,18 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Soil biodiversity imaging – Emma Belaud">
+<meta property="og:title" content="Soil biodiversity imaging | Emma Belaud">
 <meta property="og:description" content="Emma Belaud, soil ecologist">
+<meta property="og:image" content="https://emmabelaud.github.io/images/scanner_schema.png">
 <meta property="og:site_name" content="Emma Belaud">
-<meta name="twitter:title" content="Soil biodiversity imaging – Emma Belaud">
+<meta property="og:image:height" content="794">
+<meta property="og:image:width" content="1123">
+<meta name="twitter:title" content="Soil biodiversity imaging | Emma Belaud">
 <meta name="twitter:description" content="Emma Belaud, soil ecologist">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://emmabelaud.github.io/images/scanner_schema.png">
+<meta name="twitter:image-height" content="794">
+<meta name="twitter:image-width" content="1123">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -170,44 +178,103 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>A short introduction to the in situ soil imaging approach: what it is, what it makes visible, and why it matters.</p>
-<section id="the-approach" class="level2">
-<h2 class="anchored" data-anchor-id="the-approach">The approach</h2>
+<section id="context" class="level2">
+<h2 class="anchored" data-anchor-id="context">Context</h2>
+<p>Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity <em>in situ</em> by imaging.</p>
+</section>
+<section id="the-device" class="level2">
+<h2 class="anchored" data-anchor-id="the-device">The device</h2>
+<p>The system relies on desktop flatbed scanners, adapted to field conditions and buried in the soil. In the field, each scanner is paired with an automated control module based on a Raspberry Pi, which handles image acquisition. This setup allows long-term, high-resolution acquisition campaigns with minimal human intervention.</p>
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/scanner_schema.png" class="img-fluid figure-img"></p>
+<figcaption>Schematic of the buried scanner device</figcaption>
+</figure>
+</div>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/control_module.png" class="img-fluid figure-img"></p>
+<figcaption>Automated control module based on a Raspberry Pi</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="key-facts">
+<div class="fact">
+<p><span class="fact-value">6 h</span> <span class="fact-label">between two images</span></p>
+</div>
+<div class="fact">
+<p><span class="fact-value">1200 dpi</span> <span class="fact-label">image resolution</span></p>
+</div>
+<div class="fact">
+<p><span class="fact-value">A4</span> <span class="fact-label">scanned surface</span></p>
+</div>
+<div class="fact">
+<p><span class="fact-value">&gt; 1 mm</span> <span class="fact-label">size of monitored organisms</span></p>
+</div>
+</div>
+</section>
+<section id="what-the-images-reveal" class="level2">
+<h2 class="anchored" data-anchor-id="what-the-images-reveal">What the images reveal</h2>
+<p>Images are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, some fungal structures and many invertebrate taxa. It also allows their dynamics to be followed at a fine temporal scale and over long periods.</p>
+<div class="video-grid">
+<div class="card-block">
+<p><span class="block-label">Roots and fungi</span></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pZuIaU2kMHE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Colonization of oak roots by ectomycorrhizal (ECM) fungi observed by <em>in situ</em> imaging.</p>
+</div>
+<div class="card-block">
+<p><span class="block-label">Invertebrates</span></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/B3qnjS-vCa8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Mutualism between aphids and ants on roots observed by <em>in situ</em> imaging.</p>
+</div>
+<div class="card-block">
+<p><span class="block-label">Roots and fauna</span></p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Y-ypGheXB2E" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+<p>Grazing and reiteration of an oak root observed by <em>in situ</em> imaging.</p>
+</div>
+</div>
+</section>
+<section id="from-images-to-data" class="level2">
+<h2 class="anchored" data-anchor-id="from-images-to-data">From images to data</h2>
+<p>High-frequency automated monitoring generates a volume of data that quickly makes manual expertise incompatible with the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while maintaining an inference quality comparable to that of a human expert. We work on the design of such pipelines.</p>
 <div class="card-grid">
-<div class="card-block">
-<p><span class="card-icon"><i class="fa-solid fa-camera" aria-label="camera"></i></span> <span class="block-label">Principle</span></p>
-<section id="buried-flatbed-scanners" class="level3">
-<h3 class="anchored" data-anchor-id="buried-flatbed-scanners">Buried flatbed scanners</h3>
-<p>Short description of the device and how it acquires images of the soil over time.</p>
+<div class="card-block pipeline-card">
+<p><span class="card-icon"><i class="fa-solid fa-seedling" aria-label="seedling"></i></span> <span class="block-label">Roots</span></p>
+<section id="root-structures" class="level3">
+<h3 class="anchored" data-anchor-id="root-structures">Root structures</h3>
+<p>To extract biological information on root structures, we use <strong>RootPainter</strong>, a deep-learning-based tool developed at the University of Copenhagen. It requires a training phase for the model.</p>
+<p><a href="https://doi.org/10.1111/nph.18387" class="accent-link">Associated publication <i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i></a></p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="images/rootpainter_annotation.mp4"></video></div>
+<p>The RootPainter annotation interface.</p>
 </section>
 </div>
-<div class="card-block">
-<p><span class="card-icon"><i class="fa-solid fa-microchip" aria-label="microchip"></i></span> <span class="block-label">Pipeline</span></p>
-<section id="from-images-to-data" class="level3">
-<h3 class="anchored" data-anchor-id="from-images-to-data">From images to data</h3>
-<p>Short description of the image analysis pipeline (acquisition, detection, quantification).</p>
-</section>
-</div>
-<div class="card-block">
-<p><span class="card-icon"><i class="fa-solid fa-seedling" aria-label="seedling"></i></span> <span class="block-label">Applications</span></p>
-<section id="what-it-reveals" class="level3">
-<h3 class="anchored" data-anchor-id="what-it-reveals">What it reveals</h3>
-<p>Short description of the ecological questions addressed: roots, soil fauna, temporal and spatial dynamics.</p>
+<div class="card-block pipeline-card">
+<p><span class="card-icon"><i class="fa-solid fa-bug" aria-label="bug"></i></span> <span class="block-label">Invertebrates</span></p>
+<section id="soil-invertebrates" class="level3">
+<h3 class="anchored" data-anchor-id="soil-invertebrates">Soil invertebrates</h3>
+<p>For invertebrates, we developed our own tool, based on two steps: animal <strong>detection</strong>, using heuristic methods that differentiate successive images, and <strong>classification</strong>, using a deep-learning model. A Shiny interface was developed to train the model.</p>
+<p><a href="https://doi.org/10.64898/2026.06.16.732537" class="accent-link">Associated publication <i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i></a></p>
+<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="images/invertebrate_annotation.mp4"></video></div>
+<p>The Shiny interface used to annotate invertebrates and train the model.</p>
 </section>
 </div>
 </div>
 </section>
-<section id="illustrations" class="level2">
-<h2 class="anchored" data-anchor-id="illustrations">Illustrations</h2>
-<p>Images, image sequences or short videos of the device and of the data.</p>
-</section>
-<section id="key-results" class="level2">
-<h2 class="anchored" data-anchor-id="key-results">Key results</h2>
-<p>Main findings, with links to the corresponding publications.</p>
-</section>
-<section id="related" class="level2">
-<h2 class="anchored" data-anchor-id="related">Related</h2>
-<p>Links to the <a href="./publications.html">publications</a> and <a href="./resources.html">resources</a>.</p>
+<section id="related-publications" class="level2">
+<h2 class="anchored" data-anchor-id="related-publications">Related publications</h2>
+<ul>
+<li>Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. <em>Plant and Soil</em>. <a href="https://doi.org/10.1007/s11104-026-08694-2">doi</a></li>
+<li>Belaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. <em>Biology and Fertility of Soils</em>, 60, 1055–1071. <a href="https://doi.org/10.1007/s00374-024-01851-8">doi</a></li>
+<li>Pruvost, E., et al.&nbsp;(2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. <em>IEEE</em>. <a href="http://dx.doi.org/10.1109/EUVIP53989.2022.9922675">doi</a></li>
+</ul>
+<p>See the full list on the <a href="./publications.html">Publications</a> page, and more material in <a href="./resources.html">Related resources</a>.</p>
 
 
 </section>
@@ -614,6 +681,8 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<script>videojs(video_shortcode_videojs_video1);</script>
+<script>videojs(video_shortcode_videojs_video2);</script>
 
 
 
