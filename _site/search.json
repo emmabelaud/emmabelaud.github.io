@@ -4,7 +4,7 @@
     "href": "soil_biodiversity_imaging.html",
     "title": "Soil biodiversity imaging",
     "section": "",
-    "text": "A short introduction to the in situ soil imaging approach: what it is, what it makes visible, and why it matters."
+    "text": "Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity in situ by imaging."
   },
   {
     "objectID": "soil_biodiversity_imaging.html#the-approach",
@@ -32,7 +32,7 @@
     "href": "soil_biodiversity_imaging.html#related",
     "title": "Soil biodiversity imaging",
     "section": "Related",
-    "text": "Related\nLinks to the publications and resources."
+    "text": "Related\nSee the publications and the related resources (thesis defence, open image sequences, video) for more."
   },
   {
     "objectID": "publications.html",
@@ -130,13 +130,55 @@
     "href": "index.html",
     "title": "About me",
     "section": "",
-    "text": "I contribute to the development of a new in-situ soil imaging method to dynamically, integratively, and non-invasively monitor the activity of roots and soil invertebrates. I explore the potential offered by this innovative method to study the spatio-temporal organization of soil activity across ecological, spatial, and temporal scales."
+    "text": "I work on soil ecology, with a focus on developing sensor-based monitoring methods. I recently completed my PhD, entitled “Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring.”. Through this work, I contributed to the development of a new in-situ soil imaging method that non-invasively monitors the dynamics of roots and soil invertebrates. I now explore what this method can reveal about the spatio-temporal organization of soil activity across ecological, spatial, and temporal scales."
   },
   {
     "objectID": "resources.html",
     "href": "resources.html",
     "title": "Related resources",
     "section": "",
-    "text": "PhD defence\n\nMy thesis defence\nRecording of my PhD defence.\n\n\n\n\n Open resources\n\nSoil imaging image sequences\nExample image sequences acquired with the in situ soil imaging device.\nAccess the dataset \n\n\n\n Video and article\n\nThe scanners in the spotlight\nArticle. The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: Observer la biodiversité des sols à l’ère du numérique.\nVideo. An accessible introduction to the history of buried scanners and the new research opportunities they have opened up:"
+    "text": "PhD defence\n\nMy thesis defence\nRecording of my PhD defence.\n\n\n\n\n Open resources\n\nSoil imaging image sequences\nExample image sequences acquired with the in situ soil imaging device.\nAccess the dataset \n\n\n\n Video and article\n\nWebinaire\n\n\nThe scanners in the spotlight\nArticle. The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: “Observer la biodiversité des sols à l’ère du numérique”.\nWebinar. In this webinar, we present the in situ soil imaging technique and demonstrate its application to monitoring the temporal organization of edaphic activity:\n\nVideo. An accessible introduction to the history of buried scanners and the new research opportunities they have opened up:"
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#the-device",
+    "href": "soil_biodiversity_imaging.html#the-device",
+    "title": "Soil biodiversity imaging",
+    "section": "The device",
+    "text": "The device\nThe system relies on desktop flatbed scanners, adapted to field conditions and buried in the soil. In the field, each scanner is paired with an automated control module based on a Raspberry Pi, which handles image acquisition. This setup allows long-term, high-resolution acquisition campaigns with minimal human intervention.\n\n\n\n\n\n\nSchematic of the buried scanner device\n\n\n\n\n\n\n\nAutomated control module based on a Raspberry Pi\n\n\n\n\n\n\n\n6 h between two images\n\n\n1200 dpi image resolution\n\n\nA4 scanned surface\n\n\n&gt; 1 mm size of monitored organisms"
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#what-the-images-reveal",
+    "href": "soil_biodiversity_imaging.html#what-the-images-reveal",
+    "title": "Soil biodiversity imaging",
+    "section": "What the images reveal",
+    "text": "What the images reveal\nImages are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, some fungal structures and many invertebrate taxa. It also allows their dynamics to be followed at a fine temporal scale and over long periods.\n\n\nRoots and fungi\n\nColonization of oak roots by ectomycorrhizal (ECM) fungi observed by in situ imaging.\n\n\nInvertebrates\n\nMutualism between aphids and ants on roots observed by in situ imaging.\n\n\nRoots and fauna\n\nGrazing and reiteration of an oak root observed by in situ imaging."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#from-images-to-data",
+    "href": "soil_biodiversity_imaging.html#from-images-to-data",
+    "title": "Soil biodiversity imaging",
+    "section": "From images to data",
+    "text": "From images to data\nHigh-frequency automated monitoring generates a volume of data that quickly makes manual expertise incompatible with the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while maintaining an inference quality comparable to that of a human expert. We work on the design of such pipelines.\n\n\n Roots\n\nRoot structures\nTo extract biological information on root structures, we use RootPainter, a deep-learning-based tool developed at the University of Copenhagen. It requires a training phase for the model.\nAssociated publication \n\nThe RootPainter annotation interface.\n\n\n\n Invertebrates\n\nSoil invertebrates\nFor invertebrates, we developed our own tool, based on two steps: animal detection, using heuristic methods that differentiate successive images, and classification, using a deep-learning model. A Shiny interface was developed to train the model.\nAssociated publication \n\nThe Shiny interface used to annotate invertebrates and train the model."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#further-reading",
+    "href": "soil_biodiversity_imaging.html#further-reading",
+    "title": "Soil biodiversity imaging",
+    "section": "Further reading",
+    "text": "Further reading\n\n Publications\n\nIn situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota (Biology and Fertility of Soils, 2024)\nHearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity (Plant and Soil, 2026)\n\nSee also the full list of publications and the related resources (thesis defence, open image sequences)."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#context",
+    "href": "soil_biodiversity_imaging.html#context",
+    "title": "Soil biodiversity imaging",
+    "section": "",
+    "text": "Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity in situ by imaging."
+  },
+  {
+    "objectID": "soil_biodiversity_imaging.html#related-publications",
+    "href": "soil_biodiversity_imaging.html#related-publications",
+    "title": "Soil biodiversity imaging",
+    "section": "Related publications",
+    "text": "Related publications\n\nBelaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. doi\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. doi\nPruvost, E., et al. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE. doi\n\nSee the full list on the Publications page, and more material in Related resources."
   }
 ]

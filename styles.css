@@ -92,6 +92,62 @@ h2 {
 
 .pub-entry a { word-break: break-all; }
 
+/* ---------- Soil biodiversity imaging ---------- */
+
+/* Chiffres clés */
+.key-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.fact {
+  text-align: center;
+  padding: 1rem 0.5rem;
+  border-radius: 12px;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent-line);
+}
+
+.fact p { margin: 0; }
+
+.fact-value {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accent);
+}
+
+.fact-label {
+  display: block;
+  font-size: 0.8rem;
+  opacity: 0.75;
+}
+
+/* Trois vidéos côte à côte */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.video-grid .card-block {
+  margin-bottom: 0;
+  padding: 1rem;
+}
+
+.video-grid .card-block p { font-size: 0.9rem; }
+
+/* Arrondis des vidéos */
+.video-grid iframe,
+.pipeline-card iframe,
+.pipeline-card video {
+  border-radius: 8px;
+  overflow: hidden;
+}
 
 /* ---------- CV : frise chronologique ---------- */
 .cv-entry {

@@ -26,9 +26,17 @@ Example image sequences acquired with the in situ soil imaging device.
 ::: {.card-block .resource-card}
 [{{< fa video >}}]{.card-icon} [Video and article]{.block-label}
 
+### Webinaire
+
+
+
 ### The scanners in the spotlight
 
-**Article.** The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: [Observer la biodiversité des sols à l'ère du numérique](https://pepr-solsvivants.fr/a-la-une2/observer-la-biodiversite-des-sols-a-l-ere-du-numerique){.accent-link}.
+**Article.** The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: ["Observer la biodiversité des sols à l'ère du numérique"](https://pepr-solsvivants.fr/a-la-une2/observer-la-biodiversite-des-sols-a-l-ere-du-numerique){.accent-link}.
+
+**Webinar.** In this webinar, we present the in situ soil imaging technique and demonstrate its application to monitoring the temporal organization of edaphic activity:
+
+{{< video https://mediatheque.inrae.fr/Val-Loire/media/ajarisvideo/public/DE08BA63CBF8ECF59CA652C2CD9073C0-df5T84LepT/376514.mp4 >}}
 
 **Video.** An accessible introduction to the history of buried scanners and the new research opportunities they have opened up:
 

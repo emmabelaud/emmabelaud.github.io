@@ -16,4 +16,4 @@ about:
       href: https://orcid.org/0009-0003-8023-5140
 ---
 
-I contribute to the development of a new in-situ soil imaging method to dynamically, integratively, and non-invasively monitor the activity of roots and soil invertebrates. I explore the potential offered by this innovative method to study the spatio-temporal organization of soil activity across ecological, spatial, and temporal scales.
+I work on **soil ecology**, with a focus on developing **sensor-based monitoring methods**. I recently completed my PhD, entitled *“Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring.”*. Through this work, I contributed to the development of a new in-situ soil imaging method that non-invasively monitors the dynamics of roots and soil invertebrates. I now explore what this method can reveal about the spatio-temporal organization of soil activity across ecological, spatial, and temporal scales.
