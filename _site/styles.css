@@ -1,59 +1,90 @@
 /* ==========================================================
-   STYLES DU SITE
-   Sections : Variables · Global · Publications · CV ·
-              Soil biodiversity imaging · Ressources · Contact
+   STYLES DU SITE - Version Élégante & Contemporaine
    ========================================================== */
 
+/* Import d'une police moderne et géométrique */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
-/* ---------- Variables ---------- */
+/* ---------- Variables de couleur & design ---------- */
 :root {
-  --accent: #2c7a4b;
-  --accent-soft: rgba(44, 122, 75, 0.12);
-  --accent-line: rgba(44, 122, 75, 0.35);
-  --card-bg: rgba(127, 127, 127, 0.08);
-  --card-border: rgba(127, 127, 127, 0.2);
+  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --accent: #234E35;          /* Vert forêt profond et sophistiqué */
+  --accent-soft: #E8F0EC;     /* Vert très pâle pour les fonds doux */
+  --accent-line: #CBDCD3;     /* Ligne fine et élégante */
+  --text-main: #2D3748;       /* Gris foncé doux pour la lecture */
+  --text-muted: #718096;      /* Gris secondaire */
+  --card-bg: #FFFFFF;         /* Fond de carte blanc pur */
+  --card-border: #E2E8F0;     /* Bordure ultra-discrète */
+  --bg-body: #FAFAFA;         /* Fond général légèrement cassé (très élégant) */
 }
 
 
 /* ---------- Global ---------- */
-
-/* Titres de section (toutes les pages) */
-h2 {
-  margin-top: 2.5rem;
-  padding-bottom: 0.3rem;
-  border-bottom: 2px solid var(--accent);
+body {
+  font-family: var(--font-main) !important;
+  color: var(--text-main) !important;
+  background-color: var(--bg-body) !important;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Petit libellé en majuscules (Contact, Ressources, ...) */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-main);
+  font-weight: 600;
+  color: #1A202C;
+  letter-spacing: -0.02em;
+}
+
+/* Titres de section épurés */
+h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--accent-line);
+  font-size: 1.4rem;
+}
+
+/* Petit libellé en majuscules */
 .block-label {
   display: block;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.08em;
-  opacity: 0.65;
-  margin-bottom: 0.4rem;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+  font-weight: 600;
 }
 
-/* Carte générique (Ressources, Soil biodiversity imaging) */
+/* Carte générique (Minimaliste avec effet de profondeur subtil) */
 .card-block {
-  padding: 1.3rem 1.5rem;
+  padding: 1.5rem 1.8rem;
   margin-bottom: 1.5rem;
-  border-radius: 12px;
+  border-radius: 10px;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  line-height: 1.55;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  line-height: 1.6;
+}
+
+.card-block:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .card-block h3 {
-  margin-top: 0.2rem;
-  font-size: 1.2rem;
+  margin-top: 0;
+  font-size: 1.15rem;
+  color: #1A202C;
 }
 
-/* Lien d'action en vert (Ressources, Contact) */
+/* Lien d'action */
 .accent-link {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--accent);
   text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
 }
 
 .accent-link:hover { text-decoration: underline; }
@@ -61,9 +92,9 @@ h2 {
 /* Grille de cartes responsive */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin: 1rem 0 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .card-grid .card-block { margin-bottom: 0; }
@@ -71,41 +102,44 @@ h2 {
 .card-icon {
   display: inline-block;
   color: var(--accent);
-  font-size: 1.6rem;
-  margin-bottom: 0.2rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
 }
 
 
 /* ---------- Publications ---------- */
 .pub-entry {
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.9rem;
-  border-left: 4px solid var(--accent);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
   background: var(--card-bg);
-  border-radius: 0 6px 6px 0;
-  line-height: 1.5;
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  line-height: 1.6;
 }
 
-.pub-entry.submitted { border-left-color: #d4a017; }
-.pub-entry.resubmit  { border-left-color: #d9822b; }
-.pub-entry.inprep    { border-left-color: #8a8f98; }
+.pub-entry.submitted { border-left-color: #D69E2E; }
+.pub-entry.resubmit  { border-left-color: #DD6B20; }
+.pub-entry.inprep    { border-left-color: #A0AEC0; }
 
-.pub-entry a { word-break: break-all; }
+.pub-entry a { word-break: break-all; color: var(--accent); }
+
 
 /* ---------- Soil biodiversity imaging ---------- */
 
 /* Chiffres clés */
 .key-facts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  margin: 1.5rem 0;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.2rem;
+  margin: 2rem 0;
 }
 
 .fact {
   text-align: center;
-  padding: 1rem 0.5rem;
-  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  border-radius: 10px;
   background: var(--accent-soft);
   border: 1px solid var(--accent-line);
 }
@@ -114,144 +148,145 @@ h2 {
 
 .fact-value {
   display: block;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 1.2;
   color: var(--accent);
+  letter-spacing: -0.03em;
 }
 
 .fact-label {
   display: block;
   font-size: 0.8rem;
-  opacity: 0.75;
+  color: var(--text-muted);
+  margin-top: 0.3rem;
+  font-weight: 500;
 }
 
-/* Trois vidéos côte à côte */
+/* Vidéos */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.2rem;
-  margin: 1rem 0 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 .video-grid .card-block {
   margin-bottom: 0;
-  padding: 1rem;
+  padding: 1.2rem;
 }
 
-.video-grid .card-block p { font-size: 0.9rem; }
-
-/* Arrondis des vidéos */
 .video-grid iframe,
 .pipeline-card iframe,
-.pipeline-card video {
+.pipeline-card video,
+.resource-card iframe {
   border-radius: 8px;
   overflow: hidden;
 }
 
-/* ---------- CV : frise chronologique ---------- */
+
+/* ---------- CV : Frise chronologique raffinée ---------- */
 .cv-entry {
   position: relative;
-  margin: 0 0 1.3rem 0.6rem;
-  padding: 0.1rem 0 0.1rem 1.5rem;
-  border-left: 2px solid var(--accent-line);
-  line-height: 1.55;
+  margin: 0 0 1.8rem 0.8rem;
+  padding: 0 0 0 1.8rem;
+  border-left: 1px solid var(--accent-line);
+  line-height: 1.6;
 }
 
-/* Point sur la frise */
+/* Point discret sur la frise */
 .cv-entry::before {
   content: "";
   position: absolute;
-  left: -8px;
-  top: 0.45rem;
-  width: 12px;
-  height: 12px;
+  left: -5px;
+  top: 0.35rem;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 0 4px var(--accent-soft);
+  border: 2px solid var(--bg-body);
 }
 
-/* Date en pastille */
+/* Date en pastille élégante */
 .cv-date {
   float: right;
   margin-left: 1rem;
-  padding: 0.15rem 0.7rem;
+  padding: 0.2rem 0.8rem;
   border-radius: 999px;
   background: var(--accent-soft);
   color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 600;
   white-space: nowrap;
 }
 
-.cv-entry em { opacity: 0.8; }
-
-
-/* ---------- Ressources ---------- */
-.resource-card iframe,
-.resource-card .quarto-video {
-  border-radius: 8px;
-  overflow: hidden;
+.cv-entry em {
+  color: var(--text-muted);
+  font-style: normal;
+  font-weight: 400;
 }
 
 
 /* ---------- Contact ---------- */
-
-/* E-mail en tête */
 .contact-intro {
-  padding-left: 1rem;
-  margin: 1rem 0 2.5rem;
-  border-left: 4px solid var(--accent);
+  padding-left: 1.2rem;
+  margin: 1.5rem 0 3rem;
+  border-left: 3px solid var(--accent);
 }
 
 .mail-icon {
   color: var(--accent);
-  font-size: 1.3rem;
-  margin-right: 0.3rem;
+  font-size: 1.2rem;
+  margin-right: 0.4rem;
 }
 
 .mail-link {
-  font-size: 1.35rem;
+  font-size: 1.25rem;
   font-weight: 600;
+  color: var(--accent);
   text-decoration: none;
 }
 
 .mail-link:hover { text-decoration: underline; }
 
-/* Deux colonnes : affiliation / profils */
 .contact-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2.5rem;
+  gap: 3rem;
 }
 
 .contact-block {
   line-height: 1.6;
-  padding-top: 0.8rem;
-  border-top: 1px solid rgba(127, 127, 127, 0.3);
+  padding-top: 1rem;
+  border-top: 1px solid var(--card-border);
 }
 
-/* Liste des profils en ligne */
 .profile-list ul {
   list-style: none;
   padding-left: 0;
   margin: 0;
 }
 
-.profile-list li { margin-bottom: 0.6rem; }
+.profile-list li { margin-bottom: 0.8rem; }
 
 .profile-icon {
   display: inline-block;
-  width: 1.6rem;
+  width: 1.5rem;
   color: var(--accent);
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
-.profile-list a { font-weight: 600; text-decoration: none; }
-.profile-list a:hover { text-decoration: underline; }
+.profile-list a {
+  font-weight: 500;
+  color: var(--text-main);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.profile-list a:hover { color: var(--accent); }
 
 
 /* ---------- Mobile ---------- */
 @media (max-width: 700px) {
-  .contact-columns { grid-template-columns: 1fr; gap: 1.5rem; }
+  .contact-columns { grid-template-columns: 1fr; gap: 2rem; }
 }
