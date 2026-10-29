@@ -1,100 +1,196 @@
 /* ==========================================================
-   STYLES DU SITE - Version Élégante & Contemporaine
+   STYLES DU SITE — version éditoriale harmonisée
    ========================================================== */
 
-/* Import d'une police moderne et géométrique */
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
 
-/* ---------- Variables de couleur & design ---------- */
+
+/* ---------- Variables ---------- */
 :root {
-  --font-main: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  --accent: #234E35;          /* Vert forêt profond et sophistiqué */
-  --accent-soft: #E8F0EC;     /* Vert très pâle pour les fonds doux */
-  --accent-line: #CBDCD3;     /* Ligne fine et élégante */
-  --text-main: #2D3748;       /* Gris foncé doux pour la lecture */
-  --text-muted: #718096;      /* Gris secondaire */
-  --card-bg: #FFFFFF;         /* Fond de carte blanc pur */
-  --card-border: #E2E8F0;     /* Bordure ultra-discrète */
-  --bg-body: #FAFAFA;         /* Fond général légèrement cassé (très élégant) */
+  --ink: #16201b;
+  --text: #2b3430;
+  --muted: #69736d;
+  --line: #e2e6e3;
+  --tint: #f5f7f5;
+
+  --accent: #2a5d45;
+  --accent-soft: rgba(42, 93, 69, 0.08);
+  --accent-line: rgba(42, 93, 69, 0.3);
+
+  --card-bg: #ffffff;
+  --card-border: var(--line);
+
+  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
 
-/* ---------- Global ---------- */
+/* ---------- Typographie & Cohérence Globale ---------- */
 body {
-  font-family: var(--font-main) !important;
-  color: var(--text-main) !important;
-  background-color: var(--bg-body) !important;
+  font-family: var(--sans);
+  font-size: 1.04rem;
+  line-height: 1.7;
+  color: var(--text);
+  background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-main);
-  font-weight: 600;
-  color: #1A202C;
-  letter-spacing: -0.02em;
+/* Application stricte des polices par rôle */
+h1, h2, h3, h4, h5, h6,
+.title,
+.navbar-brand,
+.navbar-title,
+.fact-value {
+  font-family: var(--serif);
+  letter-spacing: -0.01em;
 }
 
-/* Titres de section épurés */
+h1, h2, h3, h4, h5, h6,
+.title,
+.navbar-brand,
+.navbar-title {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+h1, .title { font-size: 2.6rem; line-height: 1.15; }
+h3 { font-size: 1.35rem; line-height: 1.3; }
+
+p { max-width: 68ch; }
+
+/* Forcer le style sans-serif pour tous les composants utilitaires */
+.navbar, .dropdown-menu, #TOC, .sidebar, .quarto-title-meta,
+.quarto-title-banner, figcaption, .figure-caption, .nav-footer,
+.callout, table, .listing, button, input, select, textarea,
+.nav-link, .page-menu {
+  font-family: var(--sans) !important;
+}
+
+strong, b { font-weight: 600; }
+
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong,
+h1 b, h2 b, h3 b, h4 b, h5 b, h6 b { font-weight: 500; }
+
+h4 { font-size: 1.15rem; }
+h5, h6 { font-size: 1rem; }
+
+code, pre, kbd, samp {
+  font-family: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
+  font-size: 0.88em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: var(--accent-line);
+  transition: text-decoration-color 0.15s, color 0.15s;
+}
+
+a:hover {
+  color: var(--accent);
+  text-decoration-color: var(--accent);
+}
+
+::selection { background: var(--accent-soft); }
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+  opacity: 1;
+}
+
+
+/* ---------- Navigation Principale ---------- */
+.navbar {
+  background-color: #ffffff !important;
+  border-bottom: 1px solid var(--line);
+  box-shadow: none;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.navbar .navbar-title {
+  font-size: 1.3rem;
+}
+
+.navbar .nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: var(--muted) !important;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid transparent;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.navbar .nav-link:hover {
+  color: var(--ink) !important;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-item.active .nav-link {
+  color: var(--ink) !important;
+  border-bottom-color: var(--accent);
+}
+
+.navbar .bi,
+.navbar .menu-text i { color: var(--muted); }
+
+.navbar-toggler { border: 0; }
+
+
+/* ---------- Titres de section & Blocs ---------- */
 h2 {
   margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 1px solid var(--accent-line);
-  font-size: 1.4rem;
+  padding-bottom: 0.45rem;
+  font-size: 1.75rem;
+  border-bottom: 1px solid var(--line);
 }
 
-/* Petit libellé en majuscules */
 .block-label {
   display: block;
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  color: var(--text-muted);
-  margin-bottom: 0.5rem;
-  font-weight: 600;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
 }
 
-/* Carte générique (Minimaliste avec effet de profondeur subtil) */
 .card-block {
-  padding: 1.5rem 1.8rem;
+  padding: 1.5rem 1.7rem;
   margin-bottom: 1.5rem;
-  border-radius: 10px;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 4px;
+  background: #ffffff;
+  border: 1px solid var(--line);
   line-height: 1.6;
 }
 
-.card-block:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
-}
-
 .card-block h3 {
-  margin-top: 0;
-  font-size: 1.15rem;
-  color: #1A202C;
+  margin-top: 0.1rem;
+  font-size: 1.25rem;
 }
 
-/* Lien d'action */
 .accent-link {
   font-weight: 500;
   color: var(--accent);
-  text-decoration: none;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
+  text-decoration: underline;
+  text-decoration-color: var(--accent-line);
+  text-underline-offset: 0.2em;
 }
 
-.accent-link:hover { text-decoration: underline; }
+.accent-link:hover { text-decoration-color: var(--accent); }
 
-/* Grille de cartes responsive */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
-  margin: 1.5rem 0;
+  margin: 1.2rem 0 1.5rem;
 }
 
 .card-grid .card-block { margin-bottom: 0; }
@@ -102,148 +198,156 @@ h2 {
 .card-icon {
   display: inline-block;
   color: var(--accent);
-  font-size: 1.4rem;
-  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.4rem;
 }
 
 
 /* ---------- Publications ---------- */
 .pub-entry {
-  padding: 1rem 1.2rem;
-  margin-bottom: 1rem;
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
-  border-left: 3px solid var(--accent);
-  border-radius: 0 8px 8px 0;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
-  line-height: 1.6;
+  padding: 0.9rem 0 0.9rem 1.2rem;
+  margin-bottom: 0.4rem;
+  border-left: 2px solid var(--accent);
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  border-radius: 0;
+  line-height: 1.55;
 }
 
-.pub-entry.submitted { border-left-color: #D69E2E; }
-.pub-entry.resubmit  { border-left-color: #DD6B20; }
-.pub-entry.inprep    { border-left-color: #A0AEC0; }
+.pub-entry.submitted { border-left-color: #b39032; }
+.pub-entry.resubmit  { border-left-color: #b9714a; }
+.pub-entry.inprep    { border-left-color: #a3aaa6; }
 
-.pub-entry a { word-break: break-all; color: var(--accent); }
+.pub-entry a { word-break: break-all; }
 
 
-/* ---------- Soil biodiversity imaging ---------- */
-
-/* Chiffres clés */
+/* ---------- Soil Biodiversity Imaging ---------- */
 .key-facts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0;
   margin: 2rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
 }
 
 .fact {
-  text-align: center;
-  padding: 1.5rem 1rem;
-  border-radius: 10px;
-  background: var(--accent-soft);
-  border: 1px solid var(--accent-line);
+  text-align: left;
+  padding: 1.2rem 1.2rem 1.1rem;
+  background: transparent;
+  border: 0;
+  border-right: 1px solid var(--line);
 }
 
+.fact:last-child { border-right: 0; }
 .fact p { margin: 0; }
 
 .fact-value {
   display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 2.1rem;
+  font-weight: 500;
+  line-height: 1.15;
   color: var(--accent);
-  letter-spacing: -0.03em;
+  font-variant-numeric: lining-nums;
 }
 
 .fact-label {
   display: block;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  margin-top: 0.3rem;
-  font-weight: 500;
+  margin-top: 0.2rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--muted);
 }
 
-/* Vidéos */
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
-  margin: 1.5rem 0;
+  margin: 1.2rem 0 1.5rem;
 }
 
 .video-grid .card-block {
   margin-bottom: 0;
-  padding: 1.2rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.video-grid .card-block p {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-top: 0.5rem;
 }
 
 .video-grid iframe,
 .pipeline-card iframe,
-.pipeline-card video,
-.resource-card iframe {
-  border-radius: 8px;
+.pipeline-card video {
+  border-radius: 3px;
   overflow: hidden;
 }
 
 
-/* ---------- CV : Frise chronologique raffinée ---------- */
+/* ---------- CV : Frise chronologique ---------- */
 .cv-entry {
   position: relative;
-  margin: 0 0 1.8rem 0.8rem;
-  padding: 0 0 0 1.8rem;
-  border-left: 1px solid var(--accent-line);
+  margin: 0 0 1.5rem 0.4rem;
+  padding: 0 0 0 1.6rem;
+  border-left: 1px solid var(--line);
   line-height: 1.6;
 }
 
-/* Point discret sur la frise */
 .cv-entry::before {
   content: "";
   position: absolute;
   left: -5px;
-  top: 0.35rem;
+  top: 0.6rem;
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--bg-body);
+  background: #ffffff;
+  border: 1.5px solid var(--accent);
 }
 
-/* Date en pastille élégante */
 .cv-date {
   float: right;
   margin-left: 1rem;
-  padding: 0.2rem 0.8rem;
-  border-radius: 999px;
-  background: var(--accent-soft);
-  color: var(--accent);
-  font-size: 0.75rem;
-  font-weight: 600;
+  padding: 0;
+  background: none;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
   white-space: nowrap;
 }
 
-.cv-entry em {
-  color: var(--text-muted);
-  font-style: normal;
-  font-weight: 400;
+.cv-entry em { color: var(--muted); font-style: italic; }
+
+
+/* ---------- Ressources ---------- */
+.resource-card iframe,
+.resource-card .quarto-video {
+  border-radius: 3px;
+  overflow: hidden;
 }
 
 
 /* ---------- Contact ---------- */
 .contact-intro {
   padding-left: 1.2rem;
-  margin: 1.5rem 0 3rem;
-  border-left: 3px solid var(--accent);
+  margin: 1.2rem 0 2.5rem;
+  border-left: 2px solid var(--accent);
 }
 
 .mail-icon {
   color: var(--accent);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-right: 0.4rem;
 }
 
 .mail-link {
-  font-size: 1.25rem;
-  font-weight: 600;
-  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 1.3rem;
+  font-weight: 500;
   text-decoration: none;
 }
 
@@ -256,9 +360,9 @@ h2 {
 }
 
 .contact-block {
-  line-height: 1.6;
-  padding-top: 1rem;
-  border-top: 1px solid var(--card-border);
+  line-height: 1.65;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line);
 }
 
 .profile-list ul {
@@ -267,26 +371,122 @@ h2 {
   margin: 0;
 }
 
-.profile-list li { margin-bottom: 0.8rem; }
+.profile-list li { margin-bottom: 0.6rem; }
 
 .profile-icon {
   display: inline-block;
-  width: 1.5rem;
+  width: 1.6rem;
   color: var(--accent);
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 }
 
-.profile-list a {
+.profile-list a { font-weight: 500; text-decoration: none; }
+.profile-list a:hover { text-decoration: underline; }
+
+
+/* ---------- Pied de page ---------- */
+.nav-footer {
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--muted);
+  padding: 1.2rem 0;
+}
+
+
+/* ---------- Menu « On this page » (haut à droite, fixe) ---------- */
+html { scroll-padding-top: 5.5rem; }
+section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
+
+.page-menu {
+  position: fixed;
+  top: calc(var(--header-h, 4rem) + 0.8rem);
+  right: 1.2rem;
+  z-index: 900;
+  font-size: 0.9rem;
+}
+
+.page-menu-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.45rem 0.85rem;
+  background: #ffffff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font: inherit;
   font-weight: 500;
-  color: var(--text-main);
-  text-decoration: none;
-  transition: color 0.2s ease;
+  line-height: 1.2;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.03);
 }
 
-.profile-list a:hover { color: var(--accent); }
+.page-menu-btn:hover { border-color: var(--accent-line); }
+
+.page-menu-btn::after {
+  content: "";
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-top: -0.2rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  transition: transform 0.15s, margin 0.15s;
+}
+
+.page-menu-btn[aria-expanded="true"]::after {
+  margin-top: 0.2rem;
+  transform: rotate(-135deg);
+}
+
+.page-menu-list {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.35rem);
+  min-width: 15rem;
+  max-width: min(22rem, 86vw);
+  max-height: 70vh;
+  overflow-y: auto;
+  margin: 0;
+  padding: 0.4rem 0;
+  list-style: none;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(22, 32, 27, 0.08);
+}
+
+.page-menu-list[hidden] { display: none; }
+
+.page-menu-list a {
+  display: block;
+  padding: 0.45rem 1rem;
+  color: var(--text);
+  line-height: 1.35;
+  text-decoration: none;
+  border-left: 2px solid transparent;
+}
+
+.page-menu-list a:hover { background: var(--tint); }
+
+.page-menu-list a.active {
+  color: var(--accent);
+  font-weight: 500;
+  border-left-color: var(--accent);
+}
+
+@media print { .page-menu { display: none; } }
 
 
 /* ---------- Mobile ---------- */
 @media (max-width: 700px) {
-  .contact-columns { grid-template-columns: 1fr; gap: 2rem; }
+  .page-menu { right: 0.6rem; }
+  h1, .title { font-size: 2.1rem; }
+  .contact-columns { grid-template-columns: 1fr; gap: 1.5rem; }
+  .fact { border-right: 0; border-bottom: 1px solid var(--line); }
+  .fact:last-child { border-bottom: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
 }

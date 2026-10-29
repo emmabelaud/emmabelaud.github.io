@@ -9,6 +9,9 @@ website:
   twitter-card: true
   favicon: images/favicon.png
   navbar:
+    background: "#ffffff"
+    foreground: "#16201b"
+    pinned: true
     left:
       - href: index.qmd
         text: About me
@@ -25,11 +28,16 @@ website:
     right:
       - icon: github
         href: https://github.com/emmabelaud
+  page-footer:
+    center: "© 2026 Emma Belaud"
 
 format:
   html:
     include-in-header:
-         text: |
-           <meta name="google-site-verification" content="TkOA9s6Uma3IP6jg4hGxPjjPUWovnUNz2pN32pn5sy8" />
+      text: |
+        <meta name="google-site-verification" content="TkOA9s6Uma3IP6jg4hGxPjjPUWovnUNz2pN32pn5sy8" />
+    include-after-body: page-menu.html
     theme: cosmo
     css: styles.css
+    smooth-scroll: true
+    link-external-icon: false

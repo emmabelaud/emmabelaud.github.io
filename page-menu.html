@@ -1,0 +1,61 @@
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Sélectionne les titres de la page (h2 et h3)
+  const headers = document.querySelectorAll("main h2, main h3, .content h2, .content h3, article h2, article h3");
+  if (headers.length === 0) return;
+
+  // Crée le conteneur du menu flottant
+  const nav = document.createElement("nav");
+  nav.className = "page-menu";
+  nav.innerHTML = `
+    <button class="page-menu-btn" aria-expanded="false">On this page</button>
+    <ul class="page-menu-list" hidden></ul>
+  `;
+  document.body.appendChild(nav);
+
+  const btn = nav.querySelector(".page-menu-btn");
+  const list = nav.querySelector(".page-menu-list");
+
+  // Remplit la liste avec les titres trouvés sur la page
+  headers.forEach((h, index) => {
+    if (!h.id) {
+      h.id = "section-" + index;
+    }
+    const li = document.createElement("li");
+    const a = document.createElement("a");
+    a.href = "#" + h.id;
+    a.textContent = h.textContent.replace(/^#\s*/, ''); // Nettoie d'éventuels dièses résiduels
+    
+    // Indentation visuelle pour les sous-titres (h3)
+    if (h.tagName === "H3") {
+      a.style.paddingLeft = "1.5rem";
+      a.style.fontSize = "0.85rem";
+    }
+
+    // Ferme le menu au clic sur un lien
+    a.addEventListener("click", () => {
+      list.hidden = true;
+      btn.setAttribute("aria-expanded", "false");
+    });
+
+    li.appendChild(a);
+    list.appendChild(li);
+  });
+
+  // Gestion de l'ouverture/fermeture du menu
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", !expanded);
+    list.hidden = expanded;
+  });
+
+  // Ferme le menu si l'on clique en dehors
+  document.addEventListener("click", (e) => {
+    if (!nav.contains(e.target)) {
+      list.hidden = true;
+      btn.setAttribute("aria-expanded", "false");
+    }
+  });
+});
+</script>

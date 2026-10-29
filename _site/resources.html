@@ -30,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
@@ -46,7 +45,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-172ba59bd5e0b52282274ba0c0cc16fc.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-43ff5b8ee06f43255cc94cd52afb2357.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
 <link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
@@ -78,6 +77,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <meta name="google-site-verification" content="TkOA9s6Uma3IP6jg4hGxPjjPUWovnUNz2pN32pn5sy8">
 
 
@@ -201,6 +201,127 @@ ul.task-list li input[type="checkbox"] {
 
 
 </main> <!-- /main -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function() {
+
+  // Sélectionne les titres de la page (h2 et h3)
+
+  const headers = document.querySelectorAll("main h2, main h3, .content h2, .content h3, article h2, article h3");
+
+  if (headers.length === 0) return;
+
+
+
+  // Crée le conteneur du menu flottant
+
+  const nav = document.createElement("nav");
+
+  nav.className = "page-menu";
+
+  nav.innerHTML = `
+
+    <button class="page-menu-btn" aria-expanded="false">On this page</button>
+
+    <ul class="page-menu-list" hidden></ul>
+
+  `;
+
+  document.body.appendChild(nav);
+
+
+
+  const btn = nav.querySelector(".page-menu-btn");
+
+  const list = nav.querySelector(".page-menu-list");
+
+
+
+  // Remplit la liste avec les titres trouvés sur la page
+
+  headers.forEach((h, index) => {
+
+    if (!h.id) {
+
+      h.id = "section-" + index;
+
+    }
+
+    const li = document.createElement("li");
+
+    const a = document.createElement("a");
+
+    a.href = "#" + h.id;
+
+    a.textContent = h.textContent.replace(/^#\s*/, ''); // Nettoie d'éventuels dièses résiduels
+
+    
+
+    // Indentation visuelle pour les sous-titres (h3)
+
+    if (h.tagName === "H3") {
+
+      a.style.paddingLeft = "1.5rem";
+
+      a.style.fontSize = "0.85rem";
+
+    }
+
+
+
+    // Ferme le menu au clic sur un lien
+
+    a.addEventListener("click", () => {
+
+      list.hidden = true;
+
+      btn.setAttribute("aria-expanded", "false");
+
+    });
+
+
+
+    li.appendChild(a);
+
+    list.appendChild(li);
+
+  });
+
+
+
+  // Gestion de l'ouverture/fermeture du menu
+
+  btn.addEventListener("click", (e) => {
+
+    e.stopPropagation();
+
+    const expanded = btn.getAttribute("aria-expanded") === "true";
+
+    btn.setAttribute("aria-expanded", !expanded);
+
+    list.hidden = expanded;
+
+  });
+
+
+
+  // Ferme le menu si l'on clique en dehors
+
+  document.addEventListener("click", (e) => {
+
+    if (!nav.contains(e.target)) {
+
+      list.hidden = true;
+
+      btn.setAttribute("aria-expanded", "false");
+
+    }
+
+  });
+
+});
+
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -602,9 +723,23 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+<p>© 2026 Emma Belaud</p>
+</div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
 <script>videojs(video_shortcode_videojs_video1);</script>
 
 
 
 
+<script src="site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
