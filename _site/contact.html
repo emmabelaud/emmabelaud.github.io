@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Contact and information – Emma Belaud</title>
+<title>Contact | Emma Belaud – Emma Belaud</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -76,20 +76,37 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #ffffff;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: #ffffff;
+background: #2a5d45;
+      }
+</style>
 <meta name="google-site-verification" content="TkOA9s6Uma3IP6jg4hGxPjjPUWovnUNz2pN32pn5sy8">
 
 
 <link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="Contact and information – Emma Belaud">
+<meta property="og:title" content="Contact | Emma Belaud">
 <meta property="og:site_name" content="Emma Belaud">
-<meta name="twitter:title" content="Contact and information – Emma Belaud">
+<meta name="twitter:title" content="Contact | Emma Belaud">
 <meta name="twitter:card" content="summary">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -142,32 +159,42 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Get in touch</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Contact and information</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
+<!--
+  PAGE CONTACT : mode d'emploi
+  - ::: contact-intro  : bloc vert clair avec l'e-mail en grand.
+  - ::: contact-columns : deux colonnes côte à côte (empilées sur mobile) ;
+    chaque colonne est un ::: contact-block (liseré teal, puis ocre).
+  - ::: profile-list : liste de profils ; {{< fa brands orcid >}} insère une
+    icône de marque Font Awesome.
+  - Les styles sont dans styles.css, section 10.
+-->
 <div class="contact-intro">
 <p><span class="block-label">Preferred contact</span></p>
 <p><span class="mail-icon"><i class="fa-solid fa-envelope" aria-label="envelope"></i></span> <a href="mailto:emmabelaud1@gmail.com" class="mail-link">emmabelaud1@gmail.com</a></p>
@@ -196,126 +223,80 @@ Bât. 12 &amp; 13, 2 place Viala<br>
 
 
 </main> <!-- /main -->
+<!--
+  page-menu.html : menu flottant « On this page »
+  Inclus dans toutes les pages par _quarto.yml (include-after-body).
+  Le script ci-dessous :
+    1. repère les titres h2 et h3 du contenu de la page ;
+    2. crée un bouton fixe en haut à droite avec la liste de ces titres ;
+    3. ouvre / ferme la liste au clic (et au clic en dehors).
+  Rien à écrire dans les .qmd : les ## et ### suffisent.
+  - Pour retirer les sous-titres du menu : dans la ligne querySelectorAll,
+    supprimer les sélecteurs « h3 ».
+  - Pour changer le texte du bouton : modifier « On this page » dans le
+    bloc nav.innerHTML.
+  - Apparence : styles.css, section 13.
+-->
 <script>
-
 document.addEventListener("DOMContentLoaded", function() {
-
   // Sélectionne les titres de la page (h2 et h3)
-
   const headers = document.querySelectorAll("main h2, main h3, .content h2, .content h3, article h2, article h3");
-
   if (headers.length === 0) return;
 
-
-
   // Crée le conteneur du menu flottant
-
   const nav = document.createElement("nav");
-
   nav.className = "page-menu";
-
   nav.innerHTML = `
-
     <button class="page-menu-btn" aria-expanded="false">On this page</button>
-
     <ul class="page-menu-list" hidden></ul>
-
   `;
-
   document.body.appendChild(nav);
 
-
-
   const btn = nav.querySelector(".page-menu-btn");
-
   const list = nav.querySelector(".page-menu-list");
 
-
-
   // Remplit la liste avec les titres trouvés sur la page
-
   headers.forEach((h, index) => {
-
     if (!h.id) {
-
       h.id = "section-" + index;
-
     }
-
     const li = document.createElement("li");
-
     const a = document.createElement("a");
-
     a.href = "#" + h.id;
-
     a.textContent = h.textContent.replace(/^#\s*/, ''); // Nettoie d'éventuels dièses résiduels
-
     
-
     // Indentation visuelle pour les sous-titres (h3)
-
     if (h.tagName === "H3") {
-
       a.style.paddingLeft = "1.5rem";
-
       a.style.fontSize = "0.85rem";
-
     }
-
-
 
     // Ferme le menu au clic sur un lien
-
     a.addEventListener("click", () => {
-
       list.hidden = true;
-
       btn.setAttribute("aria-expanded", "false");
-
     });
 
-
-
     li.appendChild(a);
-
     list.appendChild(li);
-
   });
-
-
 
   // Gestion de l'ouverture/fermeture du menu
-
   btn.addEventListener("click", (e) => {
-
     e.stopPropagation();
-
     const expanded = btn.getAttribute("aria-expanded") === "true";
-
     btn.setAttribute("aria-expanded", !expanded);
-
     list.hidden = expanded;
-
   });
-
-
 
   // Ferme le menu si l'on clique en dehors
-
   document.addEventListener("click", (e) => {
-
     if (!nav.contains(e.target)) {
-
       list.hidden = true;
-
       btn.setAttribute("aria-expanded", "false");
-
     }
-
   });
-
 });
-
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

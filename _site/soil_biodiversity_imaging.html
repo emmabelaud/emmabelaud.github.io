@@ -78,18 +78,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<style>
+
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #ffffff;
+      }
+
+      .quarto-title-block .quarto-title-banner {
+        color: #ffffff;
+background: #2a5d45;
+      }
+</style>
 <meta name="google-site-verification" content="TkOA9s6Uma3IP6jg4hGxPjjPUWovnUNz2pN32pn5sy8">
 
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Soil biodiversity imaging | Emma Belaud">
-<meta property="og:description" content="Emma Belaud, soil ecologist">
+<meta property="og:description" content="Buried flatbed scanners and automated image analysis to monitor roots, fungi and soil invertebrates.">
 <meta property="og:image" content="https://emmabelaud.github.io/images/scanner_schema.png">
 <meta property="og:site_name" content="Emma Belaud">
 <meta property="og:image:height" content="794">
 <meta property="og:image:width" content="1123">
 <meta name="twitter:title" content="Soil biodiversity imaging | Emma Belaud">
-<meta name="twitter:description" content="Emma Belaud, soil ecologist">
+<meta name="twitter:description" content="Buried flatbed scanners and automated image analysis to monitor roots, fungi and soil invertebrates.">
 <meta name="twitter:image" content="https://emmabelaud.github.io/images/scanner_schema.png">
 <meta name="twitter:image-height" content="794">
 <meta name="twitter:image-width" content="1123">
@@ -99,7 +116,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -152,32 +169,48 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Observing soil life in situ</h1>
+            <p class="subtitle lead">Buried flatbed scanners and automated image analysis to monitor roots, fungi and soil invertebrates.</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Soil biodiversity imaging</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
+<!--
+  PAGE SOIL BIODIVERSITY IMAGING : mode d'emploi
+  Composants utilisés (styles dans styles.css, sections 6 et 8) :
+  - :::: key-facts + ::: fact : tuiles de chiffres clés. Chaque tuile =
+    [valeur]{.fact-value} puis [légende]{.fact-label}. Couleurs dans l'ordre :
+    vert, teal, ocre, terre cuite.
+  - :::: video-grid + ::: card-block : vidéos en grille avec légende.
+  - :::: card-grid + ::: {.card-block .pipeline-card} : cartes côte à côte
+    (une sur deux est teal). [{{< fa nom >}}]{.card-icon} = pastille icône.
+  - {{< video ... >}} intègre une vidéo : une adresse YouTube « embed » ou
+    un fichier local (images/xxx.mp4).
+  - ::: {layout-ncol=2} met deux images côte à côte.
+  - Chaque ## titre apparaît automatiquement dans le menu « On this page ».
+-->
 <section id="context" class="level2">
 <h2 class="anchored" data-anchor-id="context">Context</h2>
 <p>Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity <em>in situ</em> by imaging.</p>
@@ -280,126 +313,80 @@ ul.task-list li input[type="checkbox"] {
 </section>
 
 </main> <!-- /main -->
+<!--
+  page-menu.html : menu flottant « On this page »
+  Inclus dans toutes les pages par _quarto.yml (include-after-body).
+  Le script ci-dessous :
+    1. repère les titres h2 et h3 du contenu de la page ;
+    2. crée un bouton fixe en haut à droite avec la liste de ces titres ;
+    3. ouvre / ferme la liste au clic (et au clic en dehors).
+  Rien à écrire dans les .qmd : les ## et ### suffisent.
+  - Pour retirer les sous-titres du menu : dans la ligne querySelectorAll,
+    supprimer les sélecteurs « h3 ».
+  - Pour changer le texte du bouton : modifier « On this page » dans le
+    bloc nav.innerHTML.
+  - Apparence : styles.css, section 13.
+-->
 <script>
-
 document.addEventListener("DOMContentLoaded", function() {
-
   // Sélectionne les titres de la page (h2 et h3)
-
   const headers = document.querySelectorAll("main h2, main h3, .content h2, .content h3, article h2, article h3");
-
   if (headers.length === 0) return;
 
-
-
   // Crée le conteneur du menu flottant
-
   const nav = document.createElement("nav");
-
   nav.className = "page-menu";
-
   nav.innerHTML = `
-
-    <button class="page-menu-btn" aria-expanded="false">Sur cette page</button>
-
+    <button class="page-menu-btn" aria-expanded="false">On this page</button>
     <ul class="page-menu-list" hidden></ul>
-
   `;
-
   document.body.appendChild(nav);
 
-
-
   const btn = nav.querySelector(".page-menu-btn");
-
   const list = nav.querySelector(".page-menu-list");
 
-
-
   // Remplit la liste avec les titres trouvés sur la page
-
   headers.forEach((h, index) => {
-
     if (!h.id) {
-
       h.id = "section-" + index;
-
     }
-
     const li = document.createElement("li");
-
     const a = document.createElement("a");
-
     a.href = "#" + h.id;
-
     a.textContent = h.textContent.replace(/^#\s*/, ''); // Nettoie d'éventuels dièses résiduels
-
     
-
     // Indentation visuelle pour les sous-titres (h3)
-
     if (h.tagName === "H3") {
-
       a.style.paddingLeft = "1.5rem";
-
       a.style.fontSize = "0.85rem";
-
     }
-
-
 
     // Ferme le menu au clic sur un lien
-
     a.addEventListener("click", () => {
-
       list.hidden = true;
-
       btn.setAttribute("aria-expanded", "false");
-
     });
 
-
-
     li.appendChild(a);
-
     list.appendChild(li);
-
   });
-
-
 
   // Gestion de l'ouverture/fermeture du menu
-
   btn.addEventListener("click", (e) => {
-
     e.stopPropagation();
-
     const expanded = btn.getAttribute("aria-expanded") === "true";
-
     btn.setAttribute("aria-expanded", !expanded);
-
     list.hidden = expanded;
-
   });
-
-
 
   // Ferme le menu si l'on clique en dehors
-
   document.addEventListener("click", (e) => {
-
     if (!nav.contains(e.target)) {
-
       list.hidden = true;
-
       btn.setAttribute("aria-expanded", "false");
-
     }
-
   });
-
 });
-
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

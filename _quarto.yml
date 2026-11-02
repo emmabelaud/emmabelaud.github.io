@@ -1,17 +1,29 @@
+# ============================================================================
+# _quarto.yml : configuration générale du site
+# Ce fichier décide de la structure du site (menus, pied de page) et des
+# fichiers communs à toutes les pages (styles.css, page-menu.html).
+# Attention : l'indentation (espaces, jamais de tabulation) fait partie de la
+# syntaxe YAML. Un « # » démarre un commentaire jusqu'à la fin de la ligne.
+# ============================================================================
+
 project:
-  type: website
+  type: website                      # site multi-pages : chaque .qmd devient une page .html
 
 website:
-  title: "Emma Belaud"
+  title: "Emma Belaud"               # nom affiché à gauche de la barre de navigation
   site-url: https://emmabelaud.github.io
-  description: "Emma Belaud, soil ecologist"
-  open-graph: true
+  description: "Emma Belaud, soil ecologist"   # texte pour Google et les aperçus de liens
+  open-graph: true                   # aperçu enrichi quand on partage un lien
   twitter-card: true
-  favicon: images/favicon.png
+  favicon: images/favicon.png        # petite icône de l'onglet du navigateur
+
   navbar:
     background: "#ffffff"
     foreground: "#16201b"
-    pinned: true
+    pinned: true                     # barre fixée en haut quand on fait défiler la page
+    # Menus de gauche, dans l'ordre d'affichage.
+    # href = fichier de la page ; text = libellé dans le menu (il peut
+    # différer du titre affiché dans le bandeau de la page).
     left:
       - href: index.qmd
         text: About me
@@ -25,19 +37,29 @@ website:
         text: CV
       - href: contact.qmd
         text: Contact
+    # Menu de droite : icône seule.
     right:
       - icon: github
         href: https://github.com/emmabelaud
+
   page-footer:
-    center: "© 2026 Emma Belaud"
+    center: "© 2026 Emma Belaud"     # texte du pied de page
 
 format:
   html:
+    # Code HTML ajouté dans le <head> de chaque page : ici, la balise de
+    # vérification de propriété du site pour Google Search Console.
     include-in-header:
       text: |
         <meta name="google-site-verification" content="TkOA9s6Uma3IP6jg4hGxPjjPUWovnUNz2pN32pn5sy8" />
+    # Script ajouté en fin de chaque page : menu flottant « On this page ».
     include-after-body: page-menu.html
-    theme: cosmo
-    css: styles.css
-    smooth-scroll: true
-    link-external-icon: false
+    theme: cosmo                     # thème Bootstrap de base ; styles.css s'applique par-dessus
+    css: styles.css                  # feuille de style du site (très commentée)
+    # Bandeau coloré des pages qui ont un « title ». La couleur réelle est
+    # imposée par styles.css (variable --accent) ; ces valeurs ne servent
+    # que de secours.
+    title-block-banner: "#2a5d45"
+    title-block-banner-color: "#ffffff"
+    smooth-scroll: true              # défilement doux vers les ancres
+    link-external-icon: false        # pas de petite icône à côté des liens externes

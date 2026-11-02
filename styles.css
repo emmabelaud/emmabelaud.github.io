@@ -1,84 +1,160 @@
-/* ==========================================================
-   STYLES DU SITE — version éditoriale harmonisée
-   ========================================================== */
+/* ==========================================================================
+   styles.css : feuille de style du site emmabelaud.github.io
+   ==========================================================================
 
-@import url("https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+   COMMENT LIRE CE FICHIER
+   - Il va du général au particulier : variables, typographie, navigation,
+     puis un bloc par composant ou par page.
+   - Chaque section a un en-tête numéroté (voir le sommaire) et rappelle la
+     syntaxe à écrire dans les fichiers .qmd pour utiliser le composant.
+   - Cherche « [MODIFIER] » (Ctrl+F) : ce sont les réglages les plus courants.
+   - Un commentaire CSS s'écrit entre barre-étoile et étoile-barre, comme
+     celui-ci. Ne jamais en imbriquer un dans un autre.
+
+   SOMMAIRE
+     1. Variables : couleurs et police (le plus important)
+     2. Typographie : texte, titres, liens
+     3. Navigation : barre du haut
+     4. Bandeau de titre : bloc coloré en haut des pages
+     5. Titres de section (h2)
+     6. Blocs colorés génériques : cartes, pastilles, liens
+     7. Publications : un bloc par statut
+     8. Soil biodiversity imaging : tuiles de chiffres, vidéos
+     9. Accueil : bloc d'en-tête et tuiles de navigation
+    10. Contact
+    11. Pied de page
+    12. CV : frise chronologique
+    13. Menu flottant « On this page »
+    14. Mobile et accessibilité
+    15. Icônes de faune
+
+   RECETTES RAPIDES
+   - Changer la couleur principale du site : section 1, variable --accent
+     (et --accent-soft / --accent-line, qui sont la même couleur en
+     transparence : écrire les mêmes trois nombres rgb).
+   - Changer une couleur de bloc : section 1, palette --c-... (couleur pleine)
+     et --t-... (version claire utilisée en fond).
+   - Changer la police : section 1, variable --sans, et la ligne @import
+     juste en dessous (voir fonts.google.com pour d'autres polices).
+   - Faire un nouveau bloc coloré dans une page : voir la section 6.
+   - Annuler une règle pour tester : la mettre entre commentaires.
+
+   COMMENT FONCTIONNENT LES COULEURS DES BLOCS
+   Plusieurs composants utilisent deux variables « locales » :
+     --k  = couleur principale du bloc (liseré, pastille, étiquette)
+     --kt = couleur de fond claire du bloc
+   Chaque composant définit sa valeur par défaut (vert), et une règle
+   :nth-child() ou :nth-of-type() la remplace pour les blocs suivants.
+   Changer la couleur d'un bloc revient donc à changer --k (et --kt).
+   ========================================================================== */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 
 
-/* ---------- Variables ---------- */
+/* ==========================================================================
+   1. VARIABLES
+   Toutes les couleurs et la police du site sont définies ici, une seule fois.
+   Les autres sections les appellent avec var(--nom). Modifier une valeur ici
+   la change partout (bandeaux, liens, boutons, tuiles, etc.).
+   ========================================================================== */
 :root {
-  --ink: #16201b;
+  /* Neutres : texte et fonds. --ink = titres, --text = texte courant,
+     --muted = texte secondaire (légendes, navigation), --line = filets,
+     --tint = fond gris très clair (survols). */
+  --ink: #14201b;
   --text: #2b3430;
-  --muted: #69736d;
+  --muted: #5f6b65;
+  --soft: #46514b;   /* texte des descriptions du CV : un cran plus doux que --text */
   --line: #e2e6e3;
-  --tint: #f5f7f5;
+  --tint: #f4f7f5;
 
+
+  /* [MODIFIER] Couleur principale : navigation active, liens, bandeaux
+     (accueil, titres de page, CV). --accent-soft (8 % d'opacité) sert aux
+     fonds très discrets (pastilles de dates), --accent-line (30 %) aux
+     soulignements et filets. Ce sont les mêmes trois nombres rgb que
+     --accent (42, 93, 69 = #2a5d45) : les changer ensemble. */
   --accent: #2a5d45;
   --accent-soft: rgba(42, 93, 69, 0.08);
   --accent-line: rgba(42, 93, 69, 0.3);
 
-  --card-bg: #ffffff;
-  --card-border: var(--line);
 
-  --serif: "Newsreader", "Iowan Old Style", "Palatino Linotype", Georgia, serif;
-  --sans: "Instrument Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  /* [MODIFIER] Palette « sol » des grands blocs colorés.
+     --c-xxx = couleur pleine (tuiles, bandeaux de publications, liserés)
+     --t-xxx = teinte très claire de la même couleur (fond des cartes)
+     Le texte blanc posé sur une couleur pleine doit rester lisible : éviter
+     les couleurs trop claires pour --c-xxx. */
+  --c-green: #2a5d45;  --t-green: #e9f1ed;
+  --c-teal:  #0f766e;  --t-teal:  #e2f1ef;
+  --c-ochre: #9a6b00;  --t-ochre: #f8f0dc;
+  --c-clay:  #b4532a;  --t-clay:  #f9ebe4;
+
+
+  /* [MODIFIER] Police du site (voir aussi l'@import tout en haut, qui
+     charge Inter depuis Google Fonts). Les polices suivantes sont des
+     solutions de repli si Inter ne charge pas. */
+  --sans: "Inter", "Segoe UI", system-ui, -apple-system, sans-serif;
 }
 
 
-/* ---------- Typographie & Cohérence Globale ---------- */
+/* ==========================================================================
+   2. TYPOGRAPHIE
+   Texte courant, titres, liens. La police vient de --sans (section 1).
+   ========================================================================== */
+/* Texte courant : taille 1.02rem (1rem = taille de base du navigateur),
+   interligne 1.65 (plus aéré = plus lisible). */
 body {
   font-family: var(--sans);
-  font-size: 1.04rem;
-  line-height: 1.7;
+  font-size: 1.02rem;
+  line-height: 1.65;
   color: var(--text);
   background: #ffffff;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Application stricte des polices par rôle */
-h1, h2, h3, h4, h5, h6,
-.title,
-.navbar-brand,
-.navbar-title,
-.fact-value {
-  font-family: var(--serif);
-  letter-spacing: -0.01em;
-}
-
-h1, h2, h3, h4, h5, h6,
-.title,
-.navbar-brand,
-.navbar-title {
-  color: var(--ink);
-  font-weight: 500;
-}
-
-h1, .title { font-size: 2.6rem; line-height: 1.15; }
-h3 { font-size: 1.35rem; line-height: 1.3; }
-
-p { max-width: 68ch; }
-
-/* Forcer le style sans-serif pour tous les composants utilitaires */
-.navbar, .dropdown-menu, #TOC, .sidebar, .quarto-title-meta,
-.quarto-title-banner, figcaption, .figure-caption, .nav-footer,
-.callout, table, .listing, button, input, select, textarea,
-.nav-link, .page-menu {
+/* Force la police du site sur les éléments que le thème Bootstrap (cosmo)
+   stylise de son côté. Le « !important » donne priorité à cette règle sur
+   celles du thème. Si une partie du site garde une autre police, ajouter
+   son sélecteur à cette liste. */
+h1, h2, h3, h4, h5, h6, .title, .navbar, .navbar-title, .dropdown-menu,
+#TOC, .sidebar, .quarto-title-meta, .quarto-title-banner, figcaption,
+.figure-caption, .nav-footer, .callout, table, .listing, button, input,
+select, textarea, .nav-link, .page-menu, .fact-value {
   font-family: var(--sans) !important;
 }
 
-strong, b { font-weight: 600; }
 
-h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong,
-h1 b, h2 b, h3 b, h4 b, h5 b, h6 b { font-weight: 500; }
+/* Titres : couleur sombre, graisse 700 (gras), lettres légèrement resserrées
+   (letter-spacing négatif) pour un rendu plus moderne. */
+h1, h2, h3, h4, h5, h6, .title, .navbar-title {
+  color: var(--ink);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
 
-h4 { font-size: 1.15rem; }
+
+/* Tailles des titres (rem). Le h1 existe peu : les pages utilisent le
+   bandeau de titre (section 4) ou un bloc d'en-tête (sections 9 et 12). */
+h1, .title { font-size: 2.6rem; line-height: 1.1; font-weight: 800; letter-spacing: -0.03em; }
+h2 { font-size: 1.7rem; line-height: 1.2; }
+h3 { font-size: 1.3rem; line-height: 1.3; }
+h4 { font-size: 1.1rem; }
 h5, h6 { font-size: 1rem; }
+
+
+/* Limite la largeur des paragraphes à ~68 caractères : au-delà, les lignes
+   deviennent pénibles à lire. */
+p { max-width: 68ch; }
+strong, b { font-weight: 600; }
 
 code, pre, kbd, samp {
   font-family: ui-monospace, "Cascadia Code", "SF Mono", Consolas, monospace;
   font-size: 0.88em;
 }
 
+
+/* Liens : couleur d'accent, soulignement fin et discret qui se renforce au
+   survol. */
 a {
   color: var(--accent);
   text-decoration-thickness: 1px;
@@ -86,29 +162,27 @@ a {
   text-decoration-color: var(--accent-line);
   transition: text-decoration-color 0.15s, color 0.15s;
 }
-
-a:hover {
-  color: var(--accent);
-  text-decoration-color: var(--accent);
-}
+a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
 ::selection { background: var(--accent-soft); }
 
-a:focus-visible,
-button:focus-visible {
+
+/* Accessibilité : contour visible quand on navigue au clavier (Tab). */
+a:focus-visible, button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 3px;
   border-radius: 2px;
 }
 
-hr {
-  border: 0;
-  border-top: 1px solid var(--line);
-  opacity: 1;
-}
+hr { border: 0; border-top: 1px solid var(--line); opacity: 1; }
 
 
-/* ---------- Navigation Principale ---------- */
+/* ==========================================================================
+   3. NAVIGATION (barre du haut)
+   Les liens de la barre se définissent dans _quarto.yml (website > navbar).
+   Ici : seulement l'apparence.
+   ========================================================================== */
+/* Barre blanche, filet fin en bas, sans ombre. */
 .navbar {
   background-color: #ffffff !important;
   border-bottom: 1px solid var(--line);
@@ -116,275 +190,440 @@ hr {
   padding-top: 0.6rem;
   padding-bottom: 0.6rem;
 }
+.navbar .navbar-title { font-size: 1.15rem; }
 
-.navbar .navbar-title {
-  font-size: 1.3rem;
-}
-
+/* Lien de menu : gris ; devient foncé au survol. */
 .navbar .nav-link {
   font-size: 0.92rem;
   font-weight: 500;
   color: var(--muted) !important;
   padding-bottom: 0.35rem;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: color 0.15s, border-color 0.15s;
 }
-
-.navbar .nav-link:hover {
-  color: var(--ink) !important;
-}
-
+.navbar .nav-link:hover { color: var(--ink) !important; }
+/* Page en cours : texte foncé + soulignement d'accent de 2 px. */
 .navbar .nav-link.active,
 .navbar .nav-item.active .nav-link {
   color: var(--ink) !important;
   border-bottom-color: var(--accent);
 }
-
-.navbar .bi,
-.navbar .menu-text i { color: var(--muted); }
-
+.navbar .bi, .navbar .menu-text i { color: var(--muted); }
 .navbar-toggler { border: 0; }
 
 
-/* ---------- Titres de section & Blocs ---------- */
+/* ==========================================================================
+   4. BANDEAU DE TITRE
+   Bloc coloré pleine largeur en haut d'une page. Quarto le génère tout seul
+   pour toute page dont l'en-tête (entre les deux lignes de tirets) contient
+   un « title ». Exemple, en haut d'un .qmd :
+
+       title: "Phrase d'accroche de la page"
+       subtitle: "Une ligne d'explication (facultative)."
+       pagetitle: "Nom de la page | Emma Belaud"
+
+   - title    : grand texte du bandeau. Choisir une accroche qui APPORTE une
+                information plutôt que de répéter le nom de l'onglet du menu.
+   - subtitle : ligne plus petite sous le titre.
+   - pagetitle: texte de l'onglet du navigateur (et des résultats Google).
+   Pour supprimer le bandeau d'une page : title-block-banner: false dans son
+   en-tête. Une page sans title n'a pas de bandeau (accueil).
+   ========================================================================== */
+
+/* [MODIFIER] La couleur est forcée ici sur --accent, ce qui écrase la valeur
+   écrite dans _quarto.yml (title-block-banner). On change donc la couleur à
+   un seul endroit : --accent, section 1. */
+.quarto-title-banner {
+  background-color: var(--accent) !important;
+  padding: 2.8rem 0 2.6rem;   /* espace haut/bas (le texte reste aligné sur le contenu) */
+  margin-bottom: 2rem;        /* espace entre le bandeau et le contenu */
+}
+
+.quarto-title-banner .title {
+  max-width: 24ch;            /* force un retour à la ligne pour les longues accroches */
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 2.4rem;
+}
+
+/* Sous-titre : blanc légèrement transparent. « lead » est la classe que
+   Quarto ajoute au sous-titre (voir aussi la section 9). */
+.quarto-title-banner .subtitle {
+  margin: 0.9rem 0 0;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 1.15rem;
+  line-height: 1.5;
+  max-width: 56ch;
+}
+
+
+/* ==========================================================================
+   5. TITRES DE SECTION (h2)
+   Un titre « ## Mon titre » dans un .qmd donne un h2. C'est aussi lui qui
+   alimente le menu « On this page » (section 13).
+   ========================================================================== */
 h2 {
-  margin-top: 3rem;
-  padding-bottom: 0.45rem;
-  font-size: 1.75rem;
+  margin-top: 3.2rem;
+  padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--line);
 }
 
+
+/* ==========================================================================
+   6. BLOCS COLORÉS GÉNÉRIQUES (cartes, pastilles, liens)
+
+   SYNTAXE D'UNE CARTE, à écrire dans un .qmd :
+
+       ::: {.card-block}
+       [{{< fa seedling >}}]{.card-icon} [Étiquette]{.block-label}
+
+       ### Titre de la carte
+
+       Texte de la carte.
+
+       [Lien {{< fa arrow-up-right-from-square >}}](https://...){.accent-link}
+       :::
+
+   - {{< fa nom >}} insère une icône Font Awesome (liste : fontawesome.com).
+   - Plusieurs cartes à la suite changent de couleur automatiquement.
+   - Pour une grille de cartes côte à côte, les entourer de :
+         :::: card-grid
+         ... cartes ...
+         ::::
+   ========================================================================== */
+/* Petite étiquette au-dessus du titre de carte, colorée comme le liseré
+   (var(--k, ...) = couleur du bloc, ou gris si hors d'un bloc). */
 .block-label {
   display: block;
+  margin-bottom: 0.3rem;
   font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--muted);
-  margin-bottom: 0.35rem;
+  font-weight: 600;
+  color: var(--k, var(--muted));
 }
 
+/* La carte : fond teinté (--kt), liseré supérieur épais (--k), coins arrondis.
+   Les deux lignes --k / --kt fixent la couleur par défaut (vert). */
 .card-block {
-  padding: 1.5rem 1.7rem;
+  --k: var(--c-green);
+  --kt: var(--t-green);
+  padding: 1.6rem 1.8rem;
   margin-bottom: 1.5rem;
-  border-radius: 4px;
-  background: #ffffff;
-  border: 1px solid var(--line);
+  border-radius: 6px;
+  border-top: 5px solid var(--k);
+  background: var(--kt);
   line-height: 1.6;
 }
+.card-block h3 { margin-top: 0.1rem; font-size: 1.25rem; }
 
-.card-block h3 {
-  margin-top: 0.1rem;
-  font-size: 1.25rem;
+/* Rotation des couleurs : dans une .card-grid, une carte sur deux est teal ;
+   sur la page Resources, les cartes alternent vert, teal, ocre (cycle de 3).
+   nth-child / nth-of-type = « le n-ième enfant » ; 3n+2 = 2e, 5e, 8e... */
+.card-grid .card-block:nth-child(2n),
+.resource-card:nth-of-type(3n+2) { --k: var(--c-teal);  --kt: var(--t-teal); }
+.resource-card:nth-of-type(3n)   { --k: var(--c-ochre); --kt: var(--t-ochre); }
+
+/* Pastille ronde de la couleur du bloc contenant l'icône (texte blanc). */
+.card-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 0.5rem;
+  border-radius: 50%;
+  background: var(--k);
+  color: #ffffff;
+  font-size: 1.05rem;
 }
 
+/* Lien « appel à l'action » : gras, souligné, de la couleur du bloc. */
 .accent-link {
-  font-weight: 500;
-  color: var(--accent);
+  font-weight: 600;
+  color: var(--k, var(--accent));
   text-decoration: underline;
-  text-decoration-color: var(--accent-line);
   text-underline-offset: 0.2em;
 }
 
-.accent-link:hover { text-decoration-color: var(--accent); }
-
+/* Grille responsive : autant de colonnes de 320 px minimum que la largeur
+   le permet (auto-fit), 1 colonne sur mobile. */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.5rem;
   margin: 1.2rem 0 1.5rem;
 }
-
 .card-grid .card-block { margin-bottom: 0; }
 
-.card-icon {
-  display: inline-block;
-  color: var(--accent);
+
+/* ==========================================================================
+   7. PUBLICATIONS : un grand bloc coloré par statut
+   Structure dans publications.qmd :
+
+       ::: {.pub-group .pub-published}     <- le grand bloc (statut = classe)
+       ## Published articles               <- bandeau de couleur
+       ::: pub-entry                       <- une référence
+       Texte de la référence...
+       :::
+       :::
+
+   Statuts disponibles : pub-published (vert), pub-submitted (ocre),
+   pub-resubmit (terre cuite), pub-inprep (gris-bleu). Changer de statut =
+   changer la classe du bloc. Pour ajouter un statut, copier une des
+   lignes « .pub-xxx { --g... } » ci-dessous avec de nouvelles couleurs.
+   ========================================================================== */
+/* --g = couleur du bandeau et des liens, --gt = fond clair du bloc. */
+.pub-group {
+  --g: var(--c-green);
+  --gt: var(--t-green);
+  margin: 2.2rem 0;
+  background: var(--gt);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.pub-submitted { --g: var(--c-ochre); --gt: var(--t-ochre); }
+.pub-resubmit  { --g: var(--c-clay);  --gt: var(--t-clay); }
+.pub-inprep    { --g: #56626b;        --gt: #eceff1; }
+
+/* Le titre h2 devient le bandeau plein du bloc (annule le filet et les
+   marges habituels des h2). */
+.pub-group h2 {
+  margin: 0;
+  padding: 1rem 1.7rem;
+  background: var(--g);
+  color: #ffffff;
+  border: 0;
   font-size: 1.25rem;
-  margin-bottom: 0.4rem;
 }
 
-
-/* ---------- Publications ---------- */
+/* Une référence : fine ligne de séparation au-dessus, sauf la première. */
 .pub-entry {
-  padding: 0.9rem 0 0.9rem 1.2rem;
-  margin-bottom: 0.4rem;
-  border-left: 2px solid var(--accent);
-  border-bottom: 1px solid var(--line);
-  background: transparent;
-  border-radius: 0;
+  padding: 1.15rem 1.7rem;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
   line-height: 1.55;
 }
+.pub-group h2 + .pub-entry { border-top: 0; }
+.pub-entry strong { color: var(--ink); }
+/* DOI et liens : couleur du bloc ; word-break laisse un long lien passer à
+   la ligne au lieu de déborder. */
+.pub-entry a { color: var(--g); font-weight: 500; word-break: break-all; }
 
-.pub-entry.submitted { border-left-color: #b39032; }
-.pub-entry.resubmit  { border-left-color: #b9714a; }
-.pub-entry.inprep    { border-left-color: #a3aaa6; }
 
-.pub-entry a { word-break: break-all; }
+/* ==========================================================================
+   8. SOIL BIODIVERSITY IMAGING : chiffres clés et vidéos
 
+   CHIFFRES CLÉS (tuiles de couleur), syntaxe :
 
-/* ---------- Soil Biodiversity Imaging ---------- */
+       :::: key-facts
+       ::: fact
+       [6 h]{.fact-value}
+       [between two images]{.fact-label}
+       :::
+       ... autres ::: fact ...
+       ::::
+
+   Les tuiles prennent les couleurs vert, teal, ocre, terre cuite dans
+   l'ordre (4 max, au-delà elles reviennent au vert).
+
+   VIDÉOS EN GRILLE : :::: video-grid contenant des ::: card-block (ici sans
+   fond ni liseré : seule la vidéo et sa légende comptent).
+   ========================================================================== */
 .key-facts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 1rem;
   margin: 2rem 0;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
 }
 
+/* Une tuile. --k = sa couleur ; les 3 lignes suivantes changent la couleur
+   des tuiles 2, 3 et 4. */
 .fact {
-  text-align: left;
-  padding: 1.2rem 1.2rem 1.1rem;
-  background: transparent;
-  border: 0;
-  border-right: 1px solid var(--line);
+  --k: var(--c-green);
+  padding: 1.4rem 1.4rem 1.2rem;
+  background: var(--k);
+  border-radius: 6px;
 }
-
-.fact:last-child { border-right: 0; }
+.fact:nth-child(2) { --k: var(--c-teal); }
+.fact:nth-child(3) { --k: var(--c-ochre); }
+.fact:nth-child(4) { --k: var(--c-clay); }
 .fact p { margin: 0; }
 
+/* Le grand chiffre. */
 .fact-value {
   display: block;
-  font-size: 2.1rem;
-  font-weight: 500;
-  line-height: 1.15;
-  color: var(--accent);
+  font-size: 2.4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: #ffffff;
   font-variant-numeric: lining-nums;
 }
 
 .fact-label {
   display: block;
-  margin-top: 0.2rem;
-  font-size: 0.85rem;
+  margin-top: 0.3rem;
+  font-size: 0.88rem;
   line-height: 1.4;
-  color: var(--muted);
+  color: rgba(255, 255, 255, 0.92);
 }
 
+/* Grille de vidéos : colonnes de 260 px minimum. */
 .video-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   margin: 1.2rem 0 1.5rem;
 }
-
 .video-grid .card-block {
   margin-bottom: 0;
   padding: 0;
   border: 0;
   background: transparent;
 }
+.video-grid .card-block p { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
 
-.video-grid .card-block p {
-  font-size: 0.9rem;
-  color: var(--muted);
-  margin-top: 0.5rem;
-}
-
-.video-grid iframe,
-.pipeline-card iframe,
-.pipeline-card video {
-  border-radius: 3px;
+.video-grid iframe, .pipeline-card iframe, .pipeline-card video,
+.resource-card iframe, .resource-card .quarto-video {
+  border-radius: 4px;
   overflow: hidden;
 }
 
 
-/* ---------- CV : Frise chronologique ---------- */
-.cv-entry {
-  position: relative;
-  margin: 0 0 1.5rem 0.4rem;
-  padding: 0 0 0 1.6rem;
-  border-left: 1px solid var(--line);
-  line-height: 1.6;
-}
+/* ==========================================================================
+   9. ACCUEIL (index.qmd)
+   - .hero         : grand bloc vert avec nom, rôle, boutons et photo
+   - .lead         : paragraphe d'introduction en plus grand
+   - .explore/.tile: tuiles colorées qui mènent aux autres pages
 
-.cv-entry::before {
-  content: "";
-  position: absolute;
-  left: -5px;
-  top: 0.6rem;
-  width: 9px;
-  height: 9px;
-  border-radius: 50%;
+   AJOUTER UNE TUILE : copier une ligne <a class="tile" ...> dans index.qmd.
+   Les tuiles prennent les couleurs vert, teal, ocre, terre cuite dans
+   l'ordre ; une cinquième serait verte (ajouter une règle .tile:nth-child(5)
+   pour lui donner une autre couleur).
+   ========================================================================== */
+/* Bloc d'en-tête : grille à 2 colonnes (texte à gauche, photo à droite). */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 2rem 3rem;
+  margin: 1rem 0 2.5rem;
+  padding: 2.8rem 3rem;
+  background: var(--accent);
+  color: #ffffff;
+  border-radius: 6px;
+}
+/* Nom : grand, gras, blanc. Le « !important » garantit que la couleur
+   blanche l'emporte sur les règles de titres du thème (sans lui le nom
+   pouvait se confondre avec le fond vert). */
+.hero-name {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+  color: #ffffff !important;
+}
+.hero-role { margin: 0.6rem 0 1.5rem; font-size: 1.25rem; color: rgba(255, 255, 255, 0.88); }
+/* Rangée de boutons blancs en forme de pilule (liens GitHub, etc.). */
+.hero-links { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.hero-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 1rem;
   background: #ffffff;
-  border: 1.5px solid var(--accent);
-}
-
-.cv-date {
-  float: right;
-  margin-left: 1rem;
-  padding: 0;
-  background: none;
-  color: var(--muted);
-  font-size: 0.88rem;
-  font-weight: 500;
-  font-variant-numeric: tabular-nums;
-  white-space: nowrap;
-}
-
-.cv-entry em { color: var(--muted); font-style: italic; }
-
-
-/* ---------- Ressources ---------- */
-.resource-card iframe,
-.resource-card .quarto-video {
-  border-radius: 3px;
-  overflow: hidden;
-}
-
-
-/* ---------- Contact ---------- */
-.contact-intro {
-  padding-left: 1.2rem;
-  margin: 1.2rem 0 2.5rem;
-  border-left: 2px solid var(--accent);
-}
-
-.mail-icon {
   color: var(--accent);
-  font-size: 1.15rem;
-  margin-right: 0.4rem;
-}
-
-.mail-link {
-  font-family: var(--sans);
-  font-size: 1.3rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
   font-weight: 500;
   text-decoration: none;
 }
+.hero-links a:hover { background: var(--t-green); }
+/* Photo ronde (border-radius 50 %), recadrée au centre (object-fit: cover)
+   avec un halo blanc translucide. Taille : width / height. */
+.hero-photo {
+  width: 11rem;
+  height: 11rem;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
+}
 
+/* Paragraphe d'introduction. S'utilise avec ::: lead ... ::: ; Quarto
+   l'applique aussi au sous-titre des bandeaux. */
+.lead { font-size: 1.2rem; line-height: 1.65; max-width: 62ch; }
+
+/* Rangée de tuiles : colonnes de 230 px minimum. */
+.explore {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem;
+  margin: 2.5rem 0;
+}
+/* Une tuile cliquable : fond plein de la couleur --k, texte blanc. « b » est
+   le titre, « span » la description. */
+.tile {
+  --k: var(--c-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 9.5rem;
+  padding: 1.4rem 1.5rem;
+  background: var(--k);
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.tile:nth-child(2) { --k: var(--c-teal); }
+.tile:nth-child(3) { --k: var(--c-ochre); }
+.tile:nth-child(4) { --k: var(--c-clay); }
+.tile:hover { color: #ffffff; filter: brightness(1.1); }
+.tile b { font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
+.tile span { margin-top: 0.6rem; font-size: 0.92rem; line-height: 1.4; color: rgba(255, 255, 255, 0.9); }
+
+
+/* ==========================================================================
+   10. CONTACT (contact.qmd)
+   - .contact-intro   : grand bloc vert clair avec l'e-mail en gros
+   - .contact-columns : deux colonnes (empilées sur mobile)
+   - .contact-block   : une colonne (liseré teal, la 2e est ocre)
+   - .profile-list    : liste de profils en ligne avec icônes
+   ========================================================================== */
+.contact-intro {
+  --k: var(--c-green);
+  padding: 1.8rem 2rem;
+  margin: 1.2rem 0 1.5rem;
+  background: var(--t-green);
+  border-radius: 6px;
+}
+.mail-icon { color: var(--accent); font-size: 1.3rem; margin-right: 0.5rem; }
+.mail-link { font-size: 1.6rem; font-weight: 700; letter-spacing: -0.02em; text-decoration: none; }
 .mail-link:hover { text-decoration: underline; }
 
-.contact-columns {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3rem;
-}
+.contact-columns { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 
 .contact-block {
+  --k: var(--c-teal);
+  padding: 1.5rem 1.7rem;
+  background: var(--t-teal);
+  border-top: 5px solid var(--k);
+  border-radius: 6px;
   line-height: 1.65;
-  padding-top: 0.9rem;
-  border-top: 1px solid var(--line);
 }
+.contact-block:nth-child(2) { --k: var(--c-ochre); background: var(--t-ochre); }
+.lab-link { font-weight: 600; }
 
-.profile-list ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
+.profile-list ul { list-style: none; padding-left: 0; margin: 0; }
 .profile-list li { margin-bottom: 0.6rem; }
-
-.profile-icon {
-  display: inline-block;
-  width: 1.6rem;
-  color: var(--accent);
-  font-size: 1.05rem;
-}
-
-.profile-list a { font-weight: 500; text-decoration: none; }
+.profile-icon { display: inline-block; width: 1.6rem; color: var(--c-ochre); font-size: 1.05rem; }
+.profile-list a { font-weight: 600; text-decoration: none; }
 .profile-list a:hover { text-decoration: underline; }
 
 
-/* ---------- Pied de page ---------- */
+/* ==========================================================================
+   11. PIED DE PAGE
+   Le texte se règle dans _quarto.yml (website > page-footer).
+   ========================================================================== */
 .nav-footer {
   border-top: 1px solid var(--line);
   font-size: 0.85rem;
@@ -393,10 +632,100 @@ h2 {
 }
 
 
-/* ---------- Menu « On this page » (haut à droite, fixe) ---------- */
+/* ==========================================================================
+   12. CV : frise chronologique (cv.qmd)
+   Inspirée du CV PDF : pastilles de dates, points pleins sur un filet
+   vertical, lieux en couleur d'accent. Le bandeau de la page est le bandeau
+   de titre standard (section 4).
+
+   UNE ENTRÉE, syntaxe dans cv.qmd :
+
+       ::: cv-entry
+       **Intitulé** [2023 – 2026]{.cv-date}\
+       *Lieu ou structure*\
+       Description.
+       :::
+
+   - **gras**  = intitulé ; [..]{.cv-date} = pastille de date à droite ;
+     *italique* = lieu, affiché en italique, couleur d'accent.
+   - Le « \ » en fin de ligne force un retour à la ligne.
+   - Les ## titres de section (Education, Supervision...) gardent le style
+     des h2 (section 5).
+   ========================================================================== */
+/* Une entrée de la frise : le filet vertical est sa bordure gauche
+   (border-left), position: relative sert d'ancre au point (::before). */
+.cv-entry {
+  position: relative;
+  margin: 0 0 1.9rem 0.4rem;
+  padding: 0 0 0 1.6rem;
+  border-left: 1.2px solid var(--accent-line);
+  font-size: 0.95rem;         /* texte un peu plus petit que le corps de page */
+  line-height: 1.65;          /* lignes aérées */
+  color: var(--soft);         /* gris foncé doux plutôt que presque noir */
+}
+
+/* ::before = élément décoratif généré par le CSS devant chaque entrée :
+   ici un rond de 10 px posé sur le filet (left négatif = vers la gauche).
+   Le « box-shadow » blanc le détache visuellement du filet. */
+/* Point plein cerclé de blanc, comme dans le PDF */
+.cv-entry::before {
+  content: "";
+  position: absolute;
+  left: -5.6px;
+  top: 0.6rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 2px #ffffff;
+}
+
+/* Hiérarchie : seul l'intitulé est foncé et en semi-gras ; le lieu est en
+   italique coloré (ci-dessous) ; la description reste en gris doux. */
+.cv-entry strong { color: var(--ink); font-weight: 600; font-size: 1.02rem; }
+
+/* float: right place la date à droite de l'intitulé ; white-space: nowrap
+   empêche la date de se couper en deux lignes. */
+/* Date en pastille */
+.cv-date {
+  float: right;
+  margin: 0.1rem 0 0.2rem 1rem;
+  padding: 0.1rem 0.7rem;
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  line-height: 1.5;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+/* Lieux / structures : italique, couleur d'accent, graisse normale (plus
+   léger que le gras de l'intitulé). */
+.cv-entry em {
+  color: var(--accent);
+  font-style: italic;
+  font-weight: 400;
+}
+
+
+
+/* ==========================================================================
+   13. MENU FLOTTANT « ON THIS PAGE » (haut à droite, fixe)
+   Généré automatiquement par le script page-menu.html à partir des titres
+   h2 et h3 de chaque page : rien à écrire dans les .qmd. Ici, seulement
+   l'apparence : bouton (.page-menu-btn), liste (.page-menu-list), liens.
+   Note : le style « a.active » (lien en gras vert) est prêt, mais le script
+   ne pose pas encore la classe « active » : il n'a donc pas d'effet pour
+   l'instant (idée : surligner la section en cours de lecture).
+   ========================================================================== */
+/* Quand on clique un lien du menu, la page s'arrête 5.5rem plus haut pour
+   ne pas cacher le titre sous la barre de navigation fixe. */
 html { scroll-padding-top: 5.5rem; }
 section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
 
+/* Position fixe en haut à droite, au-dessus du contenu (z-index). */
 .page-menu {
   position: fixed;
   top: calc(var(--header-h, 4rem) + 0.8rem);
@@ -423,6 +752,7 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
 
 .page-menu-btn:hover { border-color: var(--accent-line); }
 
+/* Petite flèche du bouton, dessinée avec deux bordures tournées à 45°. */
 .page-menu-btn::after {
   content: "";
   width: 0.4rem;
@@ -439,6 +769,8 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
   transform: rotate(-135deg);
 }
 
+/* Liste déroulante : hauteur maximale 70 % de l'écran, défilement si
+   besoin. L'attribut HTML « hidden » (pilotée par le script) la cache. */
 .page-menu-list {
   position: absolute;
   right: 0;
@@ -478,15 +810,99 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
 @media print { .page-menu { display: none; } }
 
 
-/* ---------- Mobile ---------- */
+/* ==========================================================================
+   14. MOBILE ET ACCESSIBILITÉ
+   « @media (max-width: 700px) » = règles appliquées seulement sur écrans de
+   700 px de large ou moins (téléphones). Elles réduisent les titres,
+   empilent les colonnes et rapprochent le menu flottant du bord.
+   « prefers-reduced-motion » respecte le réglage système des personnes
+   gênées par les animations : on coupe les transitions.
+   ========================================================================== */
 @media (max-width: 700px) {
   .page-menu { right: 0.6rem; }
-  h1, .title { font-size: 2.1rem; }
-  .contact-columns { grid-template-columns: 1fr; gap: 1.5rem; }
-  .fact { border-right: 0; border-bottom: 1px solid var(--line); }
-  .fact:last-child { border-bottom: 0; }
+  h1, .title, .quarto-title-banner .title { font-size: 2.1rem; }
+  .hero { grid-template-columns: 1fr; padding: 2rem 1.6rem; }
+  .hero-photo { order: -1; width: 7.5rem; height: 7.5rem; }
+  .hero-name { font-size: 2.4rem; }
+  .contact-columns { grid-template-columns: 1fr; }
+  .pub-group h2, .pub-entry { padding-left: 1.2rem; padding-right: 1.2rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; }
+}
+
+/* ==========================================================================
+   15. ICÔNES DE FAUNE (ponctuelles, discrètes)
+   Les PNG sont dans images/animals : fauna_collembola, fauna_diplura,
+   fauna_enchy, fauna_formicidae, fauna_julida, fauna_pseudoscor,
+   fauna_symphyla, fauna_vdt. Syntaxe dans un .qmd (texte alternatif vide :
+   image purement décorative) :
+
+   - Petite icône dans une ligne de texte :
+         ![](images/animals/fauna_symphyla.png){.fauna-icon}
+   - Séparateur de section (filet - animal - filet) :
+         ::: fauna-divider
+         ![](images/animals/fauna_julida.png)
+         :::
+   - Animal en marge, à droite d'un paragraphe (masqué sur mobile) : placer
+     l'image juste avant le paragraphe :
+         ![](images/animals/fauna_vdt.png){.fauna-aside}
+   - Rangée d'animaux (pied de page) :
+         ::: fauna-row
+         ![](images/animals/fauna_diplura.png) ![](images/animals/fauna_enchy.png)
+         :::
+   L'opacité (0.4 à 0.55) les garde discrets : l'augmenter pour les accentuer.
+   ========================================================================== */
+.fauna-icon {
+  height: 1.5rem;
+  width: auto;
+  vertical-align: middle;
+  opacity: 0.55;
+}
+
+/* Séparateur de section : filet – animal – filet */
+.fauna-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin: 3rem 0 2rem;
+}
+.fauna-divider::before,
+.fauna-divider::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--line);
+}
+.fauna-divider img {
+  height: 1.8rem;
+  width: auto;
+  opacity: 0.55;
+}
+
+/* Petit animal en marge, à droite d'un paragraphe */
+.fauna-aside {
+  float: right;
+  height: 3rem;
+  width: auto;
+  margin: 0.2rem 0 0.5rem 1.4rem;
+  opacity: 0.45;
+}
+
+/* Rangée d'animaux (pied de page) */
+.fauna-row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+.fauna-row img {
+  height: 1.3rem;
+  width: auto;
+  opacity: 0.4;
+}
+
+@media (max-width: 700px) {
+  .fauna-aside { display: none; }
 }

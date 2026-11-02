@@ -1,8 +1,28 @@
 ---
-title: "Publications"
+title: "Academic products"
+subtitle: "Articles and manuscripts in progress"
+pagetitle: "Publications | Emma Belaud"
 format: html
 ---
 
+<!--
+  PAGE PUBLICATIONS : mode d'emploi
+  - L'en-tête ci-dessus alimente le bandeau vert (voir styles.css, section 4).
+    « title » = accroche, « subtitle » = ligne d'explication,
+    « pagetitle » = nom de l'onglet du navigateur.
+  - Chaque statut est un grand bloc coloré : ::: {.pub-group .pub-XXX}
+    avec XXX = published (vert), submitted (ocre), resubmit (terre cuite)
+    ou inprep (gris-bleu).
+  - Pour AJOUTER une référence : copier un bloc ::: pub-entry ... ::: et le
+    coller dans le bon groupe (avant le ::: qui ferme le groupe).
+  - Pour CHANGER le statut d'une référence : la déplacer dans un autre groupe.
+  - **Belaud, E.** met ton nom en gras ; *Titre de revue* se met entre étoiles ;
+    un DOI se met entre chevrons : <https://doi.org/...>
+  - Attention : chaque ::: ouvrant doit avoir son ::: fermant. Le groupe en
+    contient donc un de plus que les références qu'il rassemble.
+-->
+
+::: {.pub-group .pub-published}
 ## Published articles
 
 ::: pub-entry
@@ -20,7 +40,9 @@ Gérard, S., Marsden, C., **Belaud, E.**, Biryol, C., Capowiez, Y., Estopinan, J
 ::: pub-entry
 Pruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, B., Jourdan, C., **Belaud, E.**, & Hedde, M. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. *IEEE*, 1–6. <http://dx.doi.org/10.1109/EUVIP53989.2022.9922675>
 :::
+:::
 
+::: {.pub-group .pub-submitted}
 ## Submitted manuscripts
 
 ::: {.pub-entry .submitted}
@@ -30,7 +52,9 @@ Pruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, 
 ::: {.pub-entry .submitted}
 **Belaud, E.**, Beugnon, R., Frangne, E., Gallet, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. Land-use effects on soil fauna are temporally unstable. *Submitted to Global Change Biology.*
 :::
+:::
 
+::: {.pub-group .pub-resubmit}
 ## Manuscripts to be resubmitted
 
 ::: {.pub-entry .resubmit}
@@ -40,9 +64,12 @@ Pruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, 
 ::: {.pub-entry .resubmit}
 **Belaud, E.**, Dray, S., Gallet, P., Hinsinger, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. A new dimension of the rhizosphere: Microscale spatial organization of soil invertebrates around roots. *Rejected by Ecology Letters; to be resubmitted to Journal of Ecology.*
 :::
+:::
 
+::: {.pub-group .pub-inprep}
 ## Manuscripts in preparation
 
 ::: {.pub-entry .inprep}
 Hedde, M., Cortet, J., Aubert, M., **Belaud, E.**, Capowiez, Y., Biryol, C., Ganault, P., Joly, F.-X., Marsden, C., Trap, J., Nahmani, J. Trait-based ecology of soil fauna: progress, blind spots and future directions. *In preparation for Functional Ecology.*
+:::
 :::

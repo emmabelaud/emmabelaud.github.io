@@ -1,7 +1,22 @@
 ---
-title: "Related resources"
+title: "Videos, data and communication around soil biodiversity imaging"
+subtitle: "Thesis defence, image sequences, webinar and press article."
+pagetitle: "Related resources | Emma Belaud"
 format: html
 ---
+
+<!--
+  PAGE RESOURCES : mode d'emploi
+  - Chaque ressource est une carte : ::: {.card-block .resource-card}
+    (syntaxe complète dans styles.css, section 6). Les cartes changent de
+    couleur toutes seules : vert, teal, ocre, puis on recommence.
+  - [{{{< fa nom >}}}]{.card-icon} = pastille ronde avec icône Font Awesome ;
+    [Texte]{.block-label} = petite étiquette colorée au-dessus du titre ;
+    ### Titre = titre de la carte.
+  - {{{< video URL >}}} intègre une vidéo (YouTube : l'adresse « embed »).
+  - [Texte](URL){.accent-link} fait un lien gras de la couleur de la carte.
+  - Pour AJOUTER une carte : copier une carte entière (de ::: à :::).
+-->
 
 ::: {.card-block .resource-card}
 [{{< fa graduation-cap >}}]{.card-icon} [PhD defence]{.block-label}

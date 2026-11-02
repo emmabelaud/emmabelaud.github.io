@@ -2,93 +2,93 @@
   {
     "objectID": "soil_biodiversity_imaging.html",
     "href": "soil_biodiversity_imaging.html",
-    "title": "Soil biodiversity imaging",
+    "title": "Observing soil life in situ",
     "section": "",
     "text": "Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity in situ by imaging."
   },
   {
     "objectID": "soil_biodiversity_imaging.html#context",
     "href": "soil_biodiversity_imaging.html#context",
-    "title": "Soil biodiversity imaging",
+    "title": "Observing soil life in situ",
     "section": "",
     "text": "Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity in situ by imaging."
   },
   {
     "objectID": "soil_biodiversity_imaging.html#the-device",
     "href": "soil_biodiversity_imaging.html#the-device",
-    "title": "Soil biodiversity imaging",
+    "title": "Observing soil life in situ",
     "section": "The device",
     "text": "The device\nThe system relies on desktop flatbed scanners, adapted to field conditions and buried in the soil. In the field, each scanner is paired with an automated control module based on a Raspberry Pi, which handles image acquisition. This setup allows long-term, high-resolution acquisition campaigns with minimal human intervention.\n\n\n\n\n\n\nSchematic of the buried scanner device\n\n\n\n\n\n\n\nAutomated control module based on a Raspberry Pi\n\n\n\n\n\n\n\n6 h between two images\n\n\n1200 dpi image resolution\n\n\nA4 scanned surface\n\n\n&gt; 1 mm size of monitored organisms"
   },
   {
     "objectID": "soil_biodiversity_imaging.html#what-the-images-reveal",
     "href": "soil_biodiversity_imaging.html#what-the-images-reveal",
-    "title": "Soil biodiversity imaging",
+    "title": "Observing soil life in situ",
     "section": "What the images reveal",
     "text": "What the images reveal\nImages are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, some fungal structures and many invertebrate taxa. It also allows their dynamics to be followed at a fine temporal scale and over long periods.\n\n\nRoots and fungi\n\nColonization of oak roots by ectomycorrhizal (ECM) fungi observed by in situ imaging.\n\n\nInvertebrates\n\nMutualism between aphids and ants on roots observed by in situ imaging.\n\n\nRoots and fauna\n\nGrazing and reiteration of an oak root observed by in situ imaging."
   },
   {
     "objectID": "soil_biodiversity_imaging.html#from-images-to-data",
     "href": "soil_biodiversity_imaging.html#from-images-to-data",
-    "title": "Soil biodiversity imaging",
+    "title": "Observing soil life in situ",
     "section": "From images to data",
     "text": "From images to data\nHigh-frequency automated monitoring generates a volume of data that quickly makes manual expertise incompatible with the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while maintaining an inference quality comparable to that of a human expert. We work on the design of such pipelines.\n\n\n Roots\n\nRoot structures\nTo extract biological information on root structures, we use RootPainter, a deep-learning-based tool developed at the University of Copenhagen. It requires a training phase for the model.\nAssociated publication \n\nThe RootPainter annotation interface.\n\n\n\n Invertebrates\n\nSoil invertebrates\nFor invertebrates, we developed our own tool, based on two steps: animal detection, using heuristic methods that differentiate successive images, and classification, using a deep-learning model. A Shiny interface was developed to train the model.\nAssociated publication \n\nThe Shiny interface used to annotate invertebrates and train the model."
   },
   {
     "objectID": "soil_biodiversity_imaging.html#related-publications",
     "href": "soil_biodiversity_imaging.html#related-publications",
-    "title": "Soil biodiversity imaging",
+    "title": "Observing soil life in situ",
     "section": "Related publications",
     "text": "Related publications\n\nBelaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. doi\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. doi\nPruvost, E., et al. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE. doi\n\nSee the full list on the Publications page, and more material in Related resources."
   },
   {
     "objectID": "publications.html",
     "href": "publications.html",
-    "title": "Publications",
+    "title": "Academic products",
     "section": "",
     "text": "Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. https://doi.org/10.1007/s11104-026-08694-2\n\n\nGérard, S., Marsden, C., Belaud, E., Biryol, C., Capowiez, Y., Estopinan, J., Ferchaud, F., Forest, M., Ngao, J., Goury, R., Masson, A.-S., Orrière, S., & Hedde, M. (2026). Evaluating the delayed, causal effects of summer irrigation on winter earthworm communities in a Mediterranean agroforestry trial. Agriculture, Ecosystems & Environment, 408, 110455. https://doi.org/10.1016/j.agee.2026.110455\n\n\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. https://doi.org/10.1007/s00374-024-01851-8\n\n\nPruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, B., Jourdan, C., Belaud, E., & Hedde, M. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE, 1–6. http://dx.doi.org/10.1109/EUVIP53989.2022.9922675"
   },
   {
     "objectID": "publications.html#published-articles",
     "href": "publications.html#published-articles",
-    "title": "Publications",
+    "title": "Academic products",
     "section": "",
     "text": "Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. https://doi.org/10.1007/s11104-026-08694-2\n\n\nGérard, S., Marsden, C., Belaud, E., Biryol, C., Capowiez, Y., Estopinan, J., Ferchaud, F., Forest, M., Ngao, J., Goury, R., Masson, A.-S., Orrière, S., & Hedde, M. (2026). Evaluating the delayed, causal effects of summer irrigation on winter earthworm communities in a Mediterranean agroforestry trial. Agriculture, Ecosystems & Environment, 408, 110455. https://doi.org/10.1016/j.agee.2026.110455\n\n\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. https://doi.org/10.1007/s00374-024-01851-8\n\n\nPruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, B., Jourdan, C., Belaud, E., & Hedde, M. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE, 1–6. http://dx.doi.org/10.1109/EUVIP53989.2022.9922675"
   },
   {
     "objectID": "publications.html#submitted-manuscripts",
     "href": "publications.html#submitted-manuscripts",
-    "title": "Publications",
+    "title": "Academic products",
     "section": "Submitted manuscripts",
     "text": "Submitted manuscripts\n\nBelaud, E.*, Hendrikx, H.*, Postic, F., Scalabrino, M., Lebeau, M., Le Maire, G., Jourdan, C., Gallet, P., Hedde, M. Linking automated image analysis to ecological inference: high-throughput monitoring of soil fauna. (*Co-first authors). Submitted to Methods in Ecology and Evolution.\n\n\nBelaud, E., Beugnon, R., Frangne, E., Gallet, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. Land-use effects on soil fauna are temporally unstable. Submitted to Global Change Biology."
   },
   {
     "objectID": "publications.html#manuscripts-to-be-resubmitted",
     "href": "publications.html#manuscripts-to-be-resubmitted",
-    "title": "Publications",
+    "title": "Academic products",
     "section": "Manuscripts to be resubmitted",
     "text": "Manuscripts to be resubmitted\n\nBelaud, E., Labrosse, J., Jourdan, C., Gallet, P., Hendrikx, H., Le Maire, G., Postic, F., Hedde, M. In situ scanner-based imaging to monitor soil mesofauna activity: trade-offs between spatial resolution and temporal frequency. Rejected by Methods in Ecology and Evolution; to be resubmitted to Ecography.\n\n\nBelaud, E., Dray, S., Gallet, P., Hinsinger, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. A new dimension of the rhizosphere: Microscale spatial organization of soil invertebrates around roots. Rejected by Ecology Letters; to be resubmitted to Journal of Ecology."
   },
   {
     "objectID": "publications.html#manuscripts-in-preparation",
     "href": "publications.html#manuscripts-in-preparation",
-    "title": "Publications",
+    "title": "Academic products",
     "section": "Manuscripts in preparation",
     "text": "Manuscripts in preparation\n\nHedde, M., Cortet, J., Aubert, M., Belaud, E., Capowiez, Y., Biryol, C., Ganault, P., Joly, F.-X., Marsden, C., Trap, J., Nahmani, J. Trait-based ecology of soil fauna: progress, blind spots and future directions. In preparation for Functional Ecology."
   },
   {
     "objectID": "cv.html",
     "href": "cv.html",
-    "title": "CV",
+    "title": "Summary of my path",
     "section": "",
-    "text": "PhD in soil ecology 2023 – 2026\nDoctoral school GAIA · Institut Agro Montpellier · UMR Eco&Sols, Montpellier, France\n“Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring”. Funded by : CIRAD and INRAE BIOSEFAIR metaprogram\n\n\nAgricultural Engineering degree (Ingénieure agronome) 2017 - 2022\nÉcole Supérieure d’Agricultures, Angers, France\nSpecialisation: plant production and agroecology. Honours: Excellent."
+    "text": "PhD in soil ecology 2023 – 2026\nDoctoral School GAIA · Institut Agro Montpellier · UMR Eco&Sols, Montpellier, France\nThesis: “Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring” defended in August 2026.\nJointly funded by CIRAD and the INRAE BIOSEFAIR Metaprogramme.\n\n\nAgricultural Engineering Degree (Ingénieure Agronome) 2017 – 2022\nÉcole Supérieure d’Agricultures, Angers, France\nMajor: Plant Production & Agroecology · Honours: Excellent."
   },
   {
     "objectID": "cv.html#education",
     "href": "cv.html#education",
-    "title": "CV",
+    "title": "Summary of my path",
     "section": "",
-    "text": "PhD in soil ecology 2023 – 2026\nDoctoral school GAIA · Institut Agro Montpellier · UMR Eco&Sols, Montpellier, France\n“Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring”. Funded by : CIRAD and INRAE BIOSEFAIR metaprogram\n\n\nAgricultural Engineering degree (Ingénieure agronome) 2017 - 2022\nÉcole Supérieure d’Agricultures, Angers, France\nSpecialisation: plant production and agroecology. Honours: Excellent."
+    "text": "PhD in soil ecology 2023 – 2026\nDoctoral School GAIA · Institut Agro Montpellier · UMR Eco&Sols, Montpellier, France\nThesis: “Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring” defended in August 2026.\nJointly funded by CIRAD and the INRAE BIOSEFAIR Metaprogramme.\n\n\nAgricultural Engineering Degree (Ingénieure Agronome) 2017 – 2022\nÉcole Supérieure d’Agricultures, Angers, France\nMajor: Plant Production & Agroecology · Honours: Excellent."
   },
   {
     "objectID": "cv.html#professional-experience",
@@ -100,50 +100,57 @@
   {
     "objectID": "cv.html#supervision",
     "href": "cv.html#supervision",
-    "title": "CV",
+    "title": "Summary of my path",
     "section": "Supervision",
-    "text": "Supervision\n\nM1 internship: Ermessende Frangne 2025 · 3 months\nUniversité de Montpellier, Master Biodiversity, Ecology, Evolution (B2E), EcoSystèmeS track\nSpatio-temporal organisation of edaphic activity in an agroforestry system: an optical imaging approach.\n\n\nL3 (BUT) internship: Joris Labrosse 2025 · 3 months\nUniversité Jean Monnet Saint-Étienne, hosted in Montpellier, France\nDevelopment of an in situ imaging method to monitor edaphic activity: effects of image acquisition frequency and resolution.\n\n\nM2 internship: Marion Lebeau 2024 · 6 months\nUniLaSalle Beauvais, hosted in Montpellier, France\nCharacterisation of distribution patterns of soil invertebrate communities in an agroforestry system."
+    "text": "Supervision\n\nM.Sc. Thesis Co-supervision: Ermessende Frangne 2025 · 3 months\nUniversité de Montpellier, Master Biodiversity, Ecology, Evolution (B2E), EcoSystèmeS track\n“Spatio-temporal organization of edaphic activity in agroforestry systems using optical imaging approaches”\n\n\nB.Sc. Internship Supervision: Joris Labrosse 2025 · 3 months\nUniversité Jean Monnet Saint-Étienne, hosted in Montpellier, France\n“Methodological development of in situ optical imaging for edaphic activity monitoring: assessing the trade-offs of acquisition frequency and spatial resolution”\n\n\nM.Sc. Thesis Supervision: Marion Lebeau 2024 · 6 months\nUniLaSalle Beauvais, hosted in Montpellier, France\n“Characterizing spatial distribution patterns of soil invertebrate communities in an agroforestry system”"
   },
   {
     "objectID": "cv.html#communications",
     "href": "cv.html#communications",
-    "title": "CV",
+    "title": "Summary of my path",
     "section": "Communications",
-    "text": "Communications\n\nJournées Métaprogramme BIOSEFAIR 2026 · 2 days\nINRAE, Lyon, France\nPresentation: “In situ, high-throughput imaging of edaphic activity”.\n\n\nJournées de l’observatoire ORCHAMPS 2025 · 1 day\nORCHAMPS observatory, Grenoble, France\nPresentation: “A new window on the activity of soil organisms”.\n\n\nIMPACTS working group 2025 · 1 week\nCESAB, Grenoble, France\nPresentation: “From pixels to patterns: High-throughput soil imaging unveils edaphic fauna dynamics”.\n\n\nIMPACTS working group 2025 · 1 week\nCESAB, Montpellier, France\nPresentation: “Seeing the temporal and spatial organization of edaphic activity”.\n\n\nCafé des techniques 2024 · 3 hours\nCIRAD, online\nPresentation: “Development of soil imaging systems: automated control of image acquisition and processing”.\n\n\nAdNatura 2024 fair 2024 · 1 hour\nSFE2, Montpellier, France\nRound table, my perspective as a PhD student: “Doing a PhD in ecology and evolution: advantages, drawbacks and prospects”.\n\n\nCIRAD stand, Salon International de l’Agriculture 2024 · 1 week\nCIRAD, Paris, France\nScientific outreach activities on the CIRAD stand at the 2024 Salon International de l’Agriculture. Science communication to diverse audiences.\n\n\nWorkshop: Contributions, benefits and limits of sensors for monitoring biodiversity 2022 · 1 week\nINRAE, Lyon, France\nPresentation: “The potential of in situ imaging for studying biological activity in soil”."
+    "text": "Communications\n\nJournées Métaprogramme BIOSEFAIR 2026 · 2 days\nINRAE, Lyon, France\nOral Presentation: “High-throughput in situ imaging of edaphic activity”.\n\n\nJournées de l’observatoire ORCHAMPS 2025 · 1 day\nORCHAMPS observatory, Grenoble, France\nOral Presentation: “A new window on the activity of soil organisms”.\n\n\nIMPACTS Working Group 2025 · 1 week\nCESAB, Grenoble, France\nOral Presentation: “From pixels to patterns: High-throughput soil imaging unveils edaphic fauna dynamics”.\n\n\nIMPACTS Working Group 2025 · 1 week\nCESAB, Montpellier, France\nOral Presentation: “Seeing the temporal and spatial organization of edaphic activity”.\n\n\nCafé des Techniques 2024 · 3 hours\nCIRAD, online\nTechnical Webinar Presentation: “Engineering automated soil imaging workflows: From sensor deployment to image processing pipeline”.\n\n\nAdNatura 2024 fair 2024 · 1 hour\nSFE2, Montpellier, France\nInvited Panelist – Round Table: “Navigating a PhD in Ecology and Evolution: Career Prospects and Academic Challenges”.\n\n\nSalon International de l’Agriculture (CIRAD Stand) 2024 · 1 week\nCIRAD, Paris, France\nScience Communication & Public Outreach: Designed and led interactive demonstrations on soil biodiversity for general and stakeholder audiences.\n\n\nWorkshop: Contributions, Benefits, and Limits of Sensors for Monitoring Biodiversity 2022 · 1 week\nINRAE, Lyon, France\nOral Presentation: “The potential of in situ imaging for studying biological activity in soil”."
   },
   {
     "objectID": "cv.html#conferences",
     "href": "cv.html#conferences",
-    "title": "CV",
+    "title": "Summary of my path",
     "section": "Conferences",
-    "text": "Conferences\n\nTDWG 2026 2026 · 1 week\nOslo, Norway\n\n\n\nRhizosphere6 2025 · 1 week\nEdinburgh, United Kingdom\nPoster: “Roots, the fuel for soil fauna activity”.\n\n\n12th International Symposium of the International Society of Root Research 2024 · 1 week\nLeipzig, Germany\nPoster: “In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota around the roots”."
+    "text": "Conferences\n\nTDWG 2026 2026 · 1 week\nOslo, Norway\nAttended\n\n\nRhizosphere6 2025 · 1 week\nEdinburgh, United Kingdom\nPoster Presentation: “Roots, the fuel for soil fauna activity”.\n\n\n12th International Symposium of the International Society of Root Research 2024 · 1 week\nLeipzig, Germany\nPoster Presentation: “In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota around the roots”."
   },
   {
     "objectID": "cv.html#scientific-meetings-and-seminars",
     "href": "cv.html#scientific-meetings-and-seminars",
-    "title": "CV",
+    "title": "Summary of my path",
     "section": "Scientific meetings and seminars",
-    "text": "Scientific meetings and seminars\n\nSoil Imaging Network meeting 2024 · 4 hours\nINRAE Soil Imaging Network, Montpellier, France\nPresentation: “In situ soil imaging for monitoring edaphic biological activity”.\n\n\n12th Scientific and Technical Days of the Microscopists network 2024 · 3 days\nINRAE Microscopists network, Montpellier, France\n\n\n\n12th Scientific Days of the TEBIS network 2024 · 3 days\nTEBIS network, Montpellier, France\nPresentation: “Development of an in situ imaging method to monitor the phenology of edaphic activity”, on perspectives for building phenological traits for soil fauna.\n\n\nSeminar: Contributions, benefits and limits of remote sensing for better understanding biodiversity 2023 · 2 days\nBIOSEFAIR INRAE metaprogramme, Castelnau-le-Lez, France"
+    "text": "Scientific meetings and seminars\n\nSoil Imaging Network meeting 2024 · 4 hours\nINRAE Soil Imaging Network, Montpellier, France\nOral Presentation: “In situ soil imaging for monitoring edaphic biological activity”.\n\n\n12th Scientific and Technical Days of the Microscopists network 2024 · 3 days\nINRAE Microscopists network, Montpellier, France\nRan a workshop on imaging techniques at the Eco&Sols Research Unit.\n\n\n12th Scientific Days of the TEBIS network 2024 · 3 days\nTEBIS network, Montpellier, France\nOral Presentation: “Monitoring the phenology of edaphic activity via in situ imaging: Toward phenological traits for soil fauna”.\n\n\nSeminar: Remote Sensing for Biodiversity 2023 · 2 days\nBIOSEFAIR INRAE metaprogramme, Castelnau-le-Lez, France\nAttended technical workshops on high-resolution imaging."
   },
   {
     "objectID": "contact.html",
     "href": "contact.html",
-    "title": "Contact and information",
+    "title": "Get in touch",
     "section": "",
     "text": "Preferred contact\n emmabelaud1@gmail.com\n\n\n\nAffiliation\nUMR Eco&Sols\nCampus La Gaillarde, Institut Agro-INRAE\nBât. 12 & 13, 2 place Viala\n34060 Montpellier Cedex 2, France\nLab website \n\n\nOnline profiles\n\n\n ORCID\n ResearchGate\n GitHub"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "About me",
+    "title": "Emma Belaud",
     "section": "",
-    "text": "I work on soil ecology, with a focus on developing sensor-based monitoring methods. I recently completed my PhD, entitled “Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring.”. Through this work, I contributed to the development of a new in-situ soil imaging method that non-invasively monitors the dynamics of roots and soil invertebrates. I have explored what this method can reveal about the spatio-temporal organization of soil activity across ecological, spatial, and temporal scales."
+    "text": "Emma Belaud\n    Soil ecology researcher\n    \n       GitHub\n       ResearchGate\n       ORCID\n    \n  \n  \n\n\nI work on soil ecology, with a focus on developing sensor-based monitoring methods. I recently completed my PhD, entitled “Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring.”. Through this work, I contributed to the development of a new in-situ soil imaging method that non-invasively monitors the dynamics of roots and soil invertebrates. I have explored what this method can reveal about the spatio-temporal organization of soil activity across ecological, spatial, and temporal scales.\n\n\n  Soil biodiversity imagingBuried scanners to watch roots and soil fauna in situ\n  PublicationsPublished articles and manuscripts in progress\n  ResourcesThesis defence, image datasets and videos\n  CVEducation, research experience and communications"
   },
   {
     "objectID": "resources.html",
     "href": "resources.html",
-    "title": "Related resources",
+    "title": "Videos, data and communication around soil biodiversity imaging",
     "section": "",
     "text": "PhD defence\n\nMy thesis defence\nRecording of my PhD defence.\n\n\n\n\n Open resources\n\nSoil imaging image sequences\nExample image sequences acquired with the in situ soil imaging device.\nAccess the dataset \n\n\n\n Videos and article\n\nThe scanners in the spotlight\nArticle. The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: “Observer la biodiversité des sols à l’ère du numérique”.\nWebinar. In this webinar, we present the in situ soil imaging technique and demonstrate its application to monitoring the temporal organization of edaphic activity:\n\nVideo. An accessible introduction to the history of buried scanners and the new research opportunities they have opened up:"
+  },
+  {
+    "objectID": "cv.html#research-experience",
+    "href": "cv.html#research-experience",
+    "title": "Summary of my path",
+    "section": "Research experience",
+    "text": "Research experience\n\nResearch Engineer 2023 · 5 months\nINRAE, UMR Eco&Sols, Montpellier, France\nEvaluated the efficacy of in-situ optical scanners for high-temporal-resolution monitoring of soil biological activity.\n\n\nResearch Engineer 2022 · 1 month\nINRAE, UMR Eco&Sols, Montpellier, France\nAssessed the potential of in situ optical imaging to track edaphic activity. Writing of a scientific publication on image-based soil biological monitoring.\n\n\nGraduate Research Intern 2022 · 6 months\nCIRAD, UMR Eco&Sols, Montpellier, France\n“Potential of in situ imaging for monitoring biological activity in soils”\nQuantified the spatial and temporal dynamics of soil biological communities (fauna, roots, fungal hyphae) in truffle orchard soils via image analysis."
   }
 ]

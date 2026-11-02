@@ -1,8 +1,24 @@
 ---
-title: "Soil biodiversity imaging"
+title: "Observing soil life in situ"
+subtitle: "Buried flatbed scanners and automated image analysis to monitor roots, fungi and soil invertebrates."
 pagetitle: "Soil biodiversity imaging | Emma Belaud"
 format: html
 ---
+
+<!--
+  PAGE SOIL BIODIVERSITY IMAGING : mode d'emploi
+  Composants utilisés (styles dans styles.css, sections 6 et 8) :
+  - :::: key-facts + ::: fact : tuiles de chiffres clés. Chaque tuile =
+    [valeur]{.fact-value} puis [légende]{.fact-label}. Couleurs dans l'ordre :
+    vert, teal, ocre, terre cuite.
+  - :::: video-grid + ::: card-block : vidéos en grille avec légende.
+  - :::: card-grid + ::: {.card-block .pipeline-card} : cartes côte à côte
+    (une sur deux est teal). [{{{< fa nom >}}}]{.card-icon} = pastille icône.
+  - {{{< video ... >}}} intègre une vidéo : une adresse YouTube « embed » ou
+    un fichier local (images/xxx.mp4).
+  - ::: {layout-ncol=2} met deux images côte à côte.
+  - Chaque ## titre apparaît automatiquement dans le menu « On this page ».
+-->
 
 ## Context
 

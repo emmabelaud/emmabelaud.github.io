@@ -1,7 +1,18 @@
 ---
-title: "Contact and information"
+title: "Get in touch"
+pagetitle: "Contact | Emma Belaud"
 format: html
 ---
+
+<!--
+  PAGE CONTACT : mode d'emploi
+  - ::: contact-intro  : bloc vert clair avec l'e-mail en grand.
+  - ::: contact-columns : deux colonnes côte à côte (empilées sur mobile) ;
+    chaque colonne est un ::: contact-block (liseré teal, puis ocre).
+  - ::: profile-list : liste de profils ; {{{< fa brands orcid >}}} insère une
+    icône de marque Font Awesome.
+  - Les styles sont dans styles.css, section 10.
+-->
 
 ::: contact-intro
 [Preferred contact]{.block-label}

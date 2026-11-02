@@ -1,3 +1,17 @@
+<!--
+  page-menu.html : menu flottant « On this page »
+  Inclus dans toutes les pages par _quarto.yml (include-after-body).
+  Le script ci-dessous :
+    1. repère les titres h2 et h3 du contenu de la page ;
+    2. crée un bouton fixe en haut à droite avec la liste de ces titres ;
+    3. ouvre / ferme la liste au clic (et au clic en dehors).
+  Rien à écrire dans les .qmd : les ## et ### suffisent.
+  - Pour retirer les sous-titres du menu : dans la ligne querySelectorAll,
+    supprimer les sélecteurs « h3 ».
+  - Pour changer le texte du bouton : modifier « On this page » dans le
+    bloc nav.innerHTML.
+  - Apparence : styles.css, section 13.
+-->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
   // Sélectionne les titres de la page (h2 et h3)
