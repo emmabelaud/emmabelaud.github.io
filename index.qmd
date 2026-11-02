@@ -43,9 +43,9 @@ I work on **soil ecology**, with a focus on developing **sensor-based monitoring
 
 ```{=html}
 <nav class="explore">
-  <a class="tile" href="soil_biodiversity_imaging.html"><b>Soil biodiversity imaging</b><span>Buried scanners to watch roots and soil fauna in situ</span></a>
+  <a class="tile" href="soil_biodiversity_imaging.html"><b>Soil biodiversity imaging</b><span>It is now possible using automated optical scanners buried in the soil</span></a>
   <a class="tile" href="publications.html"><b>Publications</b><span>Published articles and manuscripts in progress</span></a>
-  <a class="tile" href="resources.html"><b>Resources</b><span>Thesis defence, image datasets and videos</span></a>
-  <a class="tile" href="cv.html"><b>CV</b><span>Education, research experience and communications</span></a>
+  <a class="tile" href="resources.html"><b>Resources</b><span>Videos, open data and talks that show what buried scanners reveal about soil life</span></a>
+  <a class="tile" href="cv.html"><b>CV</b><span>Education, research experience, mentoring, science communication, and outreach</span></a>
 </nav>
 ```

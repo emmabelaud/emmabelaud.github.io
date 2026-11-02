@@ -1,6 +1,6 @@
 ---
-title: "Videos, data and communication around soil biodiversity imaging"
-subtitle: "Thesis defence, image sequences, webinar and press article."
+title: "Dig deeper into soil biodiversity imaging"
+subtitle: "Videos, open data and talks that show what buried scanners reveal about soil life."
 pagetitle: "Related resources | Emma Belaud"
 format: html
 ---

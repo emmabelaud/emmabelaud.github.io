@@ -1,6 +1,6 @@
 ---
-title: "Summary of my path"
-subtitle: "Education, research, supervision and communications"
+title: "Academic background"
+subtitle: "Education, research experience, mentoring, science communication and outreach."
 pagetitle: "CV | Emma Belaud"
 format: html
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Observing soil life in situ"
-subtitle: "Buried flatbed scanners and automated image analysis to monitor roots, fungi and soil invertebrates."
+title: "Observing soil organisms *in situ*?"
+subtitle: "It is now possible using automated optical scanners buried in the soil"
 pagetitle: "Soil biodiversity imaging | Emma Belaud"
 format: html
 ---
