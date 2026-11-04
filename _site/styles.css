@@ -959,7 +959,7 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
        ```{=html}
        <div>
          <video class="sf-video" muted loop playsinline preload="metadata">
-           <source src="images/animation/web/nom.mp4" type="video/mp4">
+           <source src="images/animation/nom.mp4" type="video/mp4">
          </video>
          <p class="sf-caption">Légende.</p>
        </div>
@@ -979,7 +979,7 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
    - .sf-caption           légende sous une vidéo ou une image
    - .sf-taxa > figure.sf-taxon   planche de photos d'animaux ; copier une
                            ligne <figure class="sf-taxon">...</figure> pour
-                           ajouter un animal (photo dans images/photos_animals/web/)
+                           ajouter un animal (photo dans images/photos_animals/)
    - .sf-sizes > .sf-size  trois colonnes « classes de taille »
    - .sf-facts > .sf-fact  trois tuiles de chiffres clés (texte d'intro)
    - .sf-credit            mention « © Emma Belaud · CC BY-NC-SA 4.0 » : dans

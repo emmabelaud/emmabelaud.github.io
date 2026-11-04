@@ -96,8 +96,16 @@ for (f in avis) {
   }
   
   # 3. Encodage avec un bitrate augmenté (ex: 5 Mbps) pour préserver la netteté du texte
-  av_encode_video(images, file.path(sortie_video, paste0(nom, ".mp4")),
-                  framerate = fps, vfilter = filtre_even, bitrate = 5000000, verbose = FALSE)
+  brut <- file.path(tempdir(), paste0(nom, "_brut.mp4"))
+  av_encode_video(images, brut, framerate = fps, vfilter = filtre_even, verbose = FALSE)
+  
+  system2("ffmpeg", c(
+    "-y", "-i", shQuote(brut),
+    "-c:v", "libx264", "-profile:v", "main", "-level", "4.0",
+    "-pix_fmt", "yuv420p", "-crf", "23", "-preset", "slow",
+    "-movflags", "+faststart", "-an",
+    shQuote(file.path(sortie_video, paste0(nom, ".mp4")))
+  ))
   unlink(tmp, recursive = TRUE)
 }
 # ---- Contrôle : taille des fichiers produits (en Mo) -------------------------
