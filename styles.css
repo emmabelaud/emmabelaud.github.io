@@ -27,7 +27,7 @@
     13. Menu flottant « On this page »
     14. Mobile et accessibilité
     15. Icônes de faune
-    16. Soil fauna : page de vulgarisation (bandeaux colorés, vidéos, photos)
+    16. Soil organisms : page de vulgarisation (bandeaux colorés, vidéos, photos)
 
    RECETTES RAPIDES
    - Changer la couleur principale du site : section 1, variable --accent
@@ -38,7 +38,7 @@
    - Changer la police : section 1, variable --sans, et la ligne @import
      juste en dessous (voir fonts.google.com pour d'autres polices).
    - Faire un nouveau bloc coloré dans une page : voir la section 6.
-   - Changer la couleur d'un bandeau de la page Soil fauna, ou en ajouter un :
+   - Changer la couleur d'un bandeau de la page Soil organisms, ou en ajouter un :
      section 16 (code couleur expliqué en tête de section).
    - Annuler une règle pour tester : la mettre entre commentaires.
 
@@ -313,7 +313,7 @@ h2 {
   --k: var(--c-green);
   --kt: var(--t-green);
   padding: 1.6rem 1.8rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   border-radius: 6px;
   border-top: 5px solid var(--k);
   background: var(--kt);
@@ -333,13 +333,18 @@ h2 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2rem;
+  height: 2rem;
   margin-bottom: 0.5rem;
-  border-radius: 50%;
-  background: var(--k);
-  color: #ffffff;
-  font-size: 1.05rem;
+  color: black;
+  font-size: 1.4rem;   /* taille de l'icône FA */
+  line-height: 1;
+}
+.card-icon-img img {
+  width: 100%;         /* l'image remplit la pastille, quelle que soit sa taille */
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 /* Lien « appel à l'action » : gras, souligné, de la couleur du bloc. */
@@ -941,7 +946,7 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
 
 
 /* ==========================================================================
-   16. SOIL FAUNA : page de vulgarisation (soil_fauna.qmd)
+   16. Soil organisms : page de vulgarisation (soil_organisms.qmd)
    Cette page alterne des passages « normaux » (titres h2, texte, chiffres)
    et de grands BANDEAUX colorés pleine largeur qui contiennent texte,
    vidéos d'animation et planches de photos d'animaux.
@@ -956,7 +961,7 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
    les couleurs ci-dessus à ces rôles. Pour ajouter un bandeau d'une autre
    couleur, voir « Ajouter un bandeau » plus bas.
 
-   SYNTAXE D'UN BANDEAU, à écrire dans soil_fauna.qmd :
+   SYNTAXE D'UN BANDEAU, à écrire dans soil_organisms.qmd :
 
        :::: {.sf-band .sf-decomposers}
        ## Titre du bandeau
@@ -986,7 +991,7 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
    - .sf-split.sf-flip     idem, média à gauche
    - .sf-duo               deux médias de même largeur côte à côte
    - video.sf-video        vidéo qui se lance quand elle est visible (le
-                           script est en bas de soil_fauna.qmd)
+                           script est en bas de soil_organisms.qmd)
    - .sf-caption           légende sous une vidéo ou une image
    - .sf-taxa > figure.sf-taxon   planche de photos d'animaux ; copier une
                            ligne <figure class="sf-taxon">...</figure> pour

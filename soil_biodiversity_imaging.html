@@ -35,7 +35,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./images/favicon.png" rel="icon" type="image/png">
+<link href="./images/vectorised_animals/fauna_diplura.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -138,8 +138,8 @@ background: #2a5d45;
 <span class="menu-text">Soil biodiversity imaging</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./soil_fauna.html"> 
-<span class="menu-text">Soil fauna</span></a>
+    <a class="nav-link" href="./soil_organisms.html"> 
+<span class="menu-text">Soil organisms</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./publications.html"> 
@@ -200,23 +200,9 @@ background: #2a5d45;
 
 
 
-<!--
-  PAGE SOIL BIODIVERSITY IMAGING : mode d'emploi
-  Composants utilisés (styles dans styles.css, sections 6 et 8) :
-  - :::: key-facts + ::: fact : tuiles de chiffres clés. Chaque tuile =
-    [valeur]{.fact-value} puis [légende]{.fact-label}. Couleurs dans l'ordre :
-    vert, teal, ocre, terre cuite.
-  - :::: video-grid + ::: card-block : vidéos en grille avec légende.
-  - :::: card-grid + ::: {.card-block .pipeline-card} : cartes côte à côte
-    (une sur deux est teal). [{{< fa nom >}}]{.card-icon} = pastille icône.
-  - {{< video ... >}} intègre une vidéo : une adresse YouTube « embed » ou
-    un fichier local (images/xxx.mp4).
-  - ::: {layout-ncol=2} met deux images côte à côte.
-  - Chaque ## titre apparaît automatiquement dans le menu « On this page ».
--->
 <section id="context" class="level2">
 <h2 class="anchored" data-anchor-id="context">Context</h2>
-<p>Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity <em>in situ</em> by imaging.</p>
+<p>Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial species (learn more on the <a href="./soil_organisms.html">soil organisms page</a>). Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed, at the Eco&amp;Sols research unit, an <strong>innovative method</strong> to monitor soil biological activity <em>in situ</em> by imaging.</p>
 </section>
 <section id="the-device" class="level2">
 <h2 class="anchored" data-anchor-id="the-device">The device</h2>
@@ -258,34 +244,17 @@ background: #2a5d45;
 </section>
 <section id="what-the-images-reveal" class="level2">
 <h2 class="anchored" data-anchor-id="what-the-images-reveal">What the images reveal</h2>
-<p>Images are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, some fungal structures and many invertebrate taxa. It also allows their dynamics to be followed at a fine temporal scale and over long periods.</p>
-<div class="video-grid">
-<div class="card-block">
-<p><span class="block-label">Roots and fungi</span></p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/pZuIaU2kMHE" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Colonization of oak roots by ectomycorrhizal (ECM) fungi observed by <em>in situ</em> imaging.</p>
-</div>
-<div class="card-block">
-<p><span class="block-label">Invertebrates</span></p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/B3qnjS-vCa8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Mutualism between aphids and ants on roots observed by <em>in situ</em> imaging.</p>
-</div>
-<div class="card-block">
-<p><span class="block-label">Roots and fauna</span></p>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Y-ypGheXB2E" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<p>Grazing and reiteration of an oak root observed by <em>in situ</em> imaging.</p>
-</div>
-</div>
+<p>Images are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, certain fungal structures and many invertebrate taxa, and to follow their dynamics at a fine temporal scale over long periods. Example photos and videos of what can be observed are available on the <a href="./soil_organisms.html">soil organisms page</a>.</p>
 </section>
 <section id="from-images-to-data" class="level2">
 <h2 class="anchored" data-anchor-id="from-images-to-data">From images to data</h2>
-<p>High-frequency automated monitoring generates a volume of data that quickly makes manual expertise incompatible with the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while maintaining an inference quality comparable to that of a human expert. We work on the design of such pipelines.</p>
+<p>High-frequency automated monitoring generates a volume of data that quickly makes manual expert analysis unfeasible given the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while achieving an accuracy comparable to that of a human expert. We work on the design of such pipelines.</p>
 <div class="card-grid">
 <div class="card-block pipeline-card">
-<p><span class="card-icon"><i class="fa-solid fa-seedling" aria-label="seedling"></i></span> <span class="block-label">Roots</span></p>
+<p><span class="card-icon card-icon-img"><img src="images/racine.png" class="img-fluid" alt="Roots"></span></p>
 <section id="root-structures" class="level3">
 <h3 class="anchored" data-anchor-id="root-structures">Root structures</h3>
-<p>To extract biological information on root structures, we use <strong>RootPainter</strong>, a deep-learning-based tool developed at the University of Copenhagen. It requires a training phase for the model.</p>
+<p>To extract biological information on root structures, we use <strong>RootPainter</strong>, a deep-learning-based tool developed at the University of Copenhagen. The model requires a training phase; once trained, the tool proved highly effective at segmenting root structures in our images.</p>
 <p><a href="https://doi.org/10.1111/nph.18387" class="accent-link">Associated publication <i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i></a></p>
 <video class="pipeline-video" controls="" playsinline="" preload="metadata" poster="images/posters/rootpainter_annotation.jpg">
   <source src="images/rootpainter_annotation.mp4" type="video/mp4">
@@ -294,10 +263,10 @@ background: #2a5d45;
 </section>
 </div>
 <div class="card-block pipeline-card">
-<p><span class="card-icon"><i class="fa-solid fa-bug" aria-label="bug"></i></span> <span class="block-label">Invertebrates</span></p>
+<p><span class="card-icon card-icon-img"><img src="images/vectorised_animals/fauna_pseudoscor.png" class="img-fluid" alt="Pseudoscorpion"></span></p>
 <section id="soil-invertebrates" class="level3">
 <h3 class="anchored" data-anchor-id="soil-invertebrates">Soil invertebrates</h3>
-<p>For invertebrates, we developed our own tool, based on two steps: animal <strong>detection</strong>, using heuristic methods that differentiate successive images, and <strong>classification</strong>, using a deep-learning model. A Shiny interface was developed to train the model.</p>
+<p>For invertebrates, we are currently developing our own tool, which works in two steps: animal <strong>detection</strong>, using heuristic methods that compare successive images, and <strong>classification</strong>, using a deep-learning model.</p>
 <p><a href="https://doi.org/10.64898/2026.06.16.732537" class="accent-link">Associated publication <i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i></a></p>
 <video class="pipeline-video" controls="" playsinline="" preload="metadata" poster="images/posters/invertebrate_annotation.jpg">
   <source src="images/invertebrate_annotation.mp4" type="video/mp4">
@@ -307,12 +276,24 @@ background: #2a5d45;
 </div>
 </div>
 </section>
+<section id="people-involved" class="level2">
+<h2 class="anchored" data-anchor-id="people-involved">People involved</h2>
+<ul>
+<li>Didier Arnal, Technician (former), CIRAD</li>
+<li>Philippe Gallet, Research Engineer, CIRAD</li>
+<li>Mickael Hedde, Research Director, INRAE</li>
+<li>Hadrien Hendrickx, Research Scientist, INRIA</li>
+<li>Christophe Jourdan, Research Director, CIRAD</li>
+<li>Guerric Le Maire, Research Director, CIRAD</li>
+<li>François Postic, Postdoctoral Researcher, CIRAD</li>
+</ul>
+</section>
 <section id="related-publications" class="level2">
 <h2 class="anchored" data-anchor-id="related-publications">Related publications</h2>
 <ul>
 <li>Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. <em>Plant and Soil</em>. <a href="https://doi.org/10.1007/s11104-026-08694-2">doi</a></li>
 <li>Belaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. <em>Biology and Fertility of Soils</em>, 60, 1055–1071. <a href="https://doi.org/10.1007/s00374-024-01851-8">doi</a></li>
-<li>Pruvost, E., et al.&nbsp;(2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. <em>IEEE</em>. <a href="http://dx.doi.org/10.1109/EUVIP53989.2022.9922675">doi</a></li>
+<li>Pruvost, E., et al.&nbsp;(2022). Invertebrates detection with YOLOv5: towards study of soil organisms using deep learning. <em>IEEE</em>. <a href="http://dx.doi.org/10.1109/EUVIP53989.2022.9922675">doi</a></li>
 </ul>
 <p>See the full list on the <a href="./publications.html">Publications</a> page, and more material in <a href="./resources.html">Related resources</a>.</p>
 
