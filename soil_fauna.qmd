@@ -118,7 +118,7 @@ Decomposers feed on dead plants, dead animals and their droppings, and transform
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Leaf litter being decomposed by soil life">
     <source src="images/animation/leaf_decomposition.mp4#t=0.1" type="video/mp4">
   </video>
-  <p class="sf-caption">A leaf being broken down, seen through the scanner.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
+  <p class="sf-caption">A leaf being broken down, seen through the scanner.</p>
 </div>
 ```
 :::
@@ -146,7 +146,7 @@ Predators eat other living organisms, which makes them key players in **biologic
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="A geophilomorph centipede roaming around a root">
     <source src="images/animation/geophilomorpha_grazing.mp4#t=0.1" type="video/mp4">
   </video>
-  <p class="sf-caption">A geophilomorph centipede roaming around a root.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
+  <p class="sf-caption">A geophilomorph centipede roaming around a root.</p>
 </div>
 ```
 
@@ -175,7 +175,7 @@ A well-structured soil is made of mineral and organic particles assembled into a
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ants digging galleries in the soil">
     <source src="images/animation/ants_bioturbation.mp4#t=0.1" type="video/mp4">
   </video>
-  <p class="sf-caption">Ants digging galleries.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
+  <p class="sf-caption">Ants digging galleries.</p>
 </div>
 ```
 
@@ -201,7 +201,7 @@ The physical rearrangement of soil by living organisms has a name: **bioturbatio
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Bioturbation by an earthworm">
     <source src="images/animation/earthworm_bioturbation.mp4#t=0.1" type="video/mp4">
   </video>
-  <p class="sf-caption">Bioturbation by an earthworm.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
+  <p class="sf-caption">Bioturbation by an earthworm.</p>
 </div>
 ```
 ::::
@@ -221,7 +221,7 @@ Fungi are found everywhere in the soil. They colonise it in search of food by gr
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Fungal hyphae colonising the soil">
     <source src="images/animation/fungi_colonization.mp4#t=0.1" type="video/mp4">
   </video>
-  <p class="sf-caption">Fungal hyphae colonising the soil.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
+  <p class="sf-caption">Fungal hyphae colonising the soil.</p>
 </div>
 ```
 :::
@@ -236,7 +236,7 @@ Fungal hyphae can explore a volume of soil about 10 times larger than roots alon
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ectomycorrhizal root tip">
     <source src="images/animation/mycorhization_ECM.mp4#t=0.1" type="video/mp4">
   </video>
-  <p class="sf-caption">Ectomycorrhizae (ECM) on a root.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
+  <p class="sf-caption">Ectomycorrhizae (ECM) on a root.</p>
 </div>
 ```
 ::::
@@ -252,7 +252,7 @@ Roots can also be attacked by soil animals. Root-feeding aphids, for example, us
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ants tending aphids on a root">
     <source src="images/animation/mutualism_aphids_ants.mp4#t=0.1" type="video/mp4">
   </video>
-  <p class="sf-caption">Ants tending aphids on a root.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
+  <p class="sf-caption">Ants tending aphids on a root.</p>
 </div>
 <div>
   <div class="sf-taxa">
@@ -275,7 +275,7 @@ Root grazing by soil animals is not always bad news for crops. When herbivores h
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Mycorrhization of a fine branched root">
     <source src="images/animation/mycorhization_finebranchedroot.mp4#t=0.1" type="video/mp4">
   </video>
-  <p class="sf-caption">Mycorrhization of a fine, branched root.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
+  <p class="sf-caption">Mycorrhization of a fine, branched root.</p>
 </div>
 ```
 ::::
