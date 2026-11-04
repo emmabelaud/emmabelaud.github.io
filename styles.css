@@ -488,6 +488,17 @@ h2 {
 }
 .video-grid .card-block p { font-size: 0.9rem; color: var(--muted); margin-top: 0.5rem; }
 
+/* Vidéos locales des cartes « pipeline » (balise <video> écrite à la main
+   dans le .qmd : plus légère que le lecteur Quarto, avec image d'aperçu
+   « poster » pour éviter un cadre noir sur téléphone). */
+.pipeline-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background: var(--ink);
+}
+
 .video-grid iframe, .pipeline-card iframe, .pipeline-card video,
 .resource-card iframe, .resource-card .quarto-video {
   border-radius: 4px;

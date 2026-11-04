@@ -115,8 +115,8 @@ Decomposers feed on dead plants, dead animals and their droppings, and transform
 :::
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Leaf litter being decomposed by soil life">
-    <source src="images/animation/leaf_decomposition.mp4#t=0.1" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/leaf_decomposition.jpg" aria-label="Leaf litter being decomposed by soil life">
+    <source src="images/animation/leaf_decomposition.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">A leaf being broken down, seen through the scanner.</p>
 </div>
@@ -143,8 +143,8 @@ Predators eat other living organisms, which makes them key players in **biologic
 
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" aria-label="A geophilomorph centipede roaming around a root">
-    <source src="images/animation/geophilomorpha_grazing.mp4#t=0.1" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/geophilomorpha_grazing.jpg" aria-label="A geophilomorph centipede roaming around a root">
+    <source src="images/animation/geophilomorpha_grazing.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">A geophilomorph centipede roaming around a root.</p>
 </div>
@@ -172,8 +172,8 @@ A well-structured soil is made of mineral and organic particles assembled into a
 
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ants digging galleries in the soil">
-    <source src="images/animation/ants_bioturbation.mp4#t=0.1" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/ants_bioturbation.jpg" aria-label="Ants digging galleries in the soil">
+    <source src="images/animation/ants_bioturbation.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Ants digging galleries.</p>
 </div>
@@ -198,8 +198,8 @@ A well-structured soil is made of mineral and organic particles assembled into a
 The physical rearrangement of soil by living organisms has a name: **bioturbation**. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Bioturbation by an earthworm">
-    <source src="images/animation/earthworm_bioturbation.mp4#t=0.1" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/earthworm_bioturbation.jpg" aria-label="Bioturbation by an earthworm">
+    <source src="images/animation/earthworm_bioturbation.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Bioturbation by an earthworm.</p>
 </div>
@@ -218,8 +218,8 @@ Fungi are found everywhere in the soil. They colonise it in search of food by gr
 :::
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Fungal hyphae colonising the soil">
-    <source src="images/animation/fungi_colonization.mp4#t=0.1" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/fungi_colonization.jpg" aria-label="Fungal hyphae colonising the soil">
+    <source src="images/animation/fungi_colonization.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Fungal hyphae colonising the soil.</p>
 </div>
@@ -233,8 +233,8 @@ Fungal hyphae can explore a volume of soil about 10 times larger than roots alon
 
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ectomycorrhizal root tip">
-    <source src="images/animation/mycorhization_ECM.mp4#t=0.1" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/mycorhization_ECM.jpg" aria-label="Ectomycorrhizal root tip">
+    <source src="images/animation/mycorhization_ECM.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Ectomycorrhizae (ECM) on a root.</p>
 </div>
@@ -249,8 +249,8 @@ Roots can also be attacked by soil animals. Root-feeding aphids, for example, us
 ::: {.sf-split}
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ants tending aphids on a root">
-    <source src="images/animation/mutualism_aphids_ants.mp4#t=0.1" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/mutualism_aphids_ants.jpg" aria-label="Ants tending aphids on a root">
+    <source src="images/animation/mutualism_aphids_ants.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Ants tending aphids on a root.</p>
 </div>
@@ -272,8 +272,8 @@ Root grazing by soil animals is not always bad news for crops. When herbivores h
 
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Mycorrhization of a fine branched root">
-    <source src="images/animation/mycorhization_finebranchedroot.mp4#t=0.1" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/mycorhization_finebranchedroot.jpg" aria-label="Mycorrhization of a fine branched root">
+    <source src="images/animation/mycorhization_finebranchedroot.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Mycorrhization of a fine, branched root.</p>
 </div>
@@ -291,8 +291,12 @@ Everything you have just seen comes from images of the soil taken in situ by fla
 
 <!-- =========================================================================
      SCRIPT : lance une vidéo quand elle est visible, la met en pause sinon.
-     Si le visiteur a demandé « moins d'animations » (réglage système), les
-     vidéos ne démarrent pas seules et des boutons de lecture apparaissent.
+     - Si le visiteur a demandé « moins d'animations » (réglage système), ou si
+       le navigateur refuse de lancer la lecture seul (cas fréquent sur
+       téléphone : mode économie d'énergie d'iOS, économiseur de données),
+       la vidéo reçoit des boutons de lecture : on la lance alors d'un appui.
+     - « muted » est aussi imposé par le script : certains navigateurs mobiles
+       ignorent l'attribut HTML et bloquent alors la lecture automatique.
      ========================================================================== -->
 
 ```{=html}
@@ -300,16 +304,21 @@ Everything you have just seen comes from images of the soil taken in situ by fla
 (function () {
   var vids = Array.prototype.slice.call(document.querySelectorAll("video.sf-video"));
   var calm = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  vids.forEach(function (v) { v.muted = true; v.defaultMuted = true; });
   if (calm || !("IntersectionObserver" in window)) {
     vids.forEach(function (v) { v.controls = true; });
     return;
   }
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
-      if (e.isIntersecting) { e.target.play().catch(function () {}); }
-      else { e.target.pause(); }
+      var v = e.target;
+      if (e.isIntersecting) {
+        var p = v.play();
+        // lecture refusée par le navigateur : on affiche les commandes
+        if (p && p.catch) { p.catch(function () { v.controls = true; }); }
+      } else { v.pause(); }
     });
-  }, { threshold: 0.35 });
+  }, { threshold: 0.25 });
   vids.forEach(function (v) { io.observe(v); });
 })();
 </script>
