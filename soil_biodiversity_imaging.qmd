@@ -93,7 +93,7 @@ The Shiny interface used to annotate invertebrates and train the model.
 
 ## People involved
 
-- Didier Arnal, Technician (former), CIRAD
+- Didier Arnal, Technician (retired), CIRAD
 - Philippe Gallet, Research Engineer, CIRAD
 - Mickael Hedde, Research Director, INRAE
 - Hadrien Hendrickx, Research Scientist, INRIA

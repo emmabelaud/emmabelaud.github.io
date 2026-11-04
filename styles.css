@@ -564,9 +564,9 @@ h2 {
 /* Photo ronde (border-radius 50 %), recadrée au centre (object-fit: cover)
    avec un halo blanc translucide. Taille : width / height. */
 .hero-photo {
-  width: 11rem;
-  height: 11rem;
-  border-radius: 50%;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 60%;
   object-fit: cover;
   box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25);
 }
