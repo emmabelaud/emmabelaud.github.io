@@ -13,7 +13,7 @@ pagetitle: "Soil fauna | Emma Belaud"
   - Chaque grand bandeau coloré est un bloc  :::: {.sf-band .sf-XXXX}
     XXXX = decomposers (ocre), predators (terre cuite), engineers (teal),
     green (vert), earth (brun). Il se termine par  ::::
-  - Photos : images/photos_animals/ ; animations : images/animation/web/
+  - Photos : images/photos_animals/ ; animations : images/animation/
     (dossiers créés par la conversion .tif -> .webp et .avi -> .mp4).
   - Ajouter un animal : copier une ligne <figure class="sf-taxon">...</figure>.
   - Changer de vidéo : changer seulement le nom du .mp4 dans src="...".
@@ -116,7 +116,7 @@ Decomposers feed on dead plants, dead animals and their droppings, and transform
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Leaf litter being decomposed by soil life">
-    <source src="images/animation/web/leaf_decomposition.mp4" type="video/mp4">
+    <source src="images/animation/leaf_decomposition.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">A leaf being broken down, seen through the scanner.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
 </div>
@@ -144,7 +144,7 @@ Predators eat other living organisms, which makes them key players in **biologic
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="A geophilomorph centipede roaming around a root">
-    <source src="images/animation/web/geophilomorpha_grazing.mp4" type="video/mp4">
+    <source src="images/animation/geophilomorpha_grazing.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">A geophilomorph centipede roaming around a root.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
 </div>
@@ -173,7 +173,7 @@ A well-structured soil is made of mineral and organic particles assembled into a
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ants digging galleries in the soil">
-    <source src="images/animation/web/ants_bioturbation.mp4" type="video/mp4">
+    <source src="images/animation/ants_bioturbation.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Ants digging galleries.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
 </div>
@@ -199,7 +199,7 @@ The physical rearrangement of soil by living organisms has a name: **bioturbatio
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Bioturbation by an earthworm">
-    <source src="images/animation/web/earthworm_bioturbation.mp4" type="video/mp4">
+    <source src="images/animation/earthworm_bioturbation.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Bioturbation by an earthworm.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
 </div>
@@ -219,7 +219,7 @@ Fungi are found everywhere in the soil. They colonise it in search of food by gr
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Fungal hyphae colonising the soil">
-    <source src="images/animation/web/fungi_colonization.mp4" type="video/mp4">
+    <source src="images/animation/fungi_colonization.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Fungal hyphae colonising the soil.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
 </div>
@@ -234,7 +234,7 @@ Fungal hyphae can explore a volume of soil about 10 times larger than roots alon
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ectomycorrhizal root tip">
-    <source src="images/animation/web/mycorhization_ECM.mp4" type="video/mp4">
+    <source src="images/animation/mycorhization_ECM.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Ectomycorrhizae (ECM) on a root.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
 </div>
@@ -250,7 +250,7 @@ Roots can also be attacked by soil animals. Root-feeding aphids, for example, us
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Ants tending aphids on a root">
-    <source src="images/animation/web/mutualism_aphids_ants.mp4" type="video/mp4">
+    <source src="images/animation/mutualism_aphids_ants.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Ants tending aphids on a root.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
 </div>
@@ -273,7 +273,7 @@ Root grazing by soil animals is not always bad news for crops. When herbivores h
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" aria-label="Mycorrhization of a fine branched root">
-    <source src="images/animation/web/mycorhization_finebranchedroot.mp4" type="video/mp4">
+    <source src="images/animation/mycorhization_finebranchedroot.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Mycorrhization of a fine, branched root.<span class="sf-credit">© Emma Belaud · CC BY-NC-SA 4.0</span></p>
 </div>
