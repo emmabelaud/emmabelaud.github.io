@@ -105,7 +105,11 @@ To extract biological information on root structures, we use **RootPainter**, a 
 
 [Associated publication {{< fa arrow-up-right-from-square >}}](https://doi.org/10.1111/nph.18387){.accent-link}
 
-{{< video images/rootpainter_annotation.mp4 >}}
+```{=html}
+<video class="pipeline-video" controls playsinline preload="metadata" poster="images/posters/rootpainter_annotation.jpg">
+  <source src="images/rootpainter_annotation.mp4" type="video/mp4">
+</video>
+```
 
 The RootPainter annotation interface.
 :::
@@ -119,7 +123,11 @@ For invertebrates, we developed our own tool, based on two steps: animal **detec
 
 [Associated publication {{< fa arrow-up-right-from-square >}}](https://doi.org/10.64898/2026.06.16.732537){.accent-link}
 
-{{< video images/invertebrate_annotation.mp4 >}}
+```{=html}
+<video class="pipeline-video" controls playsinline preload="metadata" poster="images/posters/invertebrate_annotation.jpg">
+  <source src="images/invertebrate_annotation.mp4" type="video/mp4">
+</video>
+```
 
 The Shiny interface used to annotate invertebrates and train the model.
 :::
