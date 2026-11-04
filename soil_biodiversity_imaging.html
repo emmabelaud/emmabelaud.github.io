@@ -46,8 +46,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap-43ff5b8ee06f43255cc94cd52afb2357.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -289,7 +287,9 @@ background: #2a5d45;
 <h3 class="anchored" data-anchor-id="root-structures">Root structures</h3>
 <p>To extract biological information on root structures, we use <strong>RootPainter</strong>, a deep-learning-based tool developed at the University of Copenhagen. It requires a training phase for the model.</p>
 <p><a href="https://doi.org/10.1111/nph.18387" class="accent-link">Associated publication <i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i></a></p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="images/rootpainter_annotation.mp4"></video></div>
+<video class="pipeline-video" controls="" playsinline="" preload="metadata" poster="images/posters/rootpainter_annotation.jpg">
+  <source src="images/rootpainter_annotation.mp4" type="video/mp4">
+</video>
 <p>The RootPainter annotation interface.</p>
 </section>
 </div>
@@ -299,7 +299,9 @@ background: #2a5d45;
 <h3 class="anchored" data-anchor-id="soil-invertebrates">Soil invertebrates</h3>
 <p>For invertebrates, we developed our own tool, based on two steps: animal <strong>detection</strong>, using heuristic methods that differentiate successive images, and <strong>classification</strong>, using a deep-learning model. A Shiny interface was developed to train the model.</p>
 <p><a href="https://doi.org/10.64898/2026.06.16.732537" class="accent-link">Associated publication <i class="fa-solid fa-arrow-up-right-from-square" aria-label="arrow-up-right-from-square"></i></a></p>
-<div class="quarto-video"><video id="video_shortcode_videojs_video2" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="images/invertebrate_annotation.mp4"></video></div>
+<video class="pipeline-video" controls="" playsinline="" preload="metadata" poster="images/posters/invertebrate_annotation.jpg">
+  <source src="images/invertebrate_annotation.mp4" type="video/mp4">
+</video>
 <p>The Shiny interface used to annotate invertebrates and train the model.</p>
 </section>
 </div>
@@ -319,153 +321,79 @@ background: #2a5d45;
 
 </main> <!-- /main -->
 <!--
-
   page-menu.html : menu flottant « On this page »
-
   Inclus dans toutes les pages par _quarto.yml (include-after-body).
-
   Le script ci-dessous :
-
     1. repère les titres h2 et h3 du contenu de la page ;
-
     2. crée un bouton fixe en haut à droite avec la liste de ces titres ;
-
     3. ouvre / ferme la liste au clic (et au clic en dehors).
-
   Rien à écrire dans les .qmd : les ## et ### suffisent.
-
   - Pour retirer les sous-titres du menu : dans la ligne querySelectorAll,
-
     supprimer les sélecteurs « h3 ».
-
   - Pour changer le texte du bouton : modifier « On this page » dans le
-
     bloc nav.innerHTML.
-
   - Apparence : styles.css, section 13.
-
 -->
-
 <script>
-
 document.addEventListener("DOMContentLoaded", function() {
-
   // Sélectionne les titres de la page (h2 et h3)
-
   const headers = document.querySelectorAll("main h2, main h3, .content h2, .content h3, article h2, article h3");
-
   if (headers.length === 0) return;
 
-
-
   // Crée le conteneur du menu flottant
-
   const nav = document.createElement("nav");
-
   nav.className = "page-menu";
-
   nav.innerHTML = `
-
     <button class="page-menu-btn" aria-expanded="false">On this page</button>
-
     <ul class="page-menu-list" hidden></ul>
-
   `;
-
   document.body.appendChild(nav);
 
-
-
   const btn = nav.querySelector(".page-menu-btn");
-
   const list = nav.querySelector(".page-menu-list");
 
-
-
   // Remplit la liste avec les titres trouvés sur la page
-
   headers.forEach((h, index) => {
-
     if (!h.id) {
-
       h.id = "section-" + index;
-
     }
-
     const li = document.createElement("li");
-
     const a = document.createElement("a");
-
     a.href = "#" + h.id;
-
     a.textContent = h.textContent.replace(/^#\s*/, ''); // Nettoie d'éventuels dièses résiduels
-
     
-
     // Indentation visuelle pour les sous-titres (h3)
-
     if (h.tagName === "H3") {
-
       a.style.paddingLeft = "1.5rem";
-
       a.style.fontSize = "0.85rem";
-
     }
-
-
 
     // Ferme le menu au clic sur un lien
-
     a.addEventListener("click", () => {
-
       list.hidden = true;
-
       btn.setAttribute("aria-expanded", "false");
-
     });
 
-
-
     li.appendChild(a);
-
     list.appendChild(li);
-
   });
-
-
 
   // Gestion de l'ouverture/fermeture du menu
-
   btn.addEventListener("click", (e) => {
-
     e.stopPropagation();
-
     const expanded = btn.getAttribute("aria-expanded") === "true";
-
     btn.setAttribute("aria-expanded", !expanded);
-
     list.hidden = expanded;
-
   });
-
-
 
   // Ferme le menu si l'on clique en dehors
-
   document.addEventListener("click", (e) => {
-
     if (!nav.contains(e.target)) {
-
       list.hidden = true;
-
       btn.setAttribute("aria-expanded", "false");
-
     }
-
   });
-
 });
-
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
@@ -881,8 +809,6 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
   </div>
 </footer>
-<script>videojs(video_shortcode_videojs_video1);</script>
-<script>videojs(video_shortcode_videojs_video2);</script>
 
 
 
