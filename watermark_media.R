@@ -39,16 +39,19 @@ dir.create(sortie_photo, showWarnings = FALSE, recursive = TRUE)
 # blanc le rend lisible sur fond clair comme sur fond sombre.
 filigrane <- function(img, texte, gravity = "southeast") {
   largeur <- image_info(img)$width
-  taille  <- max(12, round(largeur * 0.017))
+  taille  <- max(14, round(largeur * 0.02)) # Légèrement plus grand pour la lisibilité vidéo
   marge   <- round(largeur * 0.012)
-  blanc   <- sprintf("rgba(255,255,255,%s)", opacite)
-  noir    <- sprintf("rgba(0,0,0,%s)", opacite * 0.8)
+  blanc   <- sprintf("rgba(255,255,255,%s)", max(opacite, 0.85)) # Opacité renforcée
+  noir    <- sprintf("rgba(0,0,0,%s)", 0.9)
+  
   img <- image_annotate(img, texte, gravity = gravity, size = taille,
                         color = noir,
                         location = sprintf("+%d+%d", marge + 1, marge - 1))
-  image_annotate(img, texte, gravity = gravity, size = taille,
-                 color = blanc,
-                 location = sprintf("+%d+%d", marge, marge))
+  # Correction : réassignation explicite pour s'assurer que le texte blanc s'applique bien
+  img <- image_annotate(img, texte, gravity = gravity, size = taille,
+                        color = blanc,
+                        location = sprintf("+%d+%d", marge, marge))
+  img
 }
 
 # ---- Photos : .tif -> .webp ------------------------------------------------
@@ -68,8 +71,10 @@ for (f in tifs) {
 }
 
 # ---- Vidéos : .avi -> images -> mention -> .mp4 ----------------------------
-filtre_even <- "scale=w='trunc(iw/2)*2':h='trunc(ih/2)*2',format=yuv420p"  # dimensions paires (obligatoire en H.264)
+# ---- Vidéos : .avi -> images PNG -> mention -> .mp4 -------------------------
+filtre_even <- "scale=w='trunc(iw/2)*2':h='trunc(ih/2)*2',format=yuv420p"
 avis <- list.files(dossier_avi, pattern = "\\.avi$", full.names = TRUE, ignore.case = TRUE)
+
 for (f in avis) {
   nom <- tools::file_path_sans_ext(basename(f))
   message("Vidéo : ", nom)
@@ -79,19 +84,22 @@ for (f in avis) {
   
   tmp <- file.path(tempdir(), nom)
   dir.create(tmp, showWarnings = FALSE)
-  images <- av_video_images(f, destdir = tmp, format = "jpg")
   
-  for (im in images) {                       # réduit puis marque chaque image
+  # 1. Extraction en PNG (sans perte) au lieu de JPG
+  images <- av_video_images(f, destdir = tmp, format = "png") 
+  
+  for (im in images) {
     img <- image_resize(image_read(im), "1280x>")
     if (filigrane_videos) img <- filigrane(img, mention, gravity = position_video)
-    image_write(img, im, format = "jpeg", quality = 88)
+    # 2. Sauvegarde en PNG haute qualité dans le dossier temporaire
+    image_write(img, im, format = "png")
   }
   
+  # 3. Encodage avec un bitrate augmenté (ex: 5 Mbps) pour préserver la netteté du texte
   av_encode_video(images, file.path(sortie_video, paste0(nom, ".mp4")),
-                  framerate = fps, vfilter = filtre_even, verbose = FALSE)
+                  framerate = fps, vfilter = filtre_even, bitrate = 5000000, verbose = FALSE)
   unlink(tmp, recursive = TRUE)
 }
-
 # ---- Contrôle : taille des fichiers produits (en Mo) -------------------------
 produits <- list.files(c(sortie_video, sortie_photo), full.names = TRUE)
 print(data.frame(fichier = basename(produits), Mo = round(file.size(produits) / 1e6, 2)))

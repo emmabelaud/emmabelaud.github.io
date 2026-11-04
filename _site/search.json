@@ -1,45 +1,122 @@
 [
   {
-    "objectID": "soil_biodiversity_imaging.html",
-    "href": "soil_biodiversity_imaging.html",
-    "title": "Observing soil organisms in situ?",
+    "objectID": "soil_fauna.html",
+    "href": "soil_fauna.html",
+    "title": "Who lives beneath our feet, and what do they do?",
     "section": "",
-    "text": "Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity in situ by imaging."
+    "text": "Soil hosts almost a quarter of all the species described on Earth (Anthony et al., 2023).  This largely hidden life keeps ecosystems running and supports services we all depend on, from food production to carbon storage. To make the most of these services, we need to understand the biological processes behind them.\nYet we still know surprisingly little about how soil life works. Soil has been called one of the last biotic frontiers, along with the deep ocean and the forest canopy (André et al., 1994). The reason is simple: soil is opaque, and its inhabitants are small and hard to reach. Imaging gets around this problem.  The animations on this page come from images taken by flatbed scanners buried in the ground, which let us watch soil life where it happens, without digging it up.\n\n  \n    ≈ 59% of species on Earth spend all or part of their life cycle in the soil\n    Anthony et al., 2023\n  \n  \n    One of the last biotic frontiers, alongside the deep oceans and the forest canopy\n    André et al., 1994\n  \n  \n    All kingdoms of life are present in soils"
   },
   {
-    "objectID": "soil_biodiversity_imaging.html#context",
-    "href": "soil_biodiversity_imaging.html#context",
-    "title": "Observing soil organisms in situ?",
+    "objectID": "soil_fauna.html#a-hidden-reservoir-of-biodiversity",
+    "href": "soil_fauna.html#a-hidden-reservoir-of-biodiversity",
+    "title": "Who lives beneath our feet, and what do they do?",
     "section": "",
-    "text": "Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity in situ by imaging."
+    "text": "Soil hosts almost a quarter of all the species described on Earth (Anthony et al., 2023).  This largely hidden life keeps ecosystems running and supports services we all depend on, from food production to carbon storage. To make the most of these services, we need to understand the biological processes behind them.\nYet we still know surprisingly little about how soil life works. Soil has been called one of the last biotic frontiers, along with the deep ocean and the forest canopy (André et al., 1994). The reason is simple: soil is opaque, and its inhabitants are small and hard to reach. Imaging gets around this problem.  The animations on this page come from images taken by flatbed scanners buried in the ground, which let us watch soil life where it happens, without digging it up.\n\n  \n    ≈ 59% of species on Earth spend all or part of their life cycle in the soil\n    Anthony et al., 2023\n  \n  \n    One of the last biotic frontiers, alongside the deep oceans and the forest canopy\n    André et al., 1994\n  \n  \n    All kingdoms of life are present in soils"
   },
   {
-    "objectID": "soil_biodiversity_imaging.html#the-device",
-    "href": "soil_biodiversity_imaging.html#the-device",
-    "title": "Observing soil organisms in situ?",
-    "section": "The device",
-    "text": "The device\nThe system relies on desktop flatbed scanners, adapted to field conditions and buried in the soil. In the field, each scanner is paired with an automated control module based on a Raspberry Pi, which handles image acquisition. This setup allows long-term, high-resolution acquisition campaigns with minimal human intervention.\n\n\n\n\n\n\nSchematic of the buried scanner device\n\n\n\n\n\n\n\nAutomated control module based on a Raspberry Pi\n\n\n\n\n\n\n\n6 h between two images\n\n\n1200 dpi image resolution\n\n\nA4 scanned surface\n\n\n&gt; 1 mm size of monitored organisms"
+    "objectID": "soil_fauna.html#who-lives-in-the-soil",
+    "href": "soil_fauna.html#who-lives-in-the-soil",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "Who lives in the soil?",
+    "text": "Who lives in the soil?\nSoil organisms range from a few micrometres to several centimetres. Biologists usually sort them by body size.\n\n\n  \n    Microorganisms and microfauna\n    the smallest · under 0.1 mm\n    Bacteria, archaea, fungi and protists, together with microscopic animals such as nematodes and tardigrades.\n    \n      Mycorrhizaefungi\n    \n  \n\n  \n    Mesofauna\n    intermediate size · about 0.1 to 2 mm\n    Springtails, mites, symphylans, diplurans and potworms.\n    \n      Symphyla\n      Diplura\n      Collembolaspringtails\n      Acarimites\n    \n  \n\n  \n    Macrofauna\n    the largest · over 2 mm\n    Earthworms, millipedes, woodlice, ants and spiders. Plant roots are not animals, but they also share this space and attract many of these organisms.\n    \n      Julidamillipedes\n      Chilopodacentipedes\n      Lumbricidaeearthworms\n    \n  \n\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
   },
   {
-    "objectID": "soil_biodiversity_imaging.html#what-the-images-reveal",
-    "href": "soil_biodiversity_imaging.html#what-the-images-reveal",
-    "title": "Observing soil organisms in situ?",
-    "section": "What the images reveal",
-    "text": "What the images reveal\nImages are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, some fungal structures and many invertebrate taxa. It also allows their dynamics to be followed at a fine temporal scale and over long periods.\n\n\nRoots and fungi\n\nColonization of oak roots by ectomycorrhizal (ECM) fungi observed by in situ imaging.\n\n\nInvertebrates\n\nMutualism between aphids and ants on roots observed by in situ imaging.\n\n\nRoots and fauna\n\nGrazing and reiteration of an oak root observed by in situ imaging."
+    "objectID": "soil_fauna.html#what-do-they-do-down-there",
+    "href": "soil_fauna.html#what-do-they-do-down-there",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "What do they do down there?",
+    "text": "What do they do down there?\nEach soil organism plays one or several roles in the ecosystem, which we call its function. Grouping organisms by function gives three main functional groups: decomposers, predators and ecosystem engineers. The boundaries are blurry, because many species play several roles at once."
   },
   {
-    "objectID": "soil_biodiversity_imaging.html#from-images-to-data",
-    "href": "soil_biodiversity_imaging.html#from-images-to-data",
-    "title": "Observing soil organisms in situ?",
-    "section": "From images to data",
-    "text": "From images to data\nHigh-frequency automated monitoring generates a volume of data that quickly makes manual expertise incompatible with the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while maintaining an inference quality comparable to that of a human expert. We work on the design of such pipelines.\n\n\n Roots\n\nRoot structures\nTo extract biological information on root structures, we use RootPainter, a deep-learning-based tool developed at the University of Copenhagen. It requires a training phase for the model.\nAssociated publication \n\nThe RootPainter annotation interface.\n\n\n\n Invertebrates\n\nSoil invertebrates\nFor invertebrates, we developed our own tool, based on two steps: animal detection, using heuristic methods that differentiate successive images, and classification, using a deep-learning model. A Shiny interface was developed to train the model.\nAssociated publication \n\nThe Shiny interface used to annotate invertebrates and train the model."
+    "objectID": "soil_fauna.html#decomposers",
+    "href": "soil_fauna.html#decomposers",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "Decomposers",
+    "text": "Decomposers\n\n\nDecomposers feed on dead plants, dead animals and their droppings, and transform this organic matter step by step: they are the recyclers of the soil. Soil animals shred and mix the debris, and microorganisms then complete the job through mineralisation, which breaks matter down into simple molecules. These are the nutrients that plants can finally use to grow.\n\n\n  \n    \n  \n  A leaf being broken down, seen through the scanner.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n\n  Isopodawoodlice\n  Polydesmidaflat-backed millipedes\n  Julidamillipedes\n  Diplura\n  Collembolaspringtails\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
   },
   {
-    "objectID": "soil_biodiversity_imaging.html#related-publications",
-    "href": "soil_biodiversity_imaging.html#related-publications",
-    "title": "Observing soil organisms in situ?",
-    "section": "Related publications",
-    "text": "Related publications\n\nBelaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. doi\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. doi\nPruvost, E., et al. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE. doi\n\nSee the full list on the Publications page, and more material in Related resources."
+    "objectID": "soil_fauna.html#predators",
+    "href": "soil_fauna.html#predators",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "Predators",
+    "text": "Predators\nPredators eat other living organisms, which makes them key players in biological regulation. By feeding on crop pests, they directly benefit agriculture and are called beneficial organisms. More broadly, by keeping prey populations in check, they can help many species live side by side (coexistence), which supports biodiversity. Not every member of these groups hunts, however: some mites, for example, feed on fungi or dead matter.\n\n  \n    \n  \n  A geophilomorph centipede roaming around a root.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n  Geophilomorphacentipedes\n  Chilopodacentipedes\n  Pseudoscorpionida\n  Acarimites\n  Diplura\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "soil_fauna.html#engineers",
+    "href": "soil_fauna.html#engineers",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "Engineers",
+    "text": "Engineers\nEcosystem engineers shape the structure of the soil. As they move about in search of food or shelter, they dig and push material around, creating new spaces that change the habitat of all the other organisms. The animation shows ants starting to dig a network of tunnels. Earthworms and ants are the best-known engineers, but in reality every soil organism, even the smallest, contributes to mixing the soil and refining its structure.\nA well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity). These spaces let roots penetrate and let water and oxygen circulate.\n\n  \n    \n  \n  Ants digging galleries.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n  Lumbricidaeearthworms\n  Enchytraeidaepotworms\n  Formicidaeants\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "soil_fauna.html#zoom-on-bioturbation",
+    "href": "soil_fauna.html#zoom-on-bioturbation",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "Zoom on bioturbation",
+    "text": "Zoom on bioturbation\nThe physical rearrangement of soil by living organisms has a name: bioturbation. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.\n\n  \n    \n  \n  Bioturbation by an earthworm.© Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "soil_fauna.html#fungi-underground-highways",
+    "href": "soil_fauna.html#fungi-underground-highways",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "Fungi: underground highways",
+    "text": "Fungi: underground highways\n\n\nFungi are found everywhere in the soil. They colonise it in search of food by growing a network of thread-like filaments called hyphae. This network works as an extensive transport system, carrying nutrients over long distances.\n\n\n  \n    \n  \n  Fungal hyphae colonising the soil.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n\nFungi and roots: a deal that pays both ways\nSome of these fungi form a partnership with plant roots, called mycorrhiza. It is a symbiosis, meaning both sides benefit: the plant gives the fungus carbon-rich compounds, and in return the fungus supplies the plant with nutrients and water, effectively extending its root system. Fungal hyphae can explore a volume of soil about 10 times larger than roots alone. As a result, mycorrhizal plants tend to grow better, cope better with harsh conditions and be better protected against external threats.\n\n  \n    \n  \n  Ectomycorrhizae (ECM) on a root.© Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "soil_fauna.html#ants-and-their-aphid-herds",
+    "href": "soil_fauna.html#ants-and-their-aphid-herds",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "Ants and their aphid herds",
+    "text": "Ants and their aphid herds\nRoots can also be attacked by soil animals. Root-feeding aphids, for example, use roots as their food source. They have developed a mutualistic relationship with ants: the ants protect the aphids from their many predators and, in return, feed on the sugary honeydew the aphids produce. When these populations become too dense, this partnership can threaten crops.\n\n\n  \n    \n  \n  Ants tending aphids on a root.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n  \n    Aphids\n    FormicidaeSolenopsis ants\n  \n  Photos © Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "soil_fauna.html#when-grazing-helps-roots-grow",
+    "href": "soil_fauna.html#when-grazing-helps-roots-grow",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "When grazing helps roots grow",
+    "text": "When grazing helps roots grow\nRoot grazing by soil animals is not always bad news for crops. When herbivores halt the growth of the main root, the plant can respond by producing lateral roots. This increases the contact area between roots and soil, and therefore the plant’s ability to absorb nutrients. These finer, slower-growing roots are also the ones most readily colonised by mycorrhizal fungi, which brings us back to the partnership described above.\n\n  \n    \n  \n  Mycorrhization of a fine, branched root.© Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "soil_fauna.html#how-do-we-see-all-this",
+    "href": "soil_fauna.html#how-do-we-see-all-this",
+    "title": "Who lives beneath our feet, and what do they do?",
+    "section": "How do we see all this?",
+    "text": "How do we see all this?\nEverything you have just seen comes from images of the soil taken in situ by flatbed scanners buried underground, which photograph the same patch of soil again and again over time. To find out how the system works, see Soil biodiversity imaging."
+  },
+  {
+    "objectID": "reuse.html",
+    "href": "reuse.html",
+    "title": "Use and share this work",
+    "section": "",
+    "text": "The original content of this site (texts, figures, photographs, animations and videos) is shared under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0). It is meant to circulate freely in the scientific community and beyond, for non-commercial purposes."
+  },
+  {
+    "objectID": "reuse.html#how-to-credit",
+    "href": "reuse.html#how-to-credit",
+    "title": "Use and share this work",
+    "section": "How to credit",
+    "text": "How to credit\nCopy and adapt this line next to any figure, photograph or video you reuse:\n© Emma Belaud, emmabelaud.github.io, CC BY-NC-SA 4.0\nEach image and animation on this site also carries this credit, in its caption and on the file itself. Please keep it when you reuse them. If you adapt a figure or video, add what you changed, for example « cropped » or « translated »."
+  },
+  {
+    "objectID": "reuse.html#what-this-licence-does-not-cover",
+    "href": "reuse.html#what-this-licence-does-not-cover",
+    "title": "Use and share this work",
+    "section": "What this licence does not cover",
+    "text": "What this licence does not cover\n\nLogos of institutions and laboratories (CIRAD, INRAE, Eco&Sols and others).\nContent credited to other authors or institutions, which keeps its own terms.\nScientific articles, which are covered by the licence chosen by each journal (see the publications page)."
+  },
+  {
+    "objectID": "reuse.html#commercial-or-industrial-use",
+    "href": "reuse.html#commercial-or-industrial-use",
+    "title": "Use and share this work",
+    "section": "Commercial or industrial use",
+    "text": "Commercial or industrial use\nIf you are a company, or if you want to use this material in a paid product, service, training or publication, please ask for a written agreement before reusing it. If you are not sure whether your use is commercial, ask as well. Write to me through the contact page."
+  },
+  {
+    "objectID": "reuse.html#full-licence-text",
+    "href": "reuse.html#full-licence-text",
+    "title": "Use and share this work",
+    "section": "Full licence text",
+    "text": "Full licence text\nThe complete legal code is available on the Creative Commons website."
   },
   {
     "objectID": "publications.html",
@@ -147,241 +224,45 @@
     "text": "PhD defence\n\nMy thesis defence\nRecording of my PhD defence.\n\n\n\n\n Open resources\n\nSoil imaging image sequences\nExample image sequences acquired with the in situ soil imaging device.\nAccess the dataset \n\n\n\n Videos and article\n\nThe scanners in the spotlight\nArticle. The PEPR Sols Vivants programme presents my thesis work on in situ soil imaging, and how digital tools are opening a new window on soil biodiversity: “Observer la biodiversité des sols à l’ère du numérique”.\nWebinar. In this webinar, we present the in situ soil imaging technique and demonstrate its application to monitoring the temporal organization of edaphic activity:\n\nVideo. An accessible introduction to the history of buried scanners and the new research opportunities they have opened up:"
   },
   {
-    "objectID": "soil-fauna.html",
-    "href": "soil-fauna.html",
-    "title": "Who lives beneath our feet?",
+    "objectID": "soil_biodiversity_imaging.html",
+    "href": "soil_biodiversity_imaging.html",
+    "title": "Observing soil organisms in situ?",
     "section": "",
-    "text": "Soil hosts almost a quarter of all the species described on Earth (Anthony et al., 2023). This cryptic life keeps ecosystems running and delivers services we depend on, from food production to carbon storage. Getting the most out of these services means understanding the biological mechanisms behind them.\nYet we still know little about how soil life works. Soils have been historically called the third biotic frontier, after the deep ocean and the tropical forest canopy (André et al., 1994). A big reason is simple: the soil is opaque, and its inhabitants are hard to reach.\n\n  ≈ 25 %of described species live in the soil\n  3rd frontierthe least explored biotic frontier, after the deep ocean and the forest canopy\n  Opaquethe main obstacle to observing soil life where it happens"
+    "text": "Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity in situ by imaging."
   },
   {
-    "objectID": "soil-fauna.html#a-hidden-reservoir-of-biodiversity",
-    "href": "soil-fauna.html#a-hidden-reservoir-of-biodiversity",
-    "title": "Who lives beneath our feet?",
+    "objectID": "soil_biodiversity_imaging.html#context",
+    "href": "soil_biodiversity_imaging.html#context",
+    "title": "Observing soil organisms in situ?",
     "section": "",
-    "text": "Soil hosts almost a quarter of all the species described on Earth (Anthony et al., 2023). This cryptic life keeps ecosystems running and delivers services we depend on, from food production to carbon storage. Getting the most out of these services means understanding the biological mechanisms behind them.\nYet we still know little about how soil life works. Soils have been historically called the third biotic frontier, after the deep ocean and the tropical forest canopy (André et al., 1994). A big reason is simple: the soil is opaque, and its inhabitants are hard to reach.\n\n  ≈ 25 %of described species live in the soil\n  3rd frontierthe least explored biotic frontier, after the deep ocean and the forest canopy\n  Opaquethe main obstacle to observing soil life where it happens"
+    "text": "Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity in situ by imaging."
   },
   {
-    "objectID": "soil-fauna.html#a-window-into-the-soil",
-    "href": "soil-fauna.html#a-window-into-the-soil",
-    "title": "Who lives beneath our feet?",
-    "section": "A window into the soil",
-    "text": "A window into the soil\nTo watch soil life in place, we adapted flatbed office scanners so they can be buried in the ground. Each scanner takes colour images of an A4 slice of soil and of everything living in it, again and again, without disturbing the soil.\n\nA flatbed scanner buried vertically in the soil.\nThe control module that drives the scanner and stores the images."
+    "objectID": "soil_biodiversity_imaging.html#the-device",
+    "href": "soil_biodiversity_imaging.html#the-device",
+    "title": "Observing soil organisms in situ?",
+    "section": "The device",
+    "text": "The device\nThe system relies on desktop flatbed scanners, adapted to field conditions and buried in the soil. In the field, each scanner is paired with an automated control module based on a Raspberry Pi, which handles image acquisition. This setup allows long-term, high-resolution acquisition campaigns with minimal human intervention.\n\n\n\n\n\n\nSchematic of the buried scanner device\n\n\n\n\n\n\n\nAutomated control module based on a Raspberry Pi\n\n\n\n\n\n\n\n6 h between two images\n\n\n1200 dpi image resolution\n\n\nA4 scanned surface\n\n\n&gt; 1 mm size of monitored organisms"
   },
   {
-    "objectID": "soil-fauna.html#who-lives-in-the-soil",
-    "href": "soil-fauna.html#who-lives-in-the-soil",
-    "title": "Who lives beneath our feet?",
-    "section": "Who lives in the soil?",
-    "text": "Who lives in the soil?\nSoil dwellers are usually sorted by body size.\n\n\n  \n    Microorganisms and microfauna\n    the smallest\n    Bacteria, fungi, archaea, protozoa and microalgae, together with nematodes, protists and tardigrades.\n  \n\n  \n    Mesofauna\n    intermediate size\n    Springtails, mites, potworms and diplurans.\n    \n      Collembolaspringtails\n      Acarimites\n    \n  \n\n  \n    Macrofauna and plants\n    the largest\n    Earthworms, millipedes, centipedes, spiders and woodlice, plus the plant roots.\n    \n      Lumbricidaeearthworms\n      Isopodawoodlice"
+    "objectID": "soil_biodiversity_imaging.html#what-the-images-reveal",
+    "href": "soil_biodiversity_imaging.html#what-the-images-reveal",
+    "title": "Observing soil organisms in situ?",
+    "section": "What the images reveal",
+    "text": "What the images reveal\nImages are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, some fungal structures and many invertebrate taxa. It also allows their dynamics to be followed at a fine temporal scale and over long periods.\n\n\nRoots and fungi\n\nColonization of oak roots by ectomycorrhizal (ECM) fungi observed by in situ imaging.\n\n\nInvertebrates\n\nMutualism between aphids and ants on roots observed by in situ imaging.\n\n\nRoots and fauna\n\nGrazing and reiteration of an oak root observed by in situ imaging."
   },
   {
-    "objectID": "soil-fauna.html#what-do-they-do-down-there",
-    "href": "soil-fauna.html#what-do-they-do-down-there",
-    "title": "Who lives beneath our feet?",
-    "section": "What do they do down there?",
-    "text": "What do they do down there?\nEach organism has a main role in the soil, which we call its function. Grouping taxa by function gives three functional groups: decomposers, predators and ecosystem engineers."
-  },
-  {
-    "objectID": "soil-fauna.html#decomposers-the-recyclers",
-    "href": "soil-fauna.html#decomposers-the-recyclers",
-    "title": "Who lives beneath our feet?",
-    "section": "Decomposers: the recyclers",
-    "text": "Decomposers: the recyclers\n\n\nDecomposers feed on dead plants, dead animals and their droppings, and transform this organic matter step by step. The final step is mineralisation: matter is broken down into simple molecules, the nutrients that plants can finally use to grow.\n\n\n  \n    \n  \n  A leaf being broken down, seen through the scanner.\n\n\n\n  Isopodawoodlice\n  Polydesmidaflat-backed millipedes\n  Julidamillipedes\n  Rhabduradiplurans\n  Collembolaspringtails"
-  },
-  {
-    "objectID": "soil-fauna.html#predators-the-regulators",
-    "href": "soil-fauna.html#predators-the-regulators",
-    "title": "Who lives beneath our feet?",
-    "section": "Predators: the regulators",
-    "text": "Predators: the regulators\nPredators eat other living organisms. When they eat crop pests, they directly benefit agriculture and are called beneficial organisms. More broadly, by keeping prey populations in check they let many species live side by side, which supports biodiversity.\n\n\n  Geophilomorphasoil centipedes\n  Chilopodacentipedes\n  Pseudoscorpionidapseudoscorpions\n  Acarimites\n  Dipluradiplurans"
-  },
-  {
-    "objectID": "soil-fauna.html#engineers-the-builders",
-    "href": "soil-fauna.html#engineers-the-builders",
-    "title": "Who lives beneath our feet?",
-    "section": "Engineers: the builders",
-    "text": "Engineers: the builders\nEcosystem engineers are large organisms that shape the structure of the soil as they move. Searching for food or shelter, they open up new spaces and dig networks of galleries. A well-structured soil has its mineral and organic particles assembled into aggregates of different sizes, leaving empty spaces between them: this is porosity.\nThis physical rearrangement of the soil by living organisms is called bioturbation. Earthworms are famous for it, but ants play their part too. The porosity they create lets water and air circulate and helps roots push through.\n\n  \n    \n      \n    \n    An earthworm reworking the soil.\n  \n  \n    \n      \n    \n    Ants digging galleries.\n  \n\n\n\n  Lumbricidaeearthworms\n  Enchytraeidaepotworms\n  Formicidaeants"
-  },
-  {
-    "objectID": "soil-fauna.html#fungi-underground-highways",
-    "href": "soil-fauna.html#fungi-underground-highways",
-    "title": "Who lives beneath our feet?",
-    "section": "Fungi: underground highways",
-    "text": "Fungi: underground highways\n\n\nFungi spread through the soil in search of food with a web of fine filaments called hyphae. This mycelium forms a vast network that carries nutrients over long distances.\n\n\n  \n    \n  \n  Fungal hyphae colonising the soil.\n\n\n\nFungi and roots: a deal that pays both ways\nFungi can associate with roots in a partnership called mycorrhization. The plant gives the fungus carbon-rich resources from photosynthesis. In return, the fungus supplies nutrients and water, acting as an extension of the root system. Fungi can explore about ten times more soil volume than roots alone, so the plant grows better, withstands harsh conditions better, and is better protected against outside threats.\n\n  \n    \n      \n    \n    Ectomycorrhizae (ECM) on a root.\n  \n  \n    \n      \n    \n    Mycorrhization of a fine, branched root."
-  },
-  {
-    "objectID": "soil-fauna.html#ants-and-their-aphid-herds",
-    "href": "soil-fauna.html#ants-and-their-aphid-herds",
-    "title": "Who lives beneath our feet?",
-    "section": "Ants and their aphid herds",
-    "text": "Ants and their aphid herds\nRoots are also a food source for soil herbivores such as aphids. Aphids have struck up a mutualistic deal with ants: the ants protect the aphids, which are prey for many predators, and in exchange feed on the sugary honeydew the aphids produce. When the pressure from these organisms gets too strong, this partnership can become a threat to crops.\n\n\n  \n    \n  \n  Ants tending aphids on a root.\n\n\n  Aphids\n  FormicidaeSolenopsis ants"
-  },
-  {
-    "objectID": "soil-fauna.html#when-grazing-helps-roots-grow",
-    "href": "soil-fauna.html#when-grazing-helps-roots-grow",
-    "title": "Who lives beneath our feet?",
-    "section": "When grazing helps roots grow",
-    "text": "When grazing helps roots grow\nRoot grazing by soil fauna is not necessarily bad news for crops. If attacks stop the main root from growing, lateral roots emerge instead. This increases the contact surface between soil and roots, so nutrients are absorbed better. These finer, slower-growing lateral roots are also the ones fungi prefer to colonise.\n\n  \n    \n  \n  Soil fauna feeding on a root, and the root's response."
-  },
-  {
-    "objectID": "soil-fauna.html#from-images-to-data",
-    "href": "soil-fauna.html#from-images-to-data",
-    "title": "Who lives beneath our feet?",
+    "objectID": "soil_biodiversity_imaging.html#from-images-to-data",
+    "href": "soil_biodiversity_imaging.html#from-images-to-data",
+    "title": "Observing soil organisms in situ?",
     "section": "From images to data",
-    "text": "From images to data\nEach scanner produces thousands of images. To turn them into measurements, we detect and annotate the animals and the roots with deep-learning models.\n\n  \n    \n      \n    \n    Invertebrates detected and annotated automatically.\n  \n  \n    \n      \n    \n    Roots segmented with RootPainter.\n  \n\nWant the technical details? See the soil biodiversity imaging page."
+    "text": "From images to data\nHigh-frequency automated monitoring generates a volume of data that quickly makes manual expertise incompatible with the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while maintaining an inference quality comparable to that of a human expert. We work on the design of such pipelines.\n\n\n Roots\n\nRoot structures\nTo extract biological information on root structures, we use RootPainter, a deep-learning-based tool developed at the University of Copenhagen. It requires a training phase for the model.\nAssociated publication \n\nThe RootPainter annotation interface.\n\n\n\n Invertebrates\n\nSoil invertebrates\nFor invertebrates, we developed our own tool, based on two steps: animal detection, using heuristic methods that differentiate successive images, and classification, using a deep-learning model. A Shiny interface was developed to train the model.\nAssociated publication \n\nThe Shiny interface used to annotate invertebrates and train the model."
   },
   {
-    "objectID": "soil_fauna.html",
-    "href": "soil_fauna.html",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "",
-    "text": "Soil hosts almost a quarter of all the species described on Earth (Anthony et al., 2023).  This largely hidden life keeps ecosystems running and supports services we all depend on, from food production to carbon storage. To make the most of these services, we need to understand the biological processes behind them.\nYet we still know surprisingly little about how soil life works. Soil has been called one of the last biotic frontiers, along with the deep ocean and the forest canopy (André et al., 1994). The reason is simple: soil is opaque, and its inhabitants are small and hard to reach. Imaging gets around this problem.  The animations on this page come from images taken by flatbed scanners buried in the ground, which let us watch soil life where it happens, without digging it up.\n\n  \n    ≈ 59% of species on Earth spend all or part of their life cycle in the soil\n    Anthony et al., 2023\n  \n  \n    One of the last biotic frontiers, alongside the deep oceans and the forest canopy\n    André et al., 1994\n  \n  \n    All kingdoms of life are present in soils"
-  },
-  {
-    "objectID": "soil_fauna.html#a-hidden-reservoir-of-biodiversity",
-    "href": "soil_fauna.html#a-hidden-reservoir-of-biodiversity",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "",
-    "text": "Soil hosts almost a quarter of all the species described on Earth (Anthony et al., 2023).  This largely hidden life keeps ecosystems running and supports services we all depend on, from food production to carbon storage. To make the most of these services, we need to understand the biological processes behind them.\nYet we still know surprisingly little about how soil life works. Soil has been called one of the last biotic frontiers, along with the deep ocean and the forest canopy (André et al., 1994). The reason is simple: soil is opaque, and its inhabitants are small and hard to reach. Imaging gets around this problem.  The animations on this page come from images taken by flatbed scanners buried in the ground, which let us watch soil life where it happens, without digging it up.\n\n  \n    ≈ 59% of species on Earth spend all or part of their life cycle in the soil\n    Anthony et al., 2023\n  \n  \n    One of the last biotic frontiers, alongside the deep oceans and the forest canopy\n    André et al., 1994\n  \n  \n    All kingdoms of life are present in soils"
-  },
-  {
-    "objectID": "soil_fauna.html#a-window-into-the-soil",
-    "href": "soil_fauna.html#a-window-into-the-soil",
-    "title": "Who lives beneath our feet?",
-    "section": "A window into the soil",
-    "text": "A window into the soil\nTo watch soil life in place, we adapted flatbed office scanners so they can be buried in the ground. Each scanner takes colour images of an A4 slice of soil and of everything living in it, again and again, without disturbing the soil.\n\nA flatbed scanner buried vertically in the soil.\nThe control module that drives the scanner and stores the images."
-  },
-  {
-    "objectID": "soil_fauna.html#who-lives-in-the-soil",
-    "href": "soil_fauna.html#who-lives-in-the-soil",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "Who lives in the soil?",
-    "text": "Who lives in the soil?\nSoil organisms range from a few micrometres to several centimetres. Biologists usually sort them by body size.\n\n\n  \n    Microorganisms and microfauna\n    the smallest · under 0.1 mm\n    Bacteria, archaea, fungi and protists, together with microscopic animals such as nematodes and tardigrades.\n    \n      Mycorrhizaefungi\n    \n  \n\n  \n    Mesofauna\n    intermediate size · about 0.1 to 2 mm\n    Springtails, mites, symphylans, diplurans and potworms.\n    \n      Symphyla\n      Diplura\n      Collembolaspringtails\n      Acarimites\n    \n  \n\n  \n    Macrofauna\n    the largest · over 2 mm\n    Earthworms, millipedes, woodlice, ants and spiders. Plant roots are not animals, but they also share this space and attract many of these organisms.\n    \n      Julidamillipedes\n      Chilopodacentipedes\n      Lumbricidaeearthworms\n    \n  \n\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "soil_fauna.html#what-do-they-do-down-there",
-    "href": "soil_fauna.html#what-do-they-do-down-there",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "What do they do down there?",
-    "text": "What do they do down there?\nEach soil organism plays one or several roles in the ecosystem, which we call its function. Grouping organisms by function gives three main functional groups: decomposers, predators and ecosystem engineers. The boundaries are blurry, because many species play several roles at once."
-  },
-  {
-    "objectID": "soil_fauna.html#decomposers-the-recyclers",
-    "href": "soil_fauna.html#decomposers-the-recyclers",
-    "title": "Who lives beneath our feet?",
-    "section": "Decomposers: the recyclers",
-    "text": "Decomposers: the recyclers\n\n\nDecomposers feed on dead plants, dead animals and their droppings, and transform this organic matter step by step. The final step is mineralisation: matter is broken down into simple molecules, the nutrients that plants can finally use to grow.\n\n\n  \n    \n  \n  A leaf being broken down, seen through the scanner.\n\n\n\n  Isopodawoodlice\n  Polydesmidaflat-backed millipedes\n  Julidamillipedes\n  Rhabduradiplurans\n  Collembolaspringtails"
-  },
-  {
-    "objectID": "soil_fauna.html#predators-the-regulators",
-    "href": "soil_fauna.html#predators-the-regulators",
-    "title": "Who lives beneath our feet?",
-    "section": "Predators: the regulators",
-    "text": "Predators: the regulators\nPredators eat other living organisms. When they eat crop pests, they directly benefit agriculture and are called beneficial organisms. More broadly, by keeping prey populations in check they let many species live side by side, which supports biodiversity.\n\n\n  Geophilomorphasoil centipedes\n  Chilopodacentipedes\n  Pseudoscorpionidapseudoscorpions\n  Acarimites\n  Dipluradiplurans"
-  },
-  {
-    "objectID": "soil_fauna.html#engineers-the-builders",
-    "href": "soil_fauna.html#engineers-the-builders",
-    "title": "Who lives beneath our feet?",
-    "section": "Engineers: the builders",
-    "text": "Engineers: the builders\nEcosystem engineers are large organisms that shape the structure of the soil as they move. Searching for food or shelter, they open up new spaces and dig networks of galleries. A well-structured soil has its mineral and organic particles assembled into aggregates of different sizes, leaving empty spaces between them: this is porosity.\nThis physical rearrangement of the soil by living organisms is called bioturbation. Earthworms are famous for it, but ants play their part too. The porosity they create lets water and air circulate and helps roots push through.\n\n  \n    \n      \n    \n    An earthworm reworking the soil.\n  \n  \n    \n      \n    \n    Ants digging galleries.\n  \n\n\n\n  Lumbricidaeearthworms\n  Enchytraeidaepotworms\n  Formicidaeants"
-  },
-  {
-    "objectID": "soil_fauna.html#fungi-underground-highways",
-    "href": "soil_fauna.html#fungi-underground-highways",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "Fungi: underground highways",
-    "text": "Fungi: underground highways\n\n\nFungi are found everywhere in the soil. They colonise it in search of food by growing a network of thread-like filaments called hyphae. This network works as an extensive transport system, carrying nutrients over long distances.\n\n\n  \n    \n  \n  Fungal hyphae colonising the soil.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n\nFungi and roots: a deal that pays both ways\nSome of these fungi form a partnership with plant roots, called mycorrhiza. It is a symbiosis, meaning both sides benefit: the plant gives the fungus carbon-rich compounds, and in return the fungus supplies the plant with nutrients and water, effectively extending its root system. Fungal hyphae can explore a volume of soil about 10 times larger than roots alone. As a result, mycorrhizal plants tend to grow better, cope better with harsh conditions and be better protected against external threats.\n\n  \n    \n  \n  Ectomycorrhizae (ECM) on a root.© Emma Belaud · CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "soil_fauna.html#ants-and-their-aphid-herds",
-    "href": "soil_fauna.html#ants-and-their-aphid-herds",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "Ants and their aphid herds",
-    "text": "Ants and their aphid herds\nRoots can also be attacked by soil animals. Root-feeding aphids, for example, use roots as their food source. They have developed a mutualistic relationship with ants: the ants protect the aphids from their many predators and, in return, feed on the sugary honeydew the aphids produce. When these populations become too dense, this partnership can threaten crops.\n\n\n  \n    \n  \n  Ants tending aphids on a root.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n  \n    Aphids\n    FormicidaeSolenopsis ants\n  \n  Photos © Emma Belaud · CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "soil_fauna.html#when-grazing-helps-roots-grow",
-    "href": "soil_fauna.html#when-grazing-helps-roots-grow",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "When grazing helps roots grow",
-    "text": "When grazing helps roots grow\nRoot grazing by soil animals is not always bad news for crops. When herbivores halt the growth of the main root, the plant can respond by producing lateral roots. This increases the contact area between roots and soil, and therefore the plant’s ability to absorb nutrients. These finer, slower-growing roots are also the ones most readily colonised by mycorrhizal fungi, which brings us back to the partnership described above.\n\n  \n    \n  \n  Mycorrhization of a fine, branched root.© Emma Belaud · CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "soil_fauna.html#from-images-to-data",
-    "href": "soil_fauna.html#from-images-to-data",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "From images to data",
-    "text": "From images to data\nEach scanner produces thousands of images. To turn them into measurements, we detect and annotate the animals and the roots with deep-learning models.\n\n  \n    \n      \n    \n    Invertebrates detected and annotated automatically.© Emma Belaud · CC BY-NC-SA 4.0\n  \n  \n    \n      \n    \n    Roots segmented with RootPainter.© Emma Belaud · CC BY-NC-SA 4.0\n  \n\nWant the technical details? See the soil biodiversity imaging page."
-  },
-  {
-    "objectID": "soil_fauna.html#decomposers",
-    "href": "soil_fauna.html#decomposers",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "Decomposers",
-    "text": "Decomposers\n\n\nDecomposers feed on dead plants, dead animals and their droppings, and transform this organic matter step by step: they are the recyclers of the soil. Soil animals shred and mix the debris, and microorganisms then complete the job through mineralisation, which breaks matter down into simple molecules. These are the nutrients that plants can finally use to grow.\n\n\n  \n    \n  \n  A leaf being broken down, seen through the scanner.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n\n  Isopodawoodlice\n  Polydesmidaflat-backed millipedes\n  Julidamillipedes\n  Diplura\n  Collembolaspringtails\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "soil_fauna.html#predators",
-    "href": "soil_fauna.html#predators",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "Predators",
-    "text": "Predators\nPredators eat other living organisms, which makes them key players in biological regulation. By feeding on crop pests, they directly benefit agriculture and are called beneficial organisms. More broadly, by keeping prey populations in check, they can help many species live side by side (coexistence), which supports biodiversity. Not every member of these groups hunts, however: some mites, for example, feed on fungi or dead matter.\n\n  \n    \n  \n  A geophilomorph centipede roaming around a root.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n  Geophilomorphacentipedes\n  Chilopodacentipedes\n  Pseudoscorpionida\n  Acarimites\n  Diplura\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "soil_fauna.html#engineers",
-    "href": "soil_fauna.html#engineers",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "Engineers",
-    "text": "Engineers\nEcosystem engineers shape the structure of the soil. As they move about in search of food or shelter, they dig and push material around, creating new spaces that change the habitat of all the other organisms. The animation shows ants starting to dig a network of tunnels. Earthworms and ants are the best-known engineers, but in reality every soil organism, even the smallest, contributes to mixing the soil and refining its structure.\nA well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity). These spaces let roots penetrate and let water and oxygen circulate.\n\n  \n    \n  \n  Ants digging galleries.© Emma Belaud · CC BY-NC-SA 4.0\n\n\n  Lumbricidaeearthworms\n  Enchytraeidaepotworms\n  Formicidaeants\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "reuse.html",
-    "href": "reuse.html",
-    "title": "Use and share this work",
-    "section": "",
-    "text": "The original content of this site (texts, figures, photographs, animations and videos) is shared under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International licence (CC BY-NC-SA 4.0). It is meant to circulate freely in the scientific community and beyond, for non-commercial purposes."
-  },
-  {
-    "objectID": "reuse.html#how-to-credit",
-    "href": "reuse.html#how-to-credit",
-    "title": "Use and share this work",
-    "section": "How to credit",
-    "text": "How to credit\nCopy and adapt this line next to any figure, photograph or video you reuse:\n© Emma Belaud, emmabelaud.github.io, CC BY-NC-SA 4.0\nEach image and animation on this site also carries this credit, in its caption and on the file itself. Please keep it when you reuse them. If you adapt a figure or video, add what you changed, for example « cropped » or « translated »."
-  },
-  {
-    "objectID": "reuse.html#what-this-licence-does-not-cover",
-    "href": "reuse.html#what-this-licence-does-not-cover",
-    "title": "Use and share this work",
-    "section": "What this licence does not cover",
-    "text": "What this licence does not cover\n\nLogos of institutions and laboratories (CIRAD, INRAE, Eco&Sols and others).\nContent credited to other authors or institutions, which keeps its own terms.\nScientific articles, which are covered by the licence chosen by each journal (see the publications page)."
-  },
-  {
-    "objectID": "reuse.html#commercial-or-industrial-use",
-    "href": "reuse.html#commercial-or-industrial-use",
-    "title": "Use and share this work",
-    "section": "Commercial or industrial use",
-    "text": "Commercial or industrial use\nIf you are a company, or if you want to use this material in a paid product, service, training or publication, please ask for a written agreement before reusing it. If you are not sure whether your use is commercial, ask as well. Write to me through the contact page."
-  },
-  {
-    "objectID": "reuse.html#full-licence-text",
-    "href": "reuse.html#full-licence-text",
-    "title": "Use and share this work",
-    "section": "Full licence text",
-    "text": "Full licence text\nThe complete legal code is available on the Creative Commons website."
-  },
-  {
-    "objectID": "soil_fauna.html#zoom-on-bioturbation",
-    "href": "soil_fauna.html#zoom-on-bioturbation",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "Zoom on bioturbation",
-    "text": "Zoom on bioturbation\nThe physical rearrangement of soil by living organisms has a name: bioturbation. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.\n\n  \n    \n  \n  Bioturbation by an earthworm.© Emma Belaud · CC BY-NC-SA 4.0"
-  },
-  {
-    "objectID": "soil_fauna.html#how-do-we-see-all-this",
-    "href": "soil_fauna.html#how-do-we-see-all-this",
-    "title": "Who lives beneath our feet, and what do they do?",
-    "section": "How do we see all this?",
-    "text": "How do we see all this?\nEverything you have just seen comes from images of the soil taken in situ by flatbed scanners buried underground, which photograph the same patch of soil again and again over time. To find out how the system works, see Soil biodiversity imaging."
+    "objectID": "soil_biodiversity_imaging.html#related-publications",
+    "href": "soil_biodiversity_imaging.html#related-publications",
+    "title": "Observing soil organisms in situ?",
+    "section": "Related publications",
+    "text": "Related publications\n\nBelaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. doi\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. doi\nPruvost, E., et al. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE. doi\n\nSee the full list on the Publications page, and more material in Related resources."
   }
 ]
