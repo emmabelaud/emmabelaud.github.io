@@ -1,5 +1,5 @@
 ---
-title: "Observing soil organisms *in situ*?"
+title: "Observing soil organisms *in situ* ?"
 subtitle: "It is now possible using automated optical scanners buried in the soil"
 pagetitle: "Soil biodiversity imaging | Emma Belaud"
 format: html
@@ -45,7 +45,7 @@ The system relies on desktop flatbed scanners, adapted to field conditions and b
 
 ## What the images reveal
 
-Images are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, certain fungal structures and many invertebrate taxa, and to follow their dynamics at a fine temporal scale over long periods. Example photos and videos of what can be observed are available on the [soil organisms page](soil_organisms.qmd).
+Images are routinely acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, certain fungal structures and many invertebrate taxa, and to follow their dynamics at a fine temporal scale over long periods. Example photos and videos of what can be observed are available on the [soil organisms page](soil_organisms.qmd).
 
 ## From images to data
 

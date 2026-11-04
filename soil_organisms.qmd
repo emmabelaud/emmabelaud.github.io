@@ -1,7 +1,7 @@
 ---
 title: "Who lives beneath our feet, and what do they do?"
-subtitle: "Imaging makes them visible."
-pagetitle: "Soil fauna | Emma Belaud"
+subtitle: "Imaging makes them visible"
+pagetitle: "Soil organisms | Emma Belaud"
 ---
 
 <!--
@@ -21,37 +21,14 @@ pagetitle: "Soil fauna | Emma Belaud"
     <p class="sf-credit"> sous les planches de photos (voir reuse.qmd).
 -->
 
-<!-- =========================================================================
-     INTRODUCTION — pourquoi s'intéresser à la vie du sol
-     ========================================================================== -->
-
 ## A hidden reservoir of biodiversity
 
-Soil hosts almost a **quarter of all the species described on Earth** (Anthony et al., 2023). <!-- À VÉRIFIER : la source de ce chiffre (voir message) -->
+Soil hosts almost a **quarter of all the species described on Earth** (Anthony et al., 2023). 
 This largely hidden life **keeps ecosystems running** and supports services we all depend on, from food production to carbon storage. To make the most of these services, we need to understand the biological processes behind them.
 
-Yet we still know surprisingly little about how soil life works. Soil has been called one of the **last biotic frontiers**, along with the deep ocean and the forest canopy (André et al., 1994). The reason is simple: soil is opaque, and its inhabitants are small and hard to reach. Imaging gets around this problem. <!-- À VÉRIFIER : toutes les animations viennent-elles bien des scanners enterrés ? -->
-The animations on this page come from images taken by flatbed scanners buried in the ground, which let us watch soil life where it happens, without digging it up.
+Yet we still know surprisingly little about how soil life works. Soil has been considered as one of the **last biotic frontiers**, along with the deep ocean and the forest canopy (André et al., 1994). One reason is that soil is opaque, and its inhabitants are small and hard to reach. However, there is also a general lack of awareness and consideration regarding this hidden life.
 
-```{=html}
-<div class="sf-facts">
-  <div class="sf-fact">
-    <strong>≈ 59% of species on Earth spend all or part of their life cycle in the soil</strong>
-    <span>Anthony et al., 2023</span>
-  </div>
-  <div class="sf-fact">
-    <strong>One of the last biotic frontiers, alongside the deep oceans and the forest canopy</strong>
-    <span>André et al., 1994</span>
-  </div>
-  <div class="sf-fact">
-    <strong>All kingdoms of life are present in soils</strong>
-  </div>
-</div>
-```
-
-<!-- =========================================================================
-     QUI VIT DANS LE SOL ? — les trois classes de taille
-     ========================================================================== -->
+Optical imagery sensors provide a great perspective for observing soil life in situ over time. On this page, you will find animations captured by automated optical scanners buried in the soil, allowing us to observe the cryptic life within the soil without disturbing it (learn more on the [Soil biodiversity imaging](soil_biodiversity_imaging.qmd) page).
 
 ## Who lives in the soil?
 
@@ -139,7 +116,7 @@ Decomposers feed on dead plants, dead animals and their droppings, and transform
 :::: {.sf-band .sf-predators}
 ## Predators
 
-Predators eat other living organisms, which makes them key players in **biological regulation**. By feeding on crop pests, they directly benefit agriculture and are called beneficial organisms. More broadly, by keeping prey populations in check, they can help many species live side by side (coexistence), which supports biodiversity. Not every member of these groups hunts, however: some mites, for example, feed on fungi or dead matter.
+Predators eat other living organisms, which makes them key players in **biological regulation**. By feeding on crop pests, they directly benefit agriculture and are called beneficial organisms. More broadly, by keeping prey populations in check, they can help many species live side by side (coexistence), which supports biodiversity. 
 
 ```{=html}
 <div>
@@ -166,7 +143,7 @@ Predators eat other living organisms, which makes them key players in **biologic
 :::: {.sf-band .sf-engineers}
 ## Engineers
 
-Ecosystem engineers **shape the structure of the soil**. As they move about in search of food or shelter, they dig and push material around, creating new spaces that change the habitat of all the other organisms. The animation shows ants starting to dig a network of tunnels. Earthworms and ants are the best-known engineers, but in reality every soil organism, even the smallest, contributes to mixing the soil and refining its structure.
+Ecosystem engineers **shape the structure of the soil**. As they move about in search of food or shelter, they dig and push material around, creating new spaces that change the habitat of all the other organisms. Earthworms and ants are the best-known engineers, but in reality every soil organism, even the smallest, contributes to mixing the soil and refining its structure.
 
 A well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity). These spaces let roots penetrate and let water and oxygen circulate.
 
@@ -195,7 +172,7 @@ A well-structured soil is made of mineral and organic particles assembled into a
 :::: {.sf-band .sf-bioturb}
 ## Zoom on bioturbation
 
-The physical rearrangement of soil by living organisms has a name: **bioturbation**. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.
+The physical rearrangement of soil by living organisms has a specific name: **bioturbation**. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/earthworm_bioturbation.jpg" aria-label="Bioturbation by an earthworm">
@@ -214,7 +191,7 @@ The physical rearrangement of soil by living organisms has a name: **bioturbatio
 
 ::: {.sf-split}
 ::: sf-text
-Fungi are found everywhere in the soil. They colonise it in search of food by growing a network of thread-like filaments called hyphae. This network works as an extensive transport system, carrying nutrients over long distances.
+Fungi can be found everywhere in the soil. They colonise it by growing a network of thread-like filaments called hyphae. This network works as an extensive transport system, carrying nutrients over long distances.
 :::
 ```{=html}
 <div>
@@ -228,7 +205,7 @@ Fungi are found everywhere in the soil. They colonise it in search of food by gr
 
 ### Fungi and roots: a deal that pays both ways
 
-Some of these fungi form a partnership with plant roots, called **mycorrhiza**. It is a symbiosis, meaning both sides benefit: the plant gives the fungus carbon-rich compounds, and in return the fungus supplies the plant with nutrients and water, effectively extending its root system.
+Some of these fungi form a partnership with plant roots, called **mycorrhiza**. It is a **symbiosis**, meaning both sides benefit: the plant gives the fungus carbon-rich compounds, and in return the fungus supplies the plant with nutrients and water, effectively extending its root system.
 Fungal hyphae can explore a volume of soil about 10 times larger than roots alone. As a result, mycorrhizal plants tend to grow better, cope better with harsh conditions and be better protected against external threats.
 
 ```{=html}
@@ -270,15 +247,6 @@ Root grazing by soil animals is not always bad news for crops. When herbivores h
 </div>
 ```
 ::::
-
-<!-- =========================================================================
-     CONCLUSION — renvoie vers la page sur le dispositif d'imagerie
-     ========================================================================== -->
-
-## How do we see all this?
-
-Everything you have just seen comes from images of the soil taken in situ by flatbed scanners buried underground, which photograph the same patch of soil again and again over time. To find out how the system works, see [Soil biodiversity imaging](soil_biodiversity_imaging.qmd).
-
 
 <!-- =========================================================================
      SCRIPT : lance une vidéo quand elle est visible, la met en pause sinon.
