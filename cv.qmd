@@ -88,18 +88,6 @@ Oral Presentation: "A new window on the activity of soil organisms".
 :::
 
 ::: cv-entry
-**IMPACTS Working Group** [2025 · 1 week]{.cv-date}\
-*CESAB, Grenoble, France*\
-Oral Presentation: "From pixels to patterns: High-throughput soil imaging unveils edaphic fauna dynamics".
-:::
-
-::: cv-entry
-**IMPACTS Working Group** [2025 · 1 week]{.cv-date}\
-*CESAB, Montpellier, France*\
-Oral Presentation: "Seeing the temporal and spatial organization of edaphic activity".
-:::
-
-::: cv-entry
 **Café des Techniques** [2024 · 3 hours]{.cv-date}\
 *CIRAD, online*\
 Technical Webinar Presentation: "Engineering automated soil imaging workflows: From sensor deployment to image processing pipeline".
