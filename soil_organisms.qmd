@@ -246,7 +246,6 @@ Fungal hyphae can explore a volume of soil about 10 times larger than roots alon
 
 Roots can also be attacked by soil animals. Root-feeding aphids, for example, use roots as their food source. They have developed a mutualistic relationship with ants: the ants protect the aphids from their many predators and, in return, feed on the sugary honeydew the aphids produce. When these populations become too dense, this partnership can threaten crops.
 
-::: {.sf-split}
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/mutualism_aphids_ants.jpg" aria-label="Ants tending aphids on a root">
@@ -254,15 +253,7 @@ Roots can also be attacked by soil animals. Root-feeding aphids, for example, us
   </video>
   <p class="sf-caption">Ants tending aphids on a root.</p>
 </div>
-<div>
-  <div class="sf-taxa">
-    <figure class="sf-taxon"><img src="images/photos_animals/aphids.webp" alt="Aphids" loading="lazy"><figcaption>Aphids</figcaption></figure>
-    <figure class="sf-taxon"><img src="images/photos_animals/formicidae_solenopsis.webp" alt="An ant of the genus Solenopsis" loading="lazy"><figcaption>Formicidae<em>Solenopsis ants</em></figcaption></figure>
-  </div>
-  <p class="sf-credit">Photos © Emma Belaud · CC BY-NC-SA 4.0</p>
-</div>
 ```
-:::
 ::::
 
 :::: {.sf-band .sf-brown}

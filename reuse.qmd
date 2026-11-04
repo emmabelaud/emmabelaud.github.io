@@ -33,14 +33,15 @@ Please include this line alongside any reused content:
 © Emma Belaud, emmabelaud.github.io, CC BY-NC-SA 4.0
 ``` 
 
-## Exceptions
+## Exceptions and third-party credits {#credits}
 
 This licence does **not** cover:
 
 - Institutional & laboratory logos (CIRAD, INRAE, Eco&Sols, etc.).
-- Third-party content (retains its original terms).
 - Scientific articles (governed by publisher licences; see [publications](publications.qmd)).
-
+- Third-party content, which retains its original terms. Credits:
+    - Root icon: [Racine icônes créées par dDara - Flaticon](https://www.flaticon.com/fr/icones-gratuites/racine){title="racine icônes"}
+    
 ## Commercial Use
 
 If you are a company, or if you want to use this material in a paid product, service, training or publication, please ask for a written agreement before reusing it. If you are not sure whether your use is commercial, ask as well. Write to me through the [contact page](contact.qmd). 

@@ -15,7 +15,7 @@ website:
   description: "Emma Belaud, soil ecologist"   # texte pour Google et les aperçus de liens
   open-graph: true                   # aperçu enrichi quand on partage un lien
   twitter-card: true
-  favicon: images/favicon.png        # petite icône de l'onglet du navigateur
+  favicon: images/vectorised_animals/fauna_diplura.png        # petite icône de l'onglet du navigateur
 
   navbar:
     background: "#ffffff"
@@ -29,8 +29,8 @@ website:
         text: About me
       - href: soil_biodiversity_imaging.qmd
         text: Soil biodiversity imaging
-      - href: soil_fauna.qmd
-        text: Soil fauna
+      - href: soil_organisms.qmd
+        text: Soil organisms
       - href: publications.qmd
         text: Publications
       - href: resources.qmd

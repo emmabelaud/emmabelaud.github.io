@@ -5,24 +5,9 @@ pagetitle: "Soil biodiversity imaging | Emma Belaud"
 format: html
 ---
 
-<!--
-  PAGE SOIL BIODIVERSITY IMAGING : mode d'emploi
-  Composants utilisés (styles dans styles.css, sections 6 et 8) :
-  - :::: key-facts + ::: fact : tuiles de chiffres clés. Chaque tuile =
-    [valeur]{.fact-value} puis [légende]{.fact-label}. Couleurs dans l'ordre :
-    vert, teal, ocre, terre cuite.
-  - :::: video-grid + ::: card-block : vidéos en grille avec légende.
-  - :::: card-grid + ::: {.card-block .pipeline-card} : cartes côte à côte
-    (une sur deux est teal). [{{{< fa nom >}}}]{.card-icon} = pastille icône.
-  - {{{< video ... >}}} intègre une vidéo : une adresse YouTube « embed » ou
-    un fichier local (images/xxx.mp4).
-  - ::: {layout-ncol=2} met deux images côte à côte.
-  - Chaque ## titre apparaît automatiquement dans le menu « On this page ».
--->
-
 ## Context
 
-Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial biodiversity. Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed an innovative method to monitor soil activity *in situ* by imaging.
+Soil is a major reservoir of biodiversity, hosting more than a quarter of all terrestrial species (learn more on the [soil organisms page](soil_organisms.qmd)). Yet its opacity and the cryptic nature of the organisms living in it make it an especially difficult environment to study. To address this challenge, we developed, at the Eco&Sols research unit, an **innovative method** to monitor soil biological activity *in situ* by imaging.
 
 ## The device
 
@@ -60,48 +45,20 @@ The system relies on desktop flatbed scanners, adapted to field conditions and b
 
 ## What the images reveal
 
-Images are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, some fungal structures and many invertebrate taxa. It also allows their dynamics to be followed at a fine temporal scale and over long periods.
-
-:::: video-grid
-
-::: card-block
-[Roots and fungi]{.block-label}
-
-{{< video https://www.youtube.com/embed/pZuIaU2kMHE >}}
-
-Colonization of oak roots by ectomycorrhizal (ECM) fungi observed by *in situ* imaging.
-:::
-
-::: card-block
-[Invertebrates]{.block-label}
-
-{{< video https://www.youtube.com/embed/B3qnjS-vCa8 >}}
-
-Mutualism between aphids and ants on roots observed by *in situ* imaging.
-:::
-
-::: card-block
-[Roots and fauna]{.block-label}
-
-{{< video https://www.youtube.com/embed/Y-ypGheXB2E >}}
-
-Grazing and reiteration of an oak root observed by *in situ* imaging.
-:::
-
-::::
+Images are acquired every six hours at 1200 dpi over an A4 surface. This makes it possible to monitor the activity of organisms larger than one millimetre, including root structures, certain fungal structures and many invertebrate taxa, and to follow their dynamics at a fine temporal scale over long periods. Example photos and videos of what can be observed are available on the [soil organisms page](soil_organisms.qmd).
 
 ## From images to data
 
-High-frequency automated monitoring generates a volume of data that quickly makes manual expertise incompatible with the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while maintaining an inference quality comparable to that of a human expert. We work on the design of such pipelines.
+High-frequency automated monitoring generates a volume of data that quickly makes manual expert analysis unfeasible given the available human and time resources. Generalizing imaging approaches, and more broadly moving towards soil ecology at large scale, therefore requires automated analysis pipelines able to process large image streams while achieving an accuracy comparable to that of a human expert. We work on the design of such pipelines.
 
 :::: card-grid
 
 ::: {.card-block .pipeline-card}
-[{{< fa seedling >}}]{.card-icon} [Roots]{.block-label}
+[![Roots](images/racine.png)]{.card-icon .card-icon-img}
 
 ### Root structures
 
-To extract biological information on root structures, we use **RootPainter**, a deep-learning-based tool developed at the University of Copenhagen. It requires a training phase for the model.
+To extract biological information on root structures, we use **RootPainter**, a deep-learning-based tool developed at the University of Copenhagen. The model requires a training phase; once trained, the tool proved highly effective at segmenting root structures in our images.
 
 [Associated publication {{< fa arrow-up-right-from-square >}}](https://doi.org/10.1111/nph.18387){.accent-link}
 
@@ -115,11 +72,11 @@ The RootPainter annotation interface.
 :::
 
 ::: {.card-block .pipeline-card}
-[{{< fa bug >}}]{.card-icon} [Invertebrates]{.block-label}
+[![Pseudoscorpion](images/vectorised_animals/fauna_pseudoscor.png)]{.card-icon .card-icon-img}
 
 ### Soil invertebrates
 
-For invertebrates, we developed our own tool, based on two steps: animal **detection**, using heuristic methods that differentiate successive images, and **classification**, using a deep-learning model. A Shiny interface was developed to train the model.
+For invertebrates, we are currently developing our own tool, which works in two steps: animal **detection**, using heuristic methods that compare successive images, and **classification**, using a deep-learning model.
 
 [Associated publication {{< fa arrow-up-right-from-square >}}](https://doi.org/10.64898/2026.06.16.732537){.accent-link}
 
@@ -134,10 +91,20 @@ The Shiny interface used to annotate invertebrates and train the model.
 
 ::::
 
+## People involved
+
+- Didier Arnal, Technician (former), CIRAD
+- Philippe Gallet, Research Engineer, CIRAD
+- Mickael Hedde, Research Director, INRAE
+- Hadrien Hendrickx, Research Scientist, INRIA
+- Christophe Jourdan, Research Director, CIRAD
+- Guerric Le Maire, Research Director, CIRAD
+- François Postic, Postdoctoral Researcher, CIRAD
+
 ## Related publications
 
 - Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. *Plant and Soil*. [doi](https://doi.org/10.1007/s11104-026-08694-2)
 - Belaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. *Biology and Fertility of Soils*, 60, 1055–1071. [doi](https://doi.org/10.1007/s00374-024-01851-8)
-- Pruvost, E., et al. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. *IEEE*. [doi](http://dx.doi.org/10.1109/EUVIP53989.2022.9922675)
+- Pruvost, E., et al. (2022). Invertebrates detection with YOLOv5: towards study of soil organisms using deep learning. *IEEE*. [doi](http://dx.doi.org/10.1109/EUVIP53989.2022.9922675)
 
 See the full list on the [Publications](publications.qmd) page, and more material in [Related resources](resources.qmd).
