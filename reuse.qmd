@@ -1,6 +1,5 @@
 ---
-title: "Use and share this work"
-subtitle: "Free for research, teaching and outreach. Commercial use needs my agreement."
+title: "How to use and share this work"
 pagetitle: "Reuse and licensing | Emma Belaud"
 ---
 
@@ -14,48 +13,38 @@ pagetitle: "Reuse and licensing | Emma Belaud"
     mention écrite sur les images et vidéos (watermark_media.R).
 -->
 
-The original content of this site (texts, figures, photographs, animations and videos) is shared under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** licence ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){rel="license"}). It is meant to circulate freely in the scientific community and beyond, for non-commercial purposes.
 
-:::: card-grid
-::: {.card-block}
-[<i class="bi bi-share"></i>]{.card-icon} [You are free to]{.block-label}
+The original content on this site is shared under the **Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International** licence ([CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/){rel="license"}).
 
-### Share and adapt
+You are free to copy, redistribute, remix, or adapt this material in any format for non-commercial purposes (research, teaching, outreach, etc.), under these terms :
 
-Copy and redistribute this material in any format, and remix, transform and build on it, for research, teaching, outreach or any other non-commercial purpose.
-:::
+- **Attribution:** Credit the author, link to the licence, and indicate if changes were made.
+- **NonCommercial:** No use for primary commercial advantage or monetary gain.
+- **ShareAlike:** Distributed adapted works under the same CC BY-NC-SA 4.0 licence.
 
-::: {.card-block}
-[<i class="bi bi-person-check"></i>]{.card-icon} [Under these terms]{.block-label}
+```
+``` 
 
-### Credit, non-commercial, share-alike
+## How to Credit
 
-- **Attribution:** credit the author, link to the licence and say if you made changes.
-- **NonCommercial:** the use must not be primarily intended for commercial advantage or monetary compensation.
-- **ShareAlike:** if you remix or build on the material, share your version under the same licence.
-:::
-::::
-
-## How to credit
-
-Copy and adapt this line next to any figure, photograph or video you reuse:
+Please include this line alongside any reused content:
 
 ```
 © Emma Belaud, emmabelaud.github.io, CC BY-NC-SA 4.0
-```
+``` 
 
-Each image and animation on this site also carries this credit, in its caption and on the file itself. Please keep it when you reuse them. If you adapt a figure or video, add what you changed, for example « cropped » or « translated ».
+## Exceptions
 
-## What this licence does not cover
+This licence does **not** cover:
 
-- Logos of institutions and laboratories (CIRAD, INRAE, Eco&Sols and others).
-- Content credited to other authors or institutions, which keeps its own terms.
-- Scientific articles, which are covered by the licence chosen by each journal (see the [publications](publications.qmd) page).
+- Institutional & laboratory logos (CIRAD, INRAE, Eco&Sols, etc.).
+- Third-party content (retains its original terms).
+- Scientific articles (governed by publisher licences; see [publications](publications.qmd)).
 
-## Commercial or industrial use
+## Commercial Use
 
-If you are a company, or if you want to use this material in a paid product, service, training or publication, please ask for a written agreement before reusing it. If you are not sure whether your use is commercial, ask as well. Write to me through the [contact page](contact.qmd).
+If you are a company, or if you want to use this material in a paid product, service, training or publication, please ask for a written agreement before reusing it. If you are not sure whether your use is commercial, ask as well. Write to me through the [contact page](contact.qmd). 
 
 ## Full licence text
 
-The complete legal code is available on the [Creative Commons website](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode).
+The complete legal code is available on the [Creative Commons website](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode). 
