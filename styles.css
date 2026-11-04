@@ -22,11 +22,12 @@
      8. Soil biodiversity imaging : tuiles de chiffres, vidéos
      9. Accueil : bloc d'en-tête et tuiles de navigation
     10. Contact
-    11. Pied de page
+    11. Pied de page et licence (icônes Creative Commons)
     12. CV : frise chronologique
     13. Menu flottant « On this page »
     14. Mobile et accessibilité
     15. Icônes de faune
+    16. Soil fauna : page de vulgarisation (bandeaux colorés, vidéos, photos)
 
    RECETTES RAPIDES
    - Changer la couleur principale du site : section 1, variable --accent
@@ -37,6 +38,8 @@
    - Changer la police : section 1, variable --sans, et la ligne @import
      juste en dessous (voir fonts.google.com pour d'autres polices).
    - Faire un nouveau bloc coloré dans une page : voir la section 6.
+   - Changer la couleur d'un bandeau de la page Soil fauna, ou en ajouter un :
+     section 16 (code couleur expliqué en tête de section).
    - Annuler une règle pour tester : la mettre entre commentaires.
 
    COMMENT FONCTIONNENT LES COULEURS DES BLOCS
@@ -88,7 +91,10 @@
   --c-teal:  #0f766e;  --t-teal:  #e2f1ef;
   --c-ochre: #9a6b00;  --t-ochre: #f8f0dc;
   --c-clay:  #b4532a;  --t-clay:  #f9ebe4;
-
+  --c-earth: #4a3b32;  --t-earth: #f1ece8;   
+  --c-blue:  #2F578A;  --t-blue: #90b0d9;
+  --c-red:  #be2b14;  --t-red: #fbdbd6;
+  --c-brown:  #8f7740;  --t-brown: #f0ebde;
 
   /* [MODIFIER] Police du site (voir aussi l'@import tout en haut, qui
      charge Inter depuis Google Fonts). Les polices suivantes sont des
@@ -496,9 +502,9 @@ h2 {
    - .explore/.tile: tuiles colorées qui mènent aux autres pages
 
    AJOUTER UNE TUILE : copier une ligne <a class="tile" ...> dans index.qmd.
-   Les tuiles prennent les couleurs vert, teal, ocre, terre cuite dans
-   l'ordre ; une cinquième serait verte (ajouter une règle .tile:nth-child(5)
-   pour lui donner une autre couleur).
+   Les tuiles prennent les couleurs vert, teal, ocre, terre cuite, brun terre
+   dans l'ordre (5 tuiles) ; une sixième serait verte (ajouter une règle
+   .tile:nth-child(6) pour lui donner une autre couleur).
    ========================================================================== */
 /* Bloc d'en-tête : grille à 2 colonnes (texte à gauche, photo à droite). */
 .hero {
@@ -577,6 +583,7 @@ h2 {
 .tile:nth-child(2) { --k: var(--c-teal); }
 .tile:nth-child(3) { --k: var(--c-ochre); }
 .tile:nth-child(4) { --k: var(--c-clay); }
+.tile:nth-child(5) { --k: var(--c-earth); }
 .tile:hover { color: #ffffff; filter: brightness(1.1); }
 .tile b { font-size: 1.2rem; font-weight: 700; line-height: 1.25; }
 .tile span { margin-top: 0.6rem; font-size: 0.92rem; line-height: 1.4; color: rgba(255, 255, 255, 0.9); }
@@ -621,14 +628,28 @@ h2 {
 
 
 /* ==========================================================================
-   11. PIED DE PAGE
-   Le texte se règle dans _quarto.yml (website > page-footer).
+   11. PIED DE PAGE ET LICENCE
+   Le texte se règle dans _quarto.yml (website > page-footer) : droit d'auteur,
+   lien vers la licence CC BY-NC-SA 4.0 et quatre icônes officielles.
+   Syntaxe d'une icône dans ce texte :  ![](adresse-de-l-image.svg){.cc-icon}
    ========================================================================== */
 .nav-footer {
   border-top: 1px solid var(--line);
   font-size: 0.85rem;
   color: var(--muted);
   padding: 1.2rem 0;
+}
+/* Le texte du pied de page (long, avec la licence) peut occuper toute la
+   largeur au lieu des 68 caractères imposés aux paragraphes (section 2). */
+.nav-footer p { max-width: none; }
+
+/* Icônes Creative Commons : hauteur de la ligne de texte, alignées dessus. */
+.nav-footer .cc-icon,
+.cc-icon {
+  height: 1.15em !important;
+  width: auto !important;
+  margin-left: 0.2rem;
+  vertical-align: text-bottom;
 }
 
 
@@ -905,4 +926,219 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
 
 @media (max-width: 700px) {
   .fauna-aside { display: none; }
+}
+
+
+/* ==========================================================================
+   16. SOIL FAUNA : page de vulgarisation (soil_fauna.qmd)
+   Cette page alterne des passages « normaux » (titres h2, texte, chiffres)
+   et de grands BANDEAUX colorés pleine largeur qui contiennent texte,
+   vidéos d'animation et planches de photos d'animaux.
+
+   CODE COULEUR (chaque couleur a un sens ; la palette vient de la section 1)
+     ocre        --c-ochre  : DÉCOMPOSEURS  (matière organique, humus)
+     terre cuite --c-clay   : PRÉDATEURS    (proies, régulation)
+     teal        --c-teal   : INGÉNIEURS    (galeries, structure du sol)
+     vert        --c-green  : VIVANT VÉGÉTAL (champignons, mycorhizes, racines)
+     brun terre  --c-earth  : INTERACTIONS  (fourmis et pucerons)
+   Les passages « normaux » restent neutres (vert d'accent) pour réserver
+   les couleurs ci-dessus à ces rôles. Pour ajouter un bandeau d'une autre
+   couleur, voir « Ajouter un bandeau » plus bas.
+
+   SYNTAXE D'UN BANDEAU, à écrire dans soil_fauna.qmd :
+
+       :::: {.sf-band .sf-decomposers}
+       ## Titre du bandeau
+
+       Texte...
+
+       ::: {.sf-split}                    <- texte à gauche, média à droite
+       ::: sf-text
+       Texte à côté de la vidéo.
+       :::
+       ```{=html}
+       <div>
+         <video class="sf-video" muted loop playsinline preload="metadata">
+           <source src="images/animation/web/nom.mp4" type="video/mp4">
+         </video>
+         <p class="sf-caption">Légende.</p>
+       </div>
+       ```
+       :::
+       ::::
+
+   Classes de couleur du bandeau : sf-decomposers, sf-predators,
+   sf-engineers, sf-green, sf-earth.
+
+   BLOCS DISPONIBLES (tous à l'intérieur ou à l'extérieur d'un bandeau) :
+   - .sf-split             texte + média côte à côte (empilés sur mobile)
+   - .sf-split.sf-flip     idem, média à gauche
+   - .sf-duo               deux médias de même largeur côte à côte
+   - video.sf-video        vidéo qui se lance quand elle est visible (le
+                           script est en bas de soil_fauna.qmd)
+   - .sf-caption           légende sous une vidéo ou une image
+   - .sf-taxa > figure.sf-taxon   planche de photos d'animaux ; copier une
+                           ligne <figure class="sf-taxon">...</figure> pour
+                           ajouter un animal (photo dans images/photos_animals/web/)
+   - .sf-sizes > .sf-size  trois colonnes « classes de taille »
+   - .sf-facts > .sf-fact  trois tuiles de chiffres clés (texte d'intro)
+   - .sf-credit            mention « © Emma Belaud · CC BY-NC-SA 4.0 » : dans
+                           une légende (<span class="sf-credit">) ou sous une
+                           planche de photos (<p class="sf-credit">)
+
+   AJOUTER UN BANDEAU D'UNE NOUVELLE COULEUR : écrire une ligne comme
+   « .sf-monnom { --k: var(--c-xxx); } » dans la sous-section « Couleurs des
+   bandeaux » ci-dessous, puis utiliser la classe .sf-monnom dans le .qmd.
+
+   COMMENT ÇA MARCHE : le bandeau reste dans la colonne de texte du site
+   (son texte est donc aligné sur le reste des pages) ; la couleur déborde
+   de chaque côté jusqu'au bord de l'écran grâce à une ombre portée de très
+   grande taille (box-shadow) découpée en hauteur par clip-path.
+   ========================================================================== */
+
+/* ---- Bandeau : fond --k, texte blanc ----------------------------------- */
+.sf-band {
+  --k: var(--c-green);                 /* couleur par défaut */
+  margin: 2.5rem 0 0;                  /* espace au-dessus (annulé entre deux bandeaux, voir plus bas) */
+  padding: 3.2rem 0;                   /* espace haut/bas ; pas de marge latérale : le texte suit la colonne du site */
+  background: var(--k);
+  color: #ffffff;
+  box-shadow: 0 0 0 100vmax var(--k);  /* étend la couleur à toute la largeur de l'écran... */
+  clip-path: inset(0 -100vmax);        /* ...mais pas en hauteur */
+}
+.sf-band + .sf-band { margin-top: 0; } /* deux bandeaux consécutifs se touchent */
+
+/* ---- Couleurs des bandeaux : une ligne par rôle ------------------------- */
+.sf-decomposers { --k: var(--c-ochre); }
+.sf-predators   { --k: var(--c-clay);  }
+.sf-engineers   { --k: var(--c-blue);  }
+.sf-brown       { --k: var(--c-brown); }
+.sf-bioturb   { --k: var(--t-blue);  }
+.sf-green       { --k: var(--c-green); }
+.sf-earth       { --k: var(--c-earth); }
+.sf-red       { --k: var(--c-red); }
+
+
+/* ---- Texte à l'intérieur d'un bandeau ----------------------------------- */
+/* Les titres et liens du thème sont foncés : on impose le blanc. Le titre h2
+   perd son filet et ses marges habituels (section 5), comme dans les blocs
+   de publications (section 7). */
+.sf-band h2, .sf-band h3, .sf-band p, .sf-band li, .sf-band a { color: #ffffff; }
+.sf-band h2 { margin: 0 0 1rem; padding: 0; border: 0; }
+.sf-band h3 { margin-top: 2.4rem; }
+.sf-band p  { line-height: 1.65; }
+
+/* ---- Texte + média côte à côte ------------------------------------------ */
+.sf-split {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;    /* texte un peu plus étroit que le média */
+  gap: 2.2rem;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+.sf-split.sf-flip { grid-template-columns: 1.2fr 1fr; }
+.sf-split.sf-flip .sf-text { order: 2; }
+.sf-text p { margin-top: 0; }
+
+/* ---- Deux médias de même largeur ---------------------------------------- */
+.sf-duo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  margin: 1.5rem 0;
+}
+
+/* ---- Vidéos et images ---------------------------------------------------- */
+/* Hauteur automatique : les vidéos ont des formats différents (carré,
+   panoramique...), on ne les recadre pas. */
+.sf-video, .sf-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  background: var(--ink);              /* fond sombre le temps du chargement */
+}
+.sf-figure { margin: 0; }
+
+.sf-caption {
+  margin: 0.5rem 0 0;
+  font-size: 0.88rem;
+  font-style: italic;
+  color: var(--muted);                 /* gris sur fond clair... */
+}
+.sf-band .sf-caption { color: rgba(255, 255, 255, 0.88); }  /* ...blanc sur un bandeau */
+
+/* ---- Planche de photos d'animaux ----------------------------------------- */
+/* auto-fill : autant de colonnes de 130 px minimum que la largeur le permet.
+   Vignettes carrées recadrées au centre (object-fit: cover). */
+.sf-taxa {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0 0;
+}
+.sf-taxon { margin: 0; }
+.sf-taxon img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+}
+/* Nom scientifique en gras léger, nom commun en italique dessous. */
+.sf-taxon figcaption {
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: inherit;
+}
+.sf-taxon figcaption em { display: block; font-weight: 400; opacity: 0.85; }
+
+/* ---- « Who lives in the soil? » : trois classes de taille --------------- */
+/* Liseré en vert d'accent pour les trois : la taille n'est pas un rôle,
+   donc pas de couleur de rôle (voir le code couleur en tête de section). */
+.sf-sizes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+}
+.sf-size { padding-top: 0.9rem; border-top: 5px solid var(--accent); }
+.sf-size h3 { margin: 0 0 0.2rem; font-size: 1.2rem; }
+.sf-size .sf-range { margin: 0 0 0.6rem; font-size: 0.88rem; color: var(--muted); }
+.sf-size p { line-height: 1.6; }
+.sf-size .sf-taxa { margin-top: 1rem; }
+.sf-size .sf-taxon figcaption { color: var(--soft); }
+
+/* ---- Chiffres clés du texte d'intro -------------------------------------- */
+/* Même esprit que les cartes (section 6) : fond teinté, liseré épais. */
+.sf-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.sf-fact {
+  padding: 1.2rem 1.4rem;
+  background: var(--t-green);
+  border-top: 5px solid var(--accent);
+  border-radius: 6px;
+}
+.sf-fact strong { display: block; font-size: 1rem; font-weight: 800; line-height: 1.15; color: var(--accent); }
+.sf-fact span   { display: block; margin-top: 0.3rem; font-size: 0.92rem; line-height: 1.4; color: var(--soft); }
+
+/* ---- Mention de licence (crédit) sous les médias ------------------------- */
+/* Dans une légende : sur sa propre ligne, petite, non italique. */
+.sf-caption .sf-credit { display: block; font-style: normal; font-size: 0.8rem; opacity: 0.85; }
+/* Sous une planche de photos : ligne seule. */
+p.sf-credit { margin: 0.6rem 0 0; font-size: 0.8rem; color: var(--muted); }
+.sf-band p.sf-credit { color: rgba(255, 255, 255, 0.85); }
+
+/* ---- Mobile : tout s'empile (même seuil que la section 14) --------------- */
+@media (max-width: 700px) {
+  .sf-band { padding: 2.4rem 0; }
+  .sf-split, .sf-split.sf-flip, .sf-duo, .sf-sizes { grid-template-columns: 1fr; }
+  .sf-split.sf-flip .sf-text { order: 0; }    /* le texte passe toujours avant le média */
 }
