@@ -386,6 +386,47 @@ background: #2a5d45;
 </div>
 </section>
 <!-- =========================================================================
+     NOUVELLES RUBRIQUES (à rédiger)
+     Chaque bandeau : titre (## → apparaît dans le menu « On this page »),
+     texte, puis au choix un média à côté du texte (.sf-split), une vidéo
+     seule, ou une planche de photos (.sf-taxa).
+     ========================================================================== -->
+<section id="title-of-section-1" class="level2 sf-band sf-plum">
+<h2 class="anchored" data-anchor-id="title-of-section-1">Title of section 1</h2>
+<p>Text to write.</p>
+<!-- Variante texte + vidéo côte à côte : décommenter
+::: {.sf-split}
+::: sf-text
+Texte à côté de la vidéo.
+:::
+```{=html}
+<div>
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/NOM.jpg" aria-label="Description">
+    <source src="images/animation/NOM.mp4" type="video/mp4">
+  </video>
+  <p class="sf-caption">Légende.</p>
+</div>
+```
+:::
+-->
+</section>
+<section id="title-of-section-2" class="level2 sf-band sf-raspberry">
+<h2 class="anchored" data-anchor-id="title-of-section-2">Title of section 2</h2>
+<p>Text to write.</p>
+<!-- Variante planche de photos : décommenter
+```{=html}
+<div class="sf-taxa">
+  <figure class="sf-taxon"><img src="images/photos_animals/NOM.webp" alt="Description" loading="lazy"><figcaption>Taxon<em>nom commun</em></figcaption></figure>
+</div>
+<p class="sf-credit">Photos © Emma Belaud · CC BY-NC-SA 4.0</p>
+```
+-->
+</section>
+<section id="title-of-section-3" class="level2 sf-band sf-olive">
+<h2 class="anchored" data-anchor-id="title-of-section-3">Title of section 3</h2>
+<p>Text to write.</p>
+</section>
+<!-- =========================================================================
      SCRIPT : lance une vidéo quand elle est visible, la met en pause sinon.
      - Si le visiteur a demandé « moins d'animations » (réglage système), ou si
        le navigateur refuse de lancer la lecture seul (cas fréquent sur
