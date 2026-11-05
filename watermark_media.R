@@ -29,6 +29,7 @@ forcer <- FALSE
 # (si tes pages pointent vers images/animation/web, change-le ici).
 sortie_video <- "images/animation"
 sortie_photo <- "images/photos_animals"
+sortie_poster <- "images/posters"   # image d'aperçu (1re image de la vidéo, avec mention)
 
 # Dossiers d'originaux : écris le chemin, ou laisse NULL pour avoir une fenêtre.
 dossier_avi <- NULL   # ex. "F:/DOC/originaux/avi"
@@ -39,6 +40,7 @@ stopifnot(!is.na(dossier_avi), !is.na(dossier_tif))
 
 dir.create(sortie_video, showWarnings = FALSE, recursive = TRUE)
 dir.create(sortie_photo, showWarnings = FALSE, recursive = TRUE)
+dir.create(sortie_poster, showWarnings = FALSE, recursive = TRUE)
 
 # ---- Utilitaire : faut-il traiter ce fichier ? -------------------------------
 a_traiter <- function(cible) forcer || !file.exists(cible)
@@ -98,7 +100,10 @@ message("ffmpeg utilisé : ", ffmpeg)
 for (f in avis) {
   nom   <- tools::file_path_sans_ext(basename(f))
   cible <- file.path(sortie_video, paste0(nom, ".mp4"))
-  if (!a_traiter(cible)) { message("Vidéo déjà présente, ignorée : ", nom); next }
+  poster <- file.path(sortie_poster, paste0(nom, ".jpg"))
+  if (!a_traiter(cible) && !a_traiter(poster)) {
+    message("Vidéo et poster déjà présents, ignorés : ", nom); next
+  }
   message("Vidéo : ", nom)
   
   tmp <- file.path(tempdir(), nom)
@@ -120,6 +125,9 @@ for (f in avis) {
       if (filigrane_videos) img <- filigrane(img, mention, gravity = position_video)
       image_write(img, im, format = "png")
     }
+    
+    # 2 bis. Poster = 1re image (déjà redimensionnée et avec mention)
+    image_write(image_read(images[1]), poster, format = "jpeg", quality = 85)
     
     # 3. Encodage
     brut <- file.path(tempdir(), paste0(nom, "_brut.mp4"))
