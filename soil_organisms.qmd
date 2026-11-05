@@ -248,6 +248,57 @@ Root grazing by soil animals is not always bad news for crops. When herbivores h
 ```
 ::::
 
+
+<!-- =========================================================================
+     NOUVELLES RUBRIQUES (à rédiger)
+     Chaque bandeau : titre (## → apparaît dans le menu « On this page »),
+     texte, puis au choix un média à côté du texte (.sf-split), une vidéo
+     seule, ou une planche de photos (.sf-taxa).
+     ========================================================================== -->
+
+:::: {.sf-band .sf-plum}
+## Title of section 1
+
+Text to write.
+
+<!-- Variante texte + vidéo côte à côte : décommenter
+::: {.sf-split}
+::: sf-text
+Texte à côté de la vidéo.
+:::
+```{=html}
+<div>
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/NOM.jpg" aria-label="Description">
+    <source src="images/animation/NOM.mp4" type="video/mp4">
+  </video>
+  <p class="sf-caption">Légende.</p>
+</div>
+```
+:::
+-->
+::::
+
+:::: {.sf-band .sf-raspberry}
+## Title of section 2
+
+Text to write.
+
+<!-- Variante planche de photos : décommenter
+```{=html}
+<div class="sf-taxa">
+  <figure class="sf-taxon"><img src="images/photos_animals/NOM.webp" alt="Description" loading="lazy"><figcaption>Taxon<em>nom commun</em></figcaption></figure>
+</div>
+<p class="sf-credit">Photos © Emma Belaud · CC BY-NC-SA 4.0</p>
+```
+-->
+::::
+
+:::: {.sf-band .sf-olive}
+## Title of section 3
+
+Text to write.
+:::: 
+
 <!-- =========================================================================
      SCRIPT : lance une vidéo quand elle est visible, la met en pause sinon.
      - Si le visiteur a demandé « moins d'animations » (réglage système), ou si

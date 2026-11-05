@@ -83,18 +83,30 @@
 
 
   /* [MODIFIER] Palette « sol » des grands blocs colorés.
-     --c-xxx = couleur pleine (tuiles, bandeaux de publications, liserés)
-     --t-xxx = teinte très claire de la même couleur (fond des cartes)
-     Le texte blanc posé sur une couleur pleine doit rester lisible : éviter
-     les couleurs trop claires pour --c-xxx. */
-  --c-green: #2a5d45;  --t-green: #e9f1ed;
-  --c-teal:  #0f766e;  --t-teal:  #e2f1ef;
-  --c-ochre: #9a6b00;  --t-ochre: #f8f0dc;
-  --c-clay:  #b4532a;  --t-clay:  #f9ebe4;
-  --c-earth: #4a3b32;  --t-earth: #f1ece8;   
-  --c-blue:  #2F578A;  --t-blue: #90b0d9;
-  --c-red:  #be2b14;  --t-red: #fbdbd6;
-  --c-brown:  #8f7740;  --t-brown: #f0ebde;
+     --c-xxx = couleur pleine (tuiles, bandeaux, liserés) : texte blanc posé
+               dessus, donc rester assez foncé (contraste ≥ 4.5:1).
+     --t-xxx = teinte très claire de la même couleur (fond des cartes).
+     Pour ajouter une couleur : une nouvelle ligne --c-nom / --t-nom, puis
+     (page Soil organisms) une ligne « .sf-nom { --k: var(--c-nom); } »
+     dans la section 16. */
+
+  /* Couleurs d'origine */
+  --c-green:  #2a5d45;  --t-green:  #e9f1ed;
+  --c-teal:   #0f766e;  --t-teal:   #e2f1ef;
+  --c-ochre:  #9a6b00;  --t-ochre:  #f8f0dc;
+  --c-clay:   #b4532a;  --t-clay:   #f9ebe4;
+  --c-earth:  #4a3b32;  --t-earth:  #f1ece8;
+  --c-brown:  #8f7740;  --t-brown:  #f0ebde;
+  --c-red:    #be2b14;  --t-red:    #fbdbd6;
+
+  /* Bleus */
+  --c-blue:   #2f578a;  --t-blue:   #e4edf6;
+  --c-sky:    #4a77a8;  --t-sky:    #e8eff7;
+
+  /* Nouvelles couleurs (rubriques à venir sur Soil organisms) */
+  --c-plum:       #6b3f6e;  --t-plum:       #efe6f0;
+  --c-raspberry:  #a23b62;  --t-raspberry:  #f8e5ec;
+  --c-olive:      #5d7021;  --t-olive:      #eef1dc;
 
   /* [MODIFIER] Police du site (voir aussi l'@import tout en haut, qui
      charge Inter depuis Google Fonts). Les polices suivantes sont des
@@ -951,15 +963,18 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
    et de grands BANDEAUX colorés pleine largeur qui contiennent texte,
    vidéos d'animation et planches de photos d'animaux.
 
-   CODE COULEUR (chaque couleur a un sens ; la palette vient de la section 1)
-     ocre        --c-ochre  : DÉCOMPOSEURS  (matière organique, humus)
-     terre cuite --c-clay   : PRÉDATEURS    (proies, régulation)
-     teal        --c-teal   : INGÉNIEURS    (galeries, structure du sol)
-     vert        --c-green  : VIVANT VÉGÉTAL (champignons, mycorhizes, racines)
-     brun terre  --c-earth  : INTERACTIONS  (fourmis et pucerons)
-   Les passages « normaux » restent neutres (vert d'accent) pour réserver
-   les couleurs ci-dessus à ces rôles. Pour ajouter un bandeau d'une autre
-   couleur, voir « Ajouter un bandeau » plus bas.
+   CODE COULEUR (un bandeau = une couleur = un rôle)
+     ocre        sf-decomposers : décomposeurs (matière organique, humus)
+     terre cuite sf-predators   : prédateurs (proies, régulation)
+     bleu        sf-engineers   : ingénieurs (galeries, structure du sol)
+     bleu clair  sf-bioturb     : zoom sur la bioturbation
+     rouge       sf-red         : champignons
+     brun terre  sf-earth       : interactions fourmis / pucerons
+     brun clair  sf-brown       : herbivorie et racines
+     prune       sf-plum        : nouvelle rubrique 1
+     framboise   sf-raspberry   : nouvelle rubrique 2
+     olive       sf-olive       : nouvelle rubrique 3
+     vert        sf-green       : disponible (vivant végétal)
 
    SYNTAXE D'UN BANDEAU, à écrire dans soil_organisms.qmd :
 
@@ -1024,15 +1039,24 @@ section[id], h2[id], h3[id] { scroll-margin-top: 5.5rem; }
 }
 .sf-band + .sf-band { margin-top: 0; } /* deux bandeaux consécutifs se touchent */
 
-/* ---- Couleurs des bandeaux : une ligne par rôle ------------------------- */
+/* ---- Couleurs des bandeaux : une ligne par bandeau ----------------------
+   Pour changer la couleur d'un bandeau : changer la variable après « --k: ».
+   Pour en créer un : copier une ligne, changer le nom de classe et la couleur
+   (qui doit exister en section 1). Un bandeau renommé par son rôle (par
+   exemple .sf-nematodes) se renomme ici ET dans le .qmd. */
 .sf-decomposers { --k: var(--c-ochre); }
-.sf-predators   { --k: var(--c-clay);  }
-.sf-engineers   { --k: var(--c-blue);  }
-.sf-brown       { --k: var(--c-brown); }
-.sf-bioturb   { --k: var(--t-blue);  }
-.sf-green       { --k: var(--c-green); }
+.sf-predators   { --k: var(--c-clay); }
+.sf-engineers   { --k: var(--c-blue); }
+.sf-bioturb     { --k: var(--c-sky); }
+.sf-red         { --k: var(--c-red); }
 .sf-earth       { --k: var(--c-earth); }
-.sf-red       { --k: var(--c-red); }
+.sf-brown       { --k: var(--c-brown); }
+.sf-green       { --k: var(--c-green); }
+
+/* Nouvelles rubriques (à renommer selon leur sujet) */
+.sf-plum        { --k: var(--c-plum); }
+.sf-raspberry   { --k: var(--c-raspberry); }
+.sf-olive       { --k: var(--c-olive); }
 
 
 /* ---- Texte à l'intérieur d'un bandeau ----------------------------------- */

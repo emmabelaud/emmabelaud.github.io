@@ -78,11 +78,23 @@ for (f in tifs) {
 
 # ---- Vidéos : .avi -> images PNG -> mention -> .mp4 --------------------------
 filtre_even <- "scale=w='trunc(iw/2)*2':h='trunc(ih/2)*2',format=yuv420p"
-ffmpeg <- Sys.which("ffmpeg")   # "" si ffmpeg n'est pas installé / pas dans le PATH
-if (!nzchar(ffmpeg))
-  message("ffmpeg introuvable : encodage direct par 'av' (sans passe de recompression).")
+# ffmpeg est OBLIGATOIRE : seul lui permet de fixer profil H.264, niveau et
+# faststart (sinon écran noir sur iPhone). Chemin manuel possible :
+ffmpeg <- Sys.which("ffmpeg")   # "" si pas dans le PATH de cette session R
+if (!nzchar(ffmpeg)) {
+  candidats <- c("C:/ffmpeg/bin/ffmpeg.exe",
+                 Sys.glob("C:/Program Files/ffmpeg*/bin/ffmpeg.exe"),
+                 Sys.glob(file.path(Sys.getenv("LOCALAPPDATA"),
+                                    "Microsoft/WinGet/Packages/*/*/bin/ffmpeg.exe")))
+  candidats <- candidats[file.exists(candidats)]
+  if (length(candidats)) ffmpeg <- candidats[1]
+}
 
 avis <- list.files(dossier_avi, pattern = "\\.avi$", full.names = TRUE, ignore.case = TRUE)
+if (length(avis) > 0 && !nzchar(ffmpeg))
+  stop("ffmpeg introuvable. Installe-le (winget install Gyan.FFmpeg), ",
+       "redémarre RStudio, ou renseigne son chemin dans la variable 'ffmpeg'.")
+message("ffmpeg utilisé : ", ffmpeg)
 for (f in avis) {
   nom   <- tools::file_path_sans_ext(basename(f))
   cible <- file.path(sortie_video, paste0(nom, ".mp4"))
@@ -113,18 +125,16 @@ for (f in avis) {
     brut <- file.path(tempdir(), paste0(nom, "_brut.mp4"))
     av_encode_video(images, brut, framerate = fps, vfilter = filtre_even, verbose = FALSE)
     
-    ok <- FALSE
-    if (nzchar(ffmpeg)) {
-      statut <- system2(ffmpeg, c(
-        "-y", "-i", shQuote(brut),
-        "-c:v", "libx264", "-profile:v", "main", "-level", "4.0",
-        "-pix_fmt", "yuv420p", "-crf", "23", "-preset", "slow",
-        "-movflags", "+faststart", "-an", shQuote(cible)),
-        stdout = FALSE, stderr = FALSE)
-      ok <- identical(as.integer(statut), 0L) && file.exists(cible)
-      if (!ok) message("  ffmpeg a échoué, repli sur l'encodage 'av'.")
+    statut <- system2(ffmpeg, c(
+      "-y", "-i", shQuote(brut),
+      "-c:v", "libx264", "-profile:v", "main", "-level", "4.0",
+      "-pix_fmt", "yuv420p", "-crf", "23", "-preset", "slow",
+      "-movflags", "+faststart", "-an", shQuote(cible)),
+      stdout = FALSE, stderr = FALSE)
+    if (!identical(as.integer(statut), 0L) || !file.exists(cible)) {
+      unlink(cible)   # pas de fichier incompatible laissé en place
+      stop("ffmpeg a échoué (code ", statut, ")")
     }
-    if (!ok) file.copy(brut, cible, overwrite = TRUE)
     unlink(brut)
   }, error = function(e) message("  ÉCHEC vidéo ", nom, " : ", conditionMessage(e)))
   
