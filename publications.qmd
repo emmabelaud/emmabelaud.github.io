@@ -52,6 +52,10 @@ Pruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, 
 ::: {.pub-entry .submitted}
 **Belaud, E.**, Beugnon, R., Frangne, E., Gallet, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. Land-use effects on soil fauna are temporally unstable. *Submitted to Global Change Biology.*
 :::
+
+::: {.pub-entry .submitted}
+Boileau, R., Bonfanti, J., Aubert, M., **Belaud, E.**, Biryol, C., Capowiez, Y., Cortet, J., Dubernet, M., Ganault, P., Joly, F.-X., Langridge, J., Marsden, C., Nahmani, J., Trap, J. & Hedde, M. From soil fauna traits to agroecosystem functioning: evidence gaps and a roadmap for predictive ecology. Agriculture, Ecosystems & Environment
+:::
 :::
 
 ::: {.pub-group .pub-resubmit}
@@ -66,10 +70,10 @@ Pruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, 
 :::
 :::
 
+<!--
 ::: {.pub-group .pub-inprep}
 ## Manuscripts in preparation
 
 ::: {.pub-entry .inprep}
-Hedde, M., Cortet, J., Aubert, M., **Belaud, E.**, Capowiez, Y., Biryol, C., Ganault, P., Joly, F.-X., Marsden, C., Trap, J., Nahmani, J. Trait-based ecology of soil fauna: progress, blind spots and future directions. *In preparation for Functional Ecology.*
 :::
 :::
