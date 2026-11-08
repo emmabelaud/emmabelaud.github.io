@@ -1,0 +1,3 @@
+# Appliqué automatiquement à toutes les pages du dossier fr/ :
+# <html lang="fr"> et textes générés par Quarto (« Sur cette page », etc.) en français.
+lang: fr

@@ -1,0 +1,158 @@
+---
+title: "Parcours académique"
+subtitle: "Formation, expérience en recherche, encadrement, communication scientifique et vulgarisation."
+pagetitle: "CV | Emma Belaud"
+format: html
+---
+
+<!--
+  PAGE CV DU SITE : mode d'emploi
+  (Ne pas confondre avec le cv.qmd du dossier F:\DOC\CV, qui produit le PDF.)
+  - Le bandeau vert est généré par l'en-tête ci-dessus, comme sur les autres
+    pages (voir styles.css, section 4) : « title » = accroche, « subtitle » =
+    ligne d'explication, « pagetitle » = nom de l'onglet du navigateur.
+  - Chaque entrée de la frise est un ::: cv-entry (syntaxe détaillée dans
+    styles.css, section 12). Pour ajouter une ligne : copier une entrée.
+  - Les ## titres (Education, Supervision, ...) alimentent le menu flottant.
+-->
+
+## Formation
+
+::: cv-entry
+**Doctorat en écologie des sols** [2023 – 2026]{.cv-date}\
+*École doctorale GAIA · Institut Agro Montpellier · UMR Eco&Sols, Montpellier, France*\
+Thèse : « Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring », soutenue en août 2026.\
+Financement conjoint CIRAD et métaprogramme INRAE BIOSEFAIR.
+:::
+
+::: cv-entry
+**Diplôme d'ingénieure agronome** [2017 – 2022]{.cv-date}\
+*École Supérieure d'Agricultures, Angers, France*\
+Majeure : Productions végétales et agroécologie · Mention : Très bien.
+:::
+
+## Expérience en recherche
+
+::: cv-entry
+**Ingénieure de recherche** [2023 · 5 mois]{.cv-date}\
+*INRAE, UMR Eco&Sols, Montpellier, France*\
+Évaluation de l'efficacité de scanners optiques *in situ* pour le suivi à haute résolution temporelle de l'activité biologique du sol.
+:::
+
+::: cv-entry
+**Ingénieure de recherche** [2022 · 1 mois]{.cv-date}\
+*INRAE, UMR Eco&Sols, Montpellier, France*\
+Évaluation du potentiel de l'imagerie optique *in situ* pour suivre l'activité édaphique. Rédaction d'une publication scientifique sur le suivi biologique du sol par l'image.
+:::
+
+::: cv-entry
+**Stagiaire de recherche (fin d'études)** [2022 · 6 mois]{.cv-date}\
+*CIRAD, UMR Eco&Sols, Montpellier, France*\
+« Potentiel de l'imagerie *in situ* pour le suivi de l'activité biologique des sols »\
+Quantification, par analyse d'images, de la dynamique spatiale et temporelle des communautés biologiques du sol (faune, racines, hyphes fongiques) dans des sols de truffières.
+:::
+
+
+## Encadrement
+
+::: cv-entry
+**Encadrement d'un mémoire M1 : Ermessende Frangne** [2025 · 3 mois]{.cv-date}\
+*Université de Montpellier, Master Biodiversité, Écologie, Évolution (B2E), parcours EcoSystèmeS*\
+« Organisation spatio-temporelle de l'activité édaphique en systèmes agroforestiers par des approches d'imagerie optique »
+:::
+
+::: cv-entry
+**Encadrement d'un stage BUT : Joris Labrosse** [2025 · 3 mois]{.cv-date}\
+*Université Jean Monnet Saint-Étienne, accueilli à Montpellier, France*\
+« Développement méthodologique de l'imagerie optique *in situ* pour le suivi de l'activité édaphique : évaluation des compromis entre fréquence d'acquisition et résolution spatiale »
+:::
+
+::: cv-entry
+**Encadrement d'un mémoire M2 : Marion Lebeau** [2024 · 6 mois]{.cv-date}\
+*UniLaSalle Beauvais, accueillie à Montpellier, France*\
+« Caractérisation des patrons de distribution spatiale des communautés d'invertébrés du sol dans un système agroforestier »
+:::
+
+## Communications
+
+::: cv-entry
+**Journées Métaprogramme BIOSEFAIR** [2026 · 2 jours]{.cv-date}\
+*INRAE, Lyon, France*\
+Communication orale : « Imagerie *in situ* à haut débit de l'activité édaphique ».
+:::
+
+::: cv-entry
+**Journées de l'observatoire ORCHAMPS** [2025 · 1 jour]{.cv-date}\
+*Observatoire ORCHAMPS, Grenoble, France*\
+Communication orale : « Une nouvelle fenêtre sur l'activité des organismes du sol ».
+:::
+
+::: cv-entry
+**Café des Techniques** [2024 · 3 heures]{.cv-date}\
+*CIRAD, en ligne*\
+Présentation lors d'un webinaire technique : « Ingénierie de chaînes d'imagerie automatisée du sol : du déploiement des capteurs à la chaîne de traitement des images ».
+:::
+
+::: cv-entry
+**Salon AdNatura 2024** [2024 · 1 heure]{.cv-date}\
+*SFE2, Montpellier, France*\
+Intervenante invitée – table ronde : « Faire une thèse en écologie et évolution : perspectives de carrière et défis académiques ».
+:::
+
+::: cv-entry
+**Salon International de l'Agriculture (stand CIRAD)** [2024 · 1 semaine]{.cv-date}\
+*CIRAD, Paris, France*\
+Communication scientifique et vulgarisation : conception et animation de démonstrations interactives sur la biodiversité du sol auprès du grand public et des acteurs du secteur.
+:::
+
+::: cv-entry
+**Atelier : apports, bénéfices et limites des capteurs pour le suivi de la biodiversité** [2022 · 1 semaine]{.cv-date}\
+*INRAE, Lyon, France*\
+Communication orale : « Le potentiel de l'imagerie *in situ* pour étudier l'activité biologique du sol ».
+:::
+
+## Conférences
+
+::: cv-entry
+**TDWG 2026** [2026 · 1 semaine]{.cv-date}\
+*Oslo, Norvège*\
+Participation
+:::
+
+::: cv-entry
+**Rhizosphere6** [2025 · 1 semaine]{.cv-date}\
+*Édimbourg, Royaume-Uni*\
+Poster : « Roots, the fuel for soil fauna activity ».
+:::
+
+::: cv-entry
+**12th International Symposium of the International Society of Root Research** [2024 · 1 semaine]{.cv-date}\
+*Leipzig, Allemagne*\
+Poster : « In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota around the roots ».
+:::
+
+## Réunions scientifiques et séminaires
+
+::: cv-entry
+**Réunion du Réseau Imagerie des Sols** [2024 · 4 heures]{.cv-date}\
+*Réseau Imagerie des Sols INRAE, Montpellier, France*\
+Communication orale : « L'imagerie *in situ* du sol pour le suivi de l'activité biologique édaphique ».
+:::
+
+::: cv-entry
+**12es Journées scientifiques et techniques du réseau des microscopistes** [2024 · 3 jours]{.cv-date}\
+*Réseau des microscopistes INRAE, Montpellier, France*\
+Animation d'un atelier sur les techniques d'imagerie à l'unité de recherche Eco&Sols.
+:::
+
+::: cv-entry
+**12es Journées scientifiques du réseau TEBIS** [2024 · 3 jours]{.cv-date}\
+*Réseau TEBIS, Montpellier, France*\
+Communication orale : « Suivi de la phénologie de l'activité édaphique par imagerie *in situ* : vers des traits phénologiques pour la faune du sol ».
+:::
+
+::: cv-entry
+**Séminaire : télédétection pour la biodiversité** [2023 · 2 jours]{.cv-date}\
+*Métaprogramme BIOSEFAIR INRAE, Castelnau-le-Lez, France*\
+Participation à des ateliers techniques sur l'imagerie à haute résolution.
+:::

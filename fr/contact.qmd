@@ -1,0 +1,46 @@
+---
+title: "Me contacter"
+pagetitle: "Contact | Emma Belaud"
+format: html
+---
+
+<!--
+  PAGE CONTACT : mode d'emploi
+  - ::: contact-intro  : bloc vert clair avec l'e-mail en grand.
+  - ::: contact-columns : deux colonnes côte à côte (empilées sur mobile) ;
+    chaque colonne est un ::: contact-block (liseré teal, puis ocre).
+  - ::: profile-list : liste de profils ; {{{< fa brands orcid >}}} insère une
+    icône de marque Font Awesome.
+  - Les styles sont dans styles.css, section 10.
+-->
+
+::: contact-intro
+[Contact mail]{.block-label}
+
+[{{< fa envelope >}}]{.mail-icon} [emmabelaud1@gmail.com](mailto:emmabelaud1@gmail.com){.mail-link}
+:::
+
+::: contact-columns
+
+::: contact-block
+[Affiliation]{.block-label}
+
+**UMR Eco&Sols**\
+Campus La Gaillarde, Institut Agro-INRAE\
+Bât. 12 & 13, 2 place Viala\
+34060 Montpellier Cedex 2, France
+
+[Site du laboratoire {{< fa arrow-up-right-from-square >}}](https://www.umr-ecosols.fr/){.lab-link}
+:::
+
+::: contact-block
+[Profils en ligne]{.block-label}
+
+::: profile-list
+- [{{< fa brands orcid >}}]{.profile-icon} [ORCID](https://orcid.org/0009-0003-8023-5140)
+- [{{< fa brands researchgate >}}]{.profile-icon} [ResearchGate](https://www.researchgate.net/profile/Emma-Belaud)
+- [{{< fa brands github >}}]{.profile-icon} [GitHub](https://github.com/emmabelaud)
+:::
+:::
+
+:::

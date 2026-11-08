@@ -32,7 +32,7 @@ Optical imagery sensors provide a great perspective for observing soil life in s
 
 ## Who lives in the soil?
 
-Soil organisms range from a few micrometres to several centimetres. Biologists usually sort them by body size.
+Soil organisms are highly diverse, and this diversity is particularly expressed in terms of size. They range from a few micrometers to several centimeters. Thus, it is common to present them according to their order of magnitude.
 
 ```{=html}
 <div class="sf-sizes">
@@ -145,8 +145,6 @@ Predators eat other living organisms, which makes them key players in **biologic
 
 Ecosystem engineers **shape the structure of the soil**. As they move about in search of food or shelter, they dig and push material around, creating new spaces that change the habitat of all the other organisms. Earthworms and ants are the best-known engineers, but in reality every soil organism, even the smallest, contributes to mixing the soil and refining its structure.
 
-A well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity). These spaces let roots penetrate and let water and oxygen circulate.
-
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/ants_bioturbation.jpg" aria-label="Ants digging galleries in the soil">
@@ -173,6 +171,8 @@ A well-structured soil is made of mineral and organic particles assembled into a
 ## Zoom on bioturbation
 
 The physical rearrangement of soil by living organisms has a specific name: **bioturbation**. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.
+
+A well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity).
 ```{=html}
 <div>
   <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/earthworm_bioturbation.jpg" aria-label="Bioturbation by an earthworm">

@@ -1,0 +1,107 @@
+<!--
+  lang-switch.html : bouton de langue EN <-> FR (inclus par _quarto.yml).
+  Principe : le site existe en deux versions, l’anglais à la racine et le
+  français dans fr/ (mêmes noms de fichiers). Le script :
+  1. repère la langue de la page courante d’après l’URL (/fr/...) ;
+  2. fait pointer le bouton vers la page équivalente dans l’autre langue ;
+  3. sur les pages /fr/, redirige le menu vers les pages françaises et
+     traduit ses libellés (le menu est défini une seule fois dans _quarto.yml) ;
+  4. traduit le pied de page.
+  Pour ajouter une page : la créer dans les deux langues, puis ajouter son
+  libellé français dans MENU ci-dessous.
+-->
+<style>
+  .navbar .lang-switch {
+    border: 1.5px solid currentColor;
+    border-radius: 999px;
+    padding: .1rem .75rem !important;
+    margin-left: .6rem;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .06em;
+    line-height: 1.6;
+    align-self: center;
+  }
+  .navbar .lang-switch:hover,
+  .navbar .lang-switch:focus {
+    background: var(--accent, #2a5d45);
+    border-color: var(--accent, #2a5d45);
+    color: #fff !important;
+  }
+</style>
+<script>
+(function () {
+  var path = location.pathname;
+  var m = path.match(/^(.*?)\/fr(\/.*)?$/);
+  var isFr = !!m;
+  // « base » = dossier racine du site (vide si le site est à la racine du domaine)
+  var base = isFr ? m[1] : path.replace(/\/[^\/]*$/, "");
+  var page = isFr ? (m[2] || "/") : path.slice(base.length) || "/";
+  var other = isFr ? base + page : base + "/fr" + page;
+  var extra = location.search + location.hash;
+
+  // Libellés français du menu, indexés par le libellé anglais
+  var MENU = {
+    "About me": "À propos",
+    "Soil biodiversity imaging": "Imagerie de la biodiversité du sol",
+    "Soil organisms": "Organismes du sol",
+    "Publications": "Publications",
+    "Resources": "Ressources",
+    "CV": "CV",
+    "Contact": "Contact"
+  };
+
+  function norm(p) { return p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, ""); }
+
+  var nav = document.querySelector(".navbar");
+  if (!nav) return;
+
+  nav.querySelectorAll("a[href]").forEach(function (a) {
+    var label = a.textContent.trim();
+    // Le bouton de langue
+    if (label === "FR" || label === "EN") {
+      a.classList.add("lang-switch");
+      a.href = other + extra;
+      a.textContent = isFr ? "EN" : "FR";
+      a.setAttribute("aria-label", isFr ? "View the site in English" : "Voir le site en français");
+      a.setAttribute("hreflang", isFr ? "en" : "fr");
+      a.removeAttribute("aria-current");
+      a.classList.remove("active");
+      return;
+    }
+    if (!isFr) return;
+    // Pages françaises : le menu pointe vers fr/ et est traduit
+    var u;
+    try { u = new URL(a.getAttribute("href"), location.href); } catch (e) { return; }
+    if (u.origin !== location.origin || u.pathname.indexOf(base + "/") !== 0) return;
+    var rest = u.pathname.slice(base.length);
+    if (rest.indexOf("/fr/") === 0 || rest === "/fr") return;
+    a.href = base + "/fr" + rest + u.hash;
+    var span = a.querySelector(".menu-text") || a;
+    var txt = span.textContent.trim();
+    if (MENU[txt]) span.textContent = MENU[txt];
+    // Mise en évidence de la page courante
+    if (norm(u.pathname.replace(base, "")) === norm(page)) {
+      a.classList.add("active");
+      a.setAttribute("aria-current", "page");
+    } else {
+      a.classList.remove("active");
+      a.removeAttribute("aria-current");
+    }
+  });
+
+  if (isFr) {
+    var brand = nav.querySelector(".navbar-brand");
+    if (brand) brand.href = base + "/fr/";
+    // Pied de page
+    var foot = document.querySelector(".nav-footer");
+    if (foot) {
+      var w = document.createTreeWalker(foot, NodeFilter.SHOW_TEXT), n;
+      while ((n = w.nextNode())) {
+        n.nodeValue = n.nodeValue.replace("Content licensed under", "Contenu sous licence");
+        n.nodeValue = n.nodeValue.replace("Reuse and licensing", "Réutilisation et licences");
+      }
+    }
+  }
+})();
+</script>

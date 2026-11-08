@@ -43,6 +43,11 @@ website:
     right:
       - icon: github
         href: https://github.com/emmabelaud
+      # Bouton de langue. Ici : lien de secours vers l’accueil français ;
+      # lang-switch.html le remplace par la page équivalente (EN <-> FR).
+      - text: "FR"
+        href: fr/index.qmd
+        aria-label: "Voir le site en français"
 
   page-footer:
     center: |
@@ -57,7 +62,9 @@ format:
         <meta name="google-site-verification" content="TkOA9s6Uma3IP6jg4hGxPjjPUWovnUNz2pN32pn5sy8" />
         <link rel="license" href="https://creativecommons.org/licenses/by-nc/4.0/">
     # Script ajouté en fin de chaque page : menu flottant « On this page ».
-    include-after-body: page-menu.html
+    include-after-body:
+      - page-menu.html
+      - lang-switch.html             # bouton de langue EN/FR + traduction du menu sur /fr/
     theme: cosmo                     # thème Bootstrap de base ; styles.css s'applique par-dessus
     css: styles.css                  # feuille de style du site (très commentée)
     # Bandeau coloré des pages qui ont un « title ». La couleur réelle est

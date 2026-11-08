@@ -56,7 +56,7 @@ Quantified the spatial and temporal dynamics of soil biological communities (fau
 ## Supervision
 
 ::: cv-entry
-**M.Sc. Thesis Co-supervision: Ermessende Frangne** [2025 · 3 months]{.cv-date}\
+**M.Sc. Thesis Supervision: Ermessende Frangne** [2025 · 3 months]{.cv-date}\
 *Université de Montpellier, Master Biodiversity, Ecology, Evolution (B2E), EcoSystèmeS track*\
 "Spatio-temporal organization of edaphic activity in agroforestry systems using optical imaging approaches"
 :::
