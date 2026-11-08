@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr"><head>
 
 <meta charset="utf-8">
 <meta name="generator" content="quarto-1.10.18">
@@ -60,17 +60,17 @@ ul.task-list li input[type="checkbox"] {
   ],
   "show-item-context": false,
   "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
+    "search-no-results-text": "Pas de résultats",
+    "search-matching-documents-text": "documents trouvés",
+    "search-copy-link-title": "Copier le lien vers la recherche",
+    "search-hide-matches-text": "Cacher les correspondances additionnelles",
+    "search-more-match-text": "correspondance de plus dans ce document",
+    "search-more-matches-text": "correspondances de plus dans ce document",
+    "search-clear-button-title": "Effacer",
     "search-text-placeholder": "",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit",
-    "search-label": "Search"
+    "search-detached-cancel-button-title": "Annuler",
+    "search-submit-button-title": "Envoyer",
+    "search-label": "Recherche"
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
@@ -119,8 +119,8 @@ background: #2a5d45;
     <span class="navbar-title">Emma Belaud</span>
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+            <div id="quarto-search" class="" title="Recherche"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Basculer la navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -159,6 +159,10 @@ background: #2a5d45;
     <a class="nav-link" href="https://github.com/emmabelaud"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./fr/index.html"> 
+<span class="menu-text">FR</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -220,7 +224,7 @@ background: #2a5d45;
 </section>
 <section id="who-lives-in-the-soil" class="level2">
 <h2 class="anchored" data-anchor-id="who-lives-in-the-soil">Who lives in the soil?</h2>
-<p>Soil organisms range from a few micrometres to several centimetres. Biologists usually sort them by body size.</p>
+<p>Soil organisms are highly diverse, and this diversity is particularly expressed in terms of size. They range from a few micrometers to several centimeters. Thus, it is common to present them according to their order of magnitude.</p>
 <div class="sf-sizes">
 
   <div class="sf-size">
@@ -311,7 +315,6 @@ background: #2a5d45;
 <section id="engineers" class="level2 sf-band sf-engineers">
 <h2 class="anchored" data-anchor-id="engineers">Engineers</h2>
 <p>Ecosystem engineers <strong>shape the structure of the soil</strong>. As they move about in search of food or shelter, they dig and push material around, creating new spaces that change the habitat of all the other organisms. Earthworms and ants are the best-known engineers, but in reality every soil organism, even the smallest, contributes to mixing the soil and refining its structure.</p>
-<p>A well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity). These spaces let roots penetrate and let water and oxygen circulate.</p>
 <div>
   <video class="sf-video" muted="" loop="" playsinline="" preload="metadata" poster="images/posters/ants_bioturbation.jpg" aria-label="Ants digging galleries in the soil">
     <source src="images/animation/ants_bioturbation.mp4" type="video/mp4">
@@ -331,6 +334,7 @@ background: #2a5d45;
 <section id="zoom-on-bioturbation" class="level2 sf-band sf-bioturb">
 <h2 class="anchored" data-anchor-id="zoom-on-bioturbation">Zoom on bioturbation</h2>
 <p>The physical rearrangement of soil by living organisms has a specific name: <strong>bioturbation</strong>. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.</p>
+<p>A well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity).</p>
 <div>
   <video class="sf-video" muted="" loop="" playsinline="" preload="metadata" poster="images/posters/earthworm_bioturbation.jpg" aria-label="Bioturbation by an earthworm">
     <source src="images/animation/earthworm_bioturbation.mp4" type="video/mp4">
@@ -591,6 +595,113 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 </script>
+<!--
+  lang-switch.html : bouton de langue EN <-> FR (inclus par _quarto.yml).
+  Principe : le site existe en deux versions, l’anglais à la racine et le
+  français dans fr/ (mêmes noms de fichiers). Le script :
+  1. repère la langue de la page courante d’après l’URL (/fr/...) ;
+  2. fait pointer le bouton vers la page équivalente dans l’autre langue ;
+  3. sur les pages /fr/, redirige le menu vers les pages françaises et
+     traduit ses libellés (le menu est défini une seule fois dans _quarto.yml) ;
+  4. traduit le pied de page.
+  Pour ajouter une page : la créer dans les deux langues, puis ajouter son
+  libellé français dans MENU ci-dessous.
+-->
+<style>
+  .navbar .lang-switch {
+    border: 1.5px solid currentColor;
+    border-radius: 999px;
+    padding: .1rem .75rem !important;
+    margin-left: .6rem;
+    font-weight: 700;
+    font-size: .8rem;
+    letter-spacing: .06em;
+    line-height: 1.6;
+    align-self: center;
+  }
+  .navbar .lang-switch:hover,
+  .navbar .lang-switch:focus {
+    background: var(--accent, #2a5d45);
+    border-color: var(--accent, #2a5d45);
+    color: #fff !important;
+  }
+</style>
+<script>
+(function () {
+  var path = location.pathname;
+  var m = path.match(/^(.*?)\/fr(\/.*)?$/);
+  var isFr = !!m;
+  // « base » = dossier racine du site (vide si le site est à la racine du domaine)
+  var base = isFr ? m[1] : path.replace(/\/[^\/]*$/, "");
+  var page = isFr ? (m[2] || "/") : path.slice(base.length) || "/";
+  var other = isFr ? base + page : base + "/fr" + page;
+  var extra = location.search + location.hash;
+
+  // Libellés français du menu, indexés par le libellé anglais
+  var MENU = {
+    "About me": "À propos",
+    "Soil biodiversity imaging": "Imagerie de la biodiversité du sol",
+    "Soil organisms": "Organismes du sol",
+    "Publications": "Publications",
+    "Resources": "Ressources",
+    "CV": "CV",
+    "Contact": "Contact"
+  };
+
+  function norm(p) { return p.replace(/\/index(\.html)?$/, "/").replace(/\.html$/, ""); }
+
+  var nav = document.querySelector(".navbar");
+  if (!nav) return;
+
+  nav.querySelectorAll("a[href]").forEach(function (a) {
+    var label = a.textContent.trim();
+    // Le bouton de langue
+    if (label === "FR" || label === "EN") {
+      a.classList.add("lang-switch");
+      a.href = other + extra;
+      a.textContent = isFr ? "EN" : "FR";
+      a.setAttribute("aria-label", isFr ? "View the site in English" : "Voir le site en français");
+      a.setAttribute("hreflang", isFr ? "en" : "fr");
+      a.removeAttribute("aria-current");
+      a.classList.remove("active");
+      return;
+    }
+    if (!isFr) return;
+    // Pages françaises : le menu pointe vers fr/ et est traduit
+    var u;
+    try { u = new URL(a.getAttribute("href"), location.href); } catch (e) { return; }
+    if (u.origin !== location.origin || u.pathname.indexOf(base + "/") !== 0) return;
+    var rest = u.pathname.slice(base.length);
+    if (rest.indexOf("/fr/") === 0 || rest === "/fr") return;
+    a.href = base + "/fr" + rest + u.hash;
+    var span = a.querySelector(".menu-text") || a;
+    var txt = span.textContent.trim();
+    if (MENU[txt]) span.textContent = MENU[txt];
+    // Mise en évidence de la page courante
+    if (norm(u.pathname.replace(base, "")) === norm(page)) {
+      a.classList.add("active");
+      a.setAttribute("aria-current", "page");
+    } else {
+      a.classList.remove("active");
+      a.removeAttribute("aria-current");
+    }
+  });
+
+  if (isFr) {
+    var brand = nav.querySelector(".navbar-brand");
+    if (brand) brand.href = base + "/fr/";
+    // Pied de page
+    var foot = document.querySelector(".nav-footer");
+    if (foot) {
+      var w = document.createTreeWalker(foot, NodeFilter.SHOW_TEXT), n;
+      while ((n = w.nextNode())) {
+        n.nodeValue = n.nodeValue.replace("Content licensed under", "Contenu sous licence");
+        n.nodeValue = n.nodeValue.replace("Reuse and licensing", "Réutilisation et licences");
+      }
+    }
+  }
+})();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -616,12 +727,12 @@ document.addEventListener("DOMContentLoaded", function() {
       // flash "checked"
       button.classList.add('code-copy-button-checked');
       var currentTitle = button.getAttribute("title");
-      button.setAttribute("title", "Copied!");
+      button.setAttribute("title", "Copié");
       let tooltip;
       if (window.bootstrap) {
         button.setAttribute("data-bs-toggle", "tooltip");
         button.setAttribute("data-bs-placement", "left");
-        button.setAttribute("data-bs-title", "Copied!");
+        button.setAttribute("data-bs-title", "Copié");
         tooltip = new bootstrap.Tooltip(button, 
           { trigger: "manual", 
             customClass: "code-copy-button-tooltip",

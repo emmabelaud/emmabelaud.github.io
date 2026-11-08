@@ -18,7 +18,7 @@
     "href": "soil_organisms.html#who-lives-in-the-soil",
     "title": "Who lives beneath our feet, and what do they do?",
     "section": "Who lives in the soil?",
-    "text": "Who lives in the soil?\nSoil organisms range from a few micrometres to several centimetres. Biologists usually sort them by body size.\n\n\n  \n    Microorganisms and microfauna\n    the smallest · under 0.1 mm\n    Bacteria, archaea, fungi and protists, together with microscopic animals such as nematodes and tardigrades.\n    \n      Mycorrhizaefungi\n    \n  \n\n  \n    Mesofauna\n    intermediate size · about 0.1 to 2 mm\n    Springtails, mites, symphylans, diplurans and potworms.\n    \n      Symphyla\n      Diplura\n      Collembolaspringtails\n      Acarimites\n    \n  \n\n  \n    Macrofauna\n    the largest · over 2 mm\n    Earthworms, millipedes, woodlice, ants and spiders. Plant roots are not animals, but they also share this space and attract many of these organisms.\n    \n      Julidamillipedes\n      Chilopodacentipedes\n      Lumbricidaeearthworms\n    \n  \n\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
+    "text": "Who lives in the soil?\nSoil organisms are highly diverse, and this diversity is particularly expressed in terms of size. They range from a few micrometers to several centimeters. Thus, it is common to present them according to their order of magnitude.\n\n\n  \n    Microorganisms and microfauna\n    the smallest · under 0.1 mm\n    Bacteria, archaea, fungi and protists, together with microscopic animals such as nematodes and tardigrades.\n    \n      Mycorrhizaefungi\n    \n  \n\n  \n    Mesofauna\n    intermediate size · about 0.1 to 2 mm\n    Springtails, mites, symphylans, diplurans and potworms.\n    \n      Symphyla\n      Diplura\n      Collembolaspringtails\n      Acarimites\n    \n  \n\n  \n    Macrofauna\n    the largest · over 2 mm\n    Earthworms, millipedes, woodlice, ants and spiders. Plant roots are not animals, but they also share this space and attract many of these organisms.\n    \n      Julidamillipedes\n      Chilopodacentipedes\n      Lumbricidaeearthworms\n    \n  \n\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
   },
   {
     "objectID": "soil_organisms.html#what-do-they-do-down-there",
@@ -46,14 +46,14 @@
     "href": "soil_organisms.html#engineers",
     "title": "Who lives beneath our feet, and what do they do?",
     "section": "Engineers",
-    "text": "Engineers\nEcosystem engineers shape the structure of the soil. As they move about in search of food or shelter, they dig and push material around, creating new spaces that change the habitat of all the other organisms. Earthworms and ants are the best-known engineers, but in reality every soil organism, even the smallest, contributes to mixing the soil and refining its structure.\nA well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity). These spaces let roots penetrate and let water and oxygen circulate.\n\n  \n    \n  \n  Ants digging galleries.\n\n\n  Lumbricidaeearthworms\n  Enchytraeidaepotworms\n  Formicidaeants\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
+    "text": "Engineers\nEcosystem engineers shape the structure of the soil. As they move about in search of food or shelter, they dig and push material around, creating new spaces that change the habitat of all the other organisms. Earthworms and ants are the best-known engineers, but in reality every soil organism, even the smallest, contributes to mixing the soil and refining its structure.\n\n  \n    \n  \n  Ants digging galleries.\n\n\n  Lumbricidaeearthworms\n  Enchytraeidaepotworms\n  Formicidaeants\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
   },
   {
     "objectID": "soil_organisms.html#zoom-on-bioturbation",
     "href": "soil_organisms.html#zoom-on-bioturbation",
     "title": "Who lives beneath our feet, and what do they do?",
     "section": "Zoom on bioturbation",
-    "text": "Zoom on bioturbation\nThe physical rearrangement of soil by living organisms has a specific name: bioturbation. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.\n\n  \n    \n  \n  Bioturbation by an earthworm."
+    "text": "Zoom on bioturbation\nThe physical rearrangement of soil by living organisms has a specific name: bioturbation. Earthworms are widely known for it. Their burrowing creates pores that let water and air circulate and roots penetrate, as the animation shows.\nA well-structured soil is made of mineral and organic particles assembled into aggregates of various sizes, with empty spaces in between (the porosity).\n\n  \n    \n  \n  Bioturbation by an earthworm."
   },
   {
     "objectID": "soil_organisms.html#fungi-underground-highways",
@@ -154,6 +154,125 @@
     "text": "Manuscripts to be resubmitted\n\nBelaud, E., Labrosse, J., Jourdan, C., Gallet, P., Hendrikx, H., Le Maire, G., Postic, F., Hedde, M. In situ scanner-based imaging to monitor soil mesofauna activity: trade-offs between spatial resolution and temporal frequency. Rejected by Methods in Ecology and Evolution; to be resubmitted to Ecography.\n\n\nBelaud, E., Dray, S., Gallet, P., Hinsinger, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. A new dimension of the rhizosphere: Microscale spatial organization of soil invertebrates around roots. Rejected by Ecology Letters; to be resubmitted to Journal of Ecology."
   },
   {
+    "objectID": "fr/soil_organisms.html",
+    "href": "fr/soil_organisms.html",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "",
+    "text": "Le sol abrite près d’un quart de toutes les espèces décrites sur Terre (Anthony et al., 2023). Cette vie, en grande partie cachée, contribue au fonctionnement des écosystèmes et, ainsi, soutient des services dont nous dépendons tous, de la production alimentaire au stockage du carbone. Si l’on veut désire parti de ces services, il faut comprendre les processus biologiques qui les sous-tendent.\nPourtant, nous savons étonnamment peu de choses sur le fonctionnement de la vie du sol. Le sol est considéré comme l’une des dernières frontières biotiques, avec les profondeurs océaniques et la canopée des forêts (André et al., 1994). L’une des raisons est que le sol est opaque et que ses habitants sont petits et difficiles d’accès. Il existe, toutefois, un manque général de considération pour cette vie cachée.\nLes capteurs d’imagerie optique offrent des perspectives pour observer la vie du sol in situ au fil du temps. Sur cette page, vous trouverez des animations capturées par des scanners optiques automatisés enterrés dans le sol, qui permettent d’observer la vie discrète du sol sans la perturber (pour en savoir plus sur le dispositif, voir la page Imagerie de la biodiversité du sol)."
+  },
+  {
+    "objectID": "fr/soil_organisms.html#un-réservoir-caché-de-biodiversité",
+    "href": "fr/soil_organisms.html#un-réservoir-caché-de-biodiversité",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "",
+    "text": "Le sol abrite près d’un quart de toutes les espèces décrites sur Terre (Anthony et al., 2023). Cette vie, en grande partie cachée, contribue au fonctionnement des écosystèmes et, ainsi, soutient des services dont nous dépendons tous, de la production alimentaire au stockage du carbone. Si l’on veut désire parti de ces services, il faut comprendre les processus biologiques qui les sous-tendent.\nPourtant, nous savons étonnamment peu de choses sur le fonctionnement de la vie du sol. Le sol est considéré comme l’une des dernières frontières biotiques, avec les profondeurs océaniques et la canopée des forêts (André et al., 1994). L’une des raisons est que le sol est opaque et que ses habitants sont petits et difficiles d’accès. Il existe, toutefois, un manque général de considération pour cette vie cachée.\nLes capteurs d’imagerie optique offrent des perspectives pour observer la vie du sol in situ au fil du temps. Sur cette page, vous trouverez des animations capturées par des scanners optiques automatisés enterrés dans le sol, qui permettent d’observer la vie discrète du sol sans la perturber (pour en savoir plus sur le dispositif, voir la page Imagerie de la biodiversité du sol)."
+  },
+  {
+    "objectID": "fr/soil_organisms.html#qui-vit-dans-le-sol",
+    "href": "fr/soil_organisms.html#qui-vit-dans-le-sol",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Qui vit dans le sol ?",
+    "text": "Qui vit dans le sol ?\nLes organismes du sol sont très divers, et cette diversité s’exprime notamment en termes de taille. Ils mesurent de quelques micromètres à plusieurs centimètres. Ainsi, il est commun de les présenter suivant leur ordre de grandeur.\n\n\n  \n    Micro-organismes et microfaune\n    les plus petits · moins de 0,1 mm\n    Bactéries, archées, champignons et protistes, ainsi que des animaux microscopiques comme les nématodes et les tardigrades.\n    \n      Mycorhizeschampignons\n    \n  \n\n  \n    Mésofaune\n    taille intermédiaire · d'environ 0,1 à 2 mm\n    Collemboles, acariens, symphyles, diploures et enchytréides.\n    \n      Symphyla\n      Diplura\n      Collembolacollemboles\n      Acariacariens\n    \n  \n\n  \n    Macrofaune\n    les plus grands · plus de 2 mm\n    Vers de terre, mille-pattes, cloportes, fourmis et araignées. Les racines des plantes ne sont pas des animaux, mais elles partagent aussi cet espace et attirent beaucoup de ces organismes.\n    \n      Julidaiules\n      Chilopodachilopodes\n      Lumbricidaevers de terre\n    \n  \n\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "fr/soil_organisms.html#que-font-ils-là-dessous",
+    "href": "fr/soil_organisms.html#que-font-ils-là-dessous",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Que font-ils là-dessous ?",
+    "text": "Que font-ils là-dessous ?\nChaque organisme du sol joue un ou plusieurs rôles dans l’écosystème, que l’on appelle sa fonction. En regroupant les organismes par fonction, on obtient trois grands groupes fonctionnels : les décomposeurs, les prédateurs et les ingénieurs de l’écosystème. Les frontières sont floues, car de nombreuses espèces jouent plusieurs rôles à la fois."
+  },
+  {
+    "objectID": "fr/soil_organisms.html#décomposeurs",
+    "href": "fr/soil_organisms.html#décomposeurs",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Décomposeurs",
+    "text": "Décomposeurs\n\n\nLes décomposeurs se nourrissent de plantes mortes, d’animaux morts et de leurs déjections, et transforment cette matière organique étape par étape : ce sont les recycleurs du sol. Les animaux du sol fragmentent et mélangent les débris, puis les micro-organismes terminent le travail par la minéralisation, qui réduit la matière en molécules simples. Ce sont ces nutriments que les plantes peuvent enfin utiliser pour grandir.\n\n\n  \n    \n  \n  Une feuille en cours de décomposition par un champignon, vue à travers le scanner.\n\n\n\n  Isopodacloportes\n  Polydesmidamille-pattes à dos plat\n  Julidaiules\n  Diplura\n  Collembolacollemboles\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "fr/soil_organisms.html#prédateurs",
+    "href": "fr/soil_organisms.html#prédateurs",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Prédateurs",
+    "text": "Prédateurs\nLes prédateurs se nourrissent d’autres organismes vivants, ce qui en fait des acteurs clés de la régulation biologique. En s’attaquant aux ravageurs des cultures par exemple, ils profitent directement à l’agriculture et sont appelés auxiliaires. Plus largement, en régulant les populations de proies, ils favorisent la coexistence de nombreuses espèces, ce qui soutient la biodiversité.\n\n  \n    \n  \n  Un chilopode géophilomorphe qui rode autour d'une racine.\n\n\n  Geophilomorphachilopodes\n  Chilopodachilopodes\n  Pseudoscorpionida\n  Acariacariens\n  Diplura\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "fr/soil_organisms.html#ingénieurs",
+    "href": "fr/soil_organisms.html#ingénieurs",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Ingénieurs",
+    "text": "Ingénieurs\nLes ingénieurs de l’écosystème façonnent la structure du sol. En se déplaçant à la recherche de nourriture ou d’un abri, ils creusent et déplacent de la matière, créant de nouveaux espaces qui modifient l’habitat de tous les autres organismes. Les vers de terre et les fourmis sont les ingénieurs les plus connus, mais en réalité tous les organismes du sol, même les plus petits, contribuent par leurs déplacement à mélanger le sol et à affiner sa structure.\n\n  \n    \n  \n  Des fourmis qui creusent des galeries.\n\n\n  Lumbricidaevers de terre\n  Enchytraeidaeenchytréides\n  Formicidaefourmis\n\nPhotos © Emma Belaud · CC BY-NC-SA 4.0"
+  },
+  {
+    "objectID": "fr/soil_organisms.html#zoom-sur-la-bioturbation",
+    "href": "fr/soil_organisms.html#zoom-sur-la-bioturbation",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Zoom sur la bioturbation",
+    "text": "Zoom sur la bioturbation\nLe réarrangement physique du sol par les organismes vivants porte un nom précis : la bioturbation. Les vers de terre sont largement connus pour cela. En creusant, ils créent des pores qui permettent à l’eau et à l’air de circuler et aux racines de pénétrer, comme le montre l’animation.\nUn sol bien structuré est composé de particules minérales et organiques assemblées en agrégats de tailles variées, séparés par des espaces vides (la porosité).\n\n  \n    \n  \n  Bioturbation par un ver de terre."
+  },
+  {
+    "objectID": "fr/soil_organisms.html#les-champignons-des-autoroutes-souterraines",
+    "href": "fr/soil_organisms.html#les-champignons-des-autoroutes-souterraines",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Les champignons : des autoroutes souterraines",
+    "text": "Les champignons : des autoroutes souterraines\n\n\nLes champignons sont présents partout dans le sol. Ils le colonisent en développant un réseau de filaments appelés hyphes. Ce réseau fonctionne comme un vaste système de transport, qui achemine les nutriments sur de longues distances.\n\n\n  \n    \n  \n  Des hyphes fongiques qui colonisent le sol.\n\n\n\nChampignons et racines : un accord gagnant-gagnant\nCertains de ces champignons forment un partenariat avec les racines des plantes, appelé mycorhize. C’est une symbiose, c’est-à-dire que les deux partenaires en tirent profit : la plante fournit au champignon des composés riches en carbone et, en retour, le champignon approvisionne la plante en nutriments et en eau, prolongeant de fait son système racinaire. Les hyphes fongiques peuvent explorer un volume de sol environ 10 fois plus grand que celui des racines seules. Les plantes mycorhizées ont ainsi tendance à mieux pousser, à mieux supporter les conditions difficiles et à être mieux protégées contre les menaces extérieures.\n\n  \n    \n  \n  Ectomycorhizes (ECM) sur une racine."
+  },
+  {
+    "objectID": "fr/soil_organisms.html#les-fourmis-et-leurs-troupeaux-de-pucerons",
+    "href": "fr/soil_organisms.html#les-fourmis-et-leurs-troupeaux-de-pucerons",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Les fourmis et leurs troupeaux de pucerons",
+    "text": "Les fourmis et leurs troupeaux de pucerons\nLes racines peuvent aussi être attaquées par des animaux du sol. Les pucerons des racines, par exemple, s’en nourrissent. Ils ont développé une relation de mutualisme avec les fourmis : celles-ci protègent les pucerons de leurs nombreux prédateurs et, en retour, se nourrissent du miellat sucré que les pucerons produisent. Lorsque ces populations deviennent trop denses, ce partenariat peut menacer les cultures.\n\n  \n    \n  \n  Des fourmis qui s'occupent de pucerons sur une racine."
+  },
+  {
+    "objectID": "fr/soil_organisms.html#quand-le-broutage-aide-les-racines-à-pousser",
+    "href": "fr/soil_organisms.html#quand-le-broutage-aide-les-racines-à-pousser",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Quand le broutage aide les racines à pousser",
+    "text": "Quand le broutage aide les racines à pousser\nLe broutage des racines par les animaux du sol n’est pas toujours une mauvaise nouvelle pour les cultures. Lorsque des herbivores stoppent la croissance de la racine principale, la plante peut réagir en produisant des racines latérales. Cela augmente la surface de contact entre les racines et le sol, et donc la capacité de la plante à absorber les nutriments. Ces racines plus fines, à croissance plus lente, sont aussi celles qui sont le plus facilement colonisées par les champignons mycorhiziens, ce qui nous ramène au partenariat décrit plus haut.\n\n  \n    \n  \n  Mycorhization d'une racine fine et ramifiée."
+  },
+  {
+    "objectID": "fr/soil_organisms.html#birth-day",
+    "href": "fr/soil_organisms.html#birth-day",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "Birth-day",
+    "text": "Birth-day\nLa vie du sol commence elle aussi sous terre. La séquence ci-dessous montre l’éclosion d’œufs de Julida. Les mille-pattes tout juste éclos n’ont que quelques paires de pattes et gagnent des segments à chaque mue.\n\n  \n    \n  \n  Éclosion d'œufs de mille-pattes Julida."
+  },
+  {
+    "objectID": "fr/soil_organisms.html#la-vie-du-sol-face-aux-conditions-difficiles",
+    "href": "fr/soil_organisms.html#la-vie-du-sol-face-aux-conditions-difficiles",
+    "title": "Qui vit sous nos pieds, et que font-ils ?",
+    "section": "La vie du sol face aux conditions difficiles ?",
+    "text": "La vie du sol face aux conditions difficiles ?\nLa vie dans le sol peut aussi affronter des conditions difficiles. Comme les mammifères hibernants, mieux connus, les animaux du sol peuvent ralentir leur activité en hiver et attendre des jours meilleurs, un état appelé dormance. L’animation ci-dessous montre un ver de terre resté en dormance pendant un mois en hiver :\n\n  \n    \n  \n  Un ver de terre qui entre en dormance."
+  },
+  {
+    "objectID": "fr/resources.html",
+    "href": "fr/resources.html",
+    "title": "Ressources autour de mon travail",
+    "section": "",
+    "text": "Soutenance de thèse\n\nMa soutenance de thèse\n\n\n\n\n Ressources ouvertes\n\nSéquences d’images d’imagerie du sol\nExemples de séquences d’images acquises avec le dispositif d’imagerie du sol in situ.\nAccéder au jeu de données \n\n\n\n Vidéos et article\n\nLes scanners à l’honneur\nArticle. Le programme PEPR Sols Vivants présente mes travaux de thèse sur l’imagerie du sol in situ et la manière dont les outils numériques ouvrent une nouvelle fenêtre sur la biodiversité du sol : « Observer la biodiversité des sols à l’ère du numérique ».\nWebinaire. Dans ce webinaire, nous présentons la technique d’imagerie du sol in situ et montrons son application au suivi de l’organisation temporelle de l’activité édaphique :\n\nVidéo. Une introduction accessible à l’historique des scanners enterrés et aux nouvelles perspectives de recherche qu’ils ont ouvertes :"
+  },
+  {
+    "objectID": "fr/index.html",
+    "href": "fr/index.html",
+    "title": "Emma Belaud",
+    "section": "",
+    "text": "Emma Belaud\n    Chercheuse en écologie des sols\n    \n       GitHub\n       ResearchGate\n       ORCID\n    \n  \n  \n\n\nJe travaille en écologie des sols, avec un intérêt particulier pour le développement de méthodes de suivi par capteurs. J’ai récemment soutenu ma thèse, intitulée « Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring ». Dans ce cadre, j’ai contribué au développement d’une nouvelle méthode d’imagerie in situ du sol, qui permet de suivre de façon non invasive et dynamique l’activité des racines et des invertébrés du sol. J’ai exploré ce que cette méthode pouvait révéler de l’organisation spatio-temporelle de l’activité du sol, à différentes échelles écologiques, spatiales et temporelles.\n\n\n  Imagerie de la biodiversité du solObserver la vie du sol in situ et en continu, grâce à des scanners enterrés automatisés\n  À la rencontre des organismes du solLes organismes qui vivent sous nos pieds et ce qu'ils font, rendus visibles par l'imagerie\n  PublicationsArticles publiés et manuscrits en cours\n  RessourcesVidéos, données et présentations mettant en avant ce que les scanners enterrés révèlent de la vie du sol\n  CVFormation, expérience en recherche, encadrement, communication scientifique et vulgarisation"
+  },
+  {
+    "objectID": "fr/contact.html",
+    "href": "fr/contact.html",
+    "title": "Me contacter",
+    "section": "",
+    "text": "Contact mail\n emmabelaud1@gmail.com\n\n\n\nAffiliation\nUMR Eco&Sols\nCampus La Gaillarde, Institut Agro-INRAE\nBât. 12 & 13, 2 place Viala\n34060 Montpellier Cedex 2, France\nSite du laboratoire \n\n\nProfils en ligne\n\n\n ORCID\n ResearchGate\n GitHub"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Get in touch",
+    "section": "",
+    "text": "Preferred contact\n emmabelaud1@gmail.com\n\n\n\nAffiliation\nUMR Eco&Sols\nCampus La Gaillarde, Institut Agro-INRAE\nBât. 12 & 13, 2 place Viala\n34060 Montpellier Cedex 2, France\nLab website \n\n\nOnline profiles\n\n\n ORCID\n ResearchGate\n GitHub"
+  },
+  {
     "objectID": "cv.html",
     "href": "cv.html",
     "title": "Academic background",
@@ -179,7 +298,7 @@
     "href": "cv.html#supervision",
     "title": "Academic background",
     "section": "Supervision",
-    "text": "Supervision\n\nM.Sc. Thesis Co-supervision: Ermessende Frangne 2025 · 3 months\nUniversité de Montpellier, Master Biodiversity, Ecology, Evolution (B2E), EcoSystèmeS track\n“Spatio-temporal organization of edaphic activity in agroforestry systems using optical imaging approaches”\n\n\nB.Sc. Internship Supervision: Joris Labrosse 2025 · 3 months\nUniversité Jean Monnet Saint-Étienne, hosted in Montpellier, France\n“Methodological development of in situ optical imaging for edaphic activity monitoring: assessing the trade-offs of acquisition frequency and spatial resolution”\n\n\nM.Sc. Thesis Supervision: Marion Lebeau 2024 · 6 months\nUniLaSalle Beauvais, hosted in Montpellier, France\n“Characterizing spatial distribution patterns of soil invertebrate communities in an agroforestry system”"
+    "text": "Supervision\n\nM.Sc. Thesis Supervision: Ermessende Frangne 2025 · 3 months\nUniversité de Montpellier, Master Biodiversity, Ecology, Evolution (B2E), EcoSystèmeS track\n“Spatio-temporal organization of edaphic activity in agroforestry systems using optical imaging approaches”\n\n\nB.Sc. Internship Supervision: Joris Labrosse 2025 · 3 months\nUniversité Jean Monnet Saint-Étienne, hosted in Montpellier, France\n“Methodological development of in situ optical imaging for edaphic activity monitoring: assessing the trade-offs of acquisition frequency and spatial resolution”\n\n\nM.Sc. Thesis Supervision: Marion Lebeau 2024 · 6 months\nUniLaSalle Beauvais, hosted in Montpellier, France\n“Characterizing spatial distribution patterns of soil invertebrate communities in an agroforestry system”"
   },
   {
     "objectID": "cv.html#communications",
@@ -203,11 +322,130 @@
     "text": "Scientific meetings and seminars\n\nSoil Imaging Network meeting 2024 · 4 hours\nINRAE Soil Imaging Network, Montpellier, France\nOral Presentation: “In situ soil imaging for monitoring edaphic biological activity”.\n\n\n12th Scientific and Technical Days of the Microscopists network 2024 · 3 days\nINRAE Microscopists network, Montpellier, France\nRan a workshop on imaging techniques at the Eco&Sols Research Unit.\n\n\n12th Scientific Days of the TEBIS network 2024 · 3 days\nTEBIS network, Montpellier, France\nOral Presentation: “Monitoring the phenology of edaphic activity via in situ imaging: Toward phenological traits for soil fauna”.\n\n\nSeminar: Remote Sensing for Biodiversity 2023 · 2 days\nBIOSEFAIR INRAE metaprogramme, Castelnau-le-Lez, France\nAttended technical workshops on high-resolution imaging."
   },
   {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Get in touch",
+    "objectID": "fr/cv.html",
+    "href": "fr/cv.html",
+    "title": "Parcours académique",
     "section": "",
-    "text": "Preferred contact\n emmabelaud1@gmail.com\n\n\n\nAffiliation\nUMR Eco&Sols\nCampus La Gaillarde, Institut Agro-INRAE\nBât. 12 & 13, 2 place Viala\n34060 Montpellier Cedex 2, France\nLab website \n\n\nOnline profiles\n\n\n ORCID\n ResearchGate\n GitHub"
+    "text": "Doctorat en écologie des sols 2023 – 2026\nÉcole doctorale GAIA · Institut Agro Montpellier · UMR Eco&Sols, Montpellier, France\nThèse : « Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring », soutenue en août 2026.\nFinancement conjoint CIRAD et métaprogramme INRAE BIOSEFAIR.\n\n\nDiplôme d’ingénieure agronome 2017 – 2022\nÉcole Supérieure d’Agricultures, Angers, France\nMajeure : Productions végétales et agroécologie · Mention : Très bien."
+  },
+  {
+    "objectID": "fr/cv.html#formation",
+    "href": "fr/cv.html#formation",
+    "title": "Parcours académique",
+    "section": "",
+    "text": "Doctorat en écologie des sols 2023 – 2026\nÉcole doctorale GAIA · Institut Agro Montpellier · UMR Eco&Sols, Montpellier, France\nThèse : « Soil ecology in the digital age: challenges and contributions of automated edaphic biodiversity monitoring », soutenue en août 2026.\nFinancement conjoint CIRAD et métaprogramme INRAE BIOSEFAIR.\n\n\nDiplôme d’ingénieure agronome 2017 – 2022\nÉcole Supérieure d’Agricultures, Angers, France\nMajeure : Productions végétales et agroécologie · Mention : Très bien."
+  },
+  {
+    "objectID": "fr/cv.html#expérience-en-recherche",
+    "href": "fr/cv.html#expérience-en-recherche",
+    "title": "Parcours académique",
+    "section": "Expérience en recherche",
+    "text": "Expérience en recherche\n\nIngénieure de recherche 2023 · 5 mois\nINRAE, UMR Eco&Sols, Montpellier, France\nÉvaluation de l’efficacité de scanners optiques in situ pour le suivi à haute résolution temporelle de l’activité biologique du sol.\n\n\nIngénieure de recherche 2022 · 1 mois\nINRAE, UMR Eco&Sols, Montpellier, France\nÉvaluation du potentiel de l’imagerie optique in situ pour suivre l’activité édaphique. Rédaction d’une publication scientifique sur le suivi biologique du sol par l’image.\n\n\nStagiaire de recherche (fin d’études) 2022 · 6 mois\nCIRAD, UMR Eco&Sols, Montpellier, France\n« Potentiel de l’imagerie in situ pour le suivi de l’activité biologique des sols »\nQuantification, par analyse d’images, de la dynamique spatiale et temporelle des communautés biologiques du sol (faune, racines, hyphes fongiques) dans des sols de truffières."
+  },
+  {
+    "objectID": "fr/cv.html#encadrement",
+    "href": "fr/cv.html#encadrement",
+    "title": "Parcours académique",
+    "section": "Encadrement",
+    "text": "Encadrement\n\nEncadrement d’un mémoire M1 : Ermessende Frangne 2025 · 3 mois\nUniversité de Montpellier, Master Biodiversité, Écologie, Évolution (B2E), parcours EcoSystèmeS\n« Organisation spatio-temporelle de l’activité édaphique en systèmes agroforestiers par des approches d’imagerie optique »\n\n\nEncadrement d’un stage BUT : Joris Labrosse 2025 · 3 mois\nUniversité Jean Monnet Saint-Étienne, accueilli à Montpellier, France\n« Développement méthodologique de l’imagerie optique in situ pour le suivi de l’activité édaphique : évaluation des compromis entre fréquence d’acquisition et résolution spatiale »\n\n\nEncadrement d’un mémoire M2 : Marion Lebeau 2024 · 6 mois\nUniLaSalle Beauvais, accueillie à Montpellier, France\n« Caractérisation des patrons de distribution spatiale des communautés d’invertébrés du sol dans un système agroforestier »"
+  },
+  {
+    "objectID": "fr/cv.html#communications",
+    "href": "fr/cv.html#communications",
+    "title": "Parcours académique",
+    "section": "Communications",
+    "text": "Communications\n\nJournées Métaprogramme BIOSEFAIR 2026 · 2 jours\nINRAE, Lyon, France\nCommunication orale : « Imagerie in situ à haut débit de l’activité édaphique ».\n\n\nJournées de l’observatoire ORCHAMPS 2025 · 1 jour\nObservatoire ORCHAMPS, Grenoble, France\nCommunication orale : « Une nouvelle fenêtre sur l’activité des organismes du sol ».\n\n\nCafé des Techniques 2024 · 3 heures\nCIRAD, en ligne\nPrésentation lors d’un webinaire technique : « Ingénierie de chaînes d’imagerie automatisée du sol : du déploiement des capteurs à la chaîne de traitement des images ».\n\n\nSalon AdNatura 2024 2024 · 1 heure\nSFE2, Montpellier, France\nIntervenante invitée – table ronde : « Faire une thèse en écologie et évolution : perspectives de carrière et défis académiques ».\n\n\nSalon International de l’Agriculture (stand CIRAD) 2024 · 1 semaine\nCIRAD, Paris, France\nCommunication scientifique et vulgarisation : conception et animation de démonstrations interactives sur la biodiversité du sol auprès du grand public et des acteurs du secteur.\n\n\nAtelier : apports, bénéfices et limites des capteurs pour le suivi de la biodiversité 2022 · 1 semaine\nINRAE, Lyon, France\nCommunication orale : « Le potentiel de l’imagerie in situ pour étudier l’activité biologique du sol »."
+  },
+  {
+    "objectID": "fr/cv.html#conférences",
+    "href": "fr/cv.html#conférences",
+    "title": "Parcours académique",
+    "section": "Conférences",
+    "text": "Conférences\n\nTDWG 2026 2026 · 1 semaine\nOslo, Norvège\nParticipation\n\n\nRhizosphere6 2025 · 1 semaine\nÉdimbourg, Royaume-Uni\nPoster : « Roots, the fuel for soil fauna activity ».\n\n\n12th International Symposium of the International Society of Root Research 2024 · 1 semaine\nLeipzig, Allemagne\nPoster : « In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota around the roots »."
+  },
+  {
+    "objectID": "fr/cv.html#réunions-scientifiques-et-séminaires",
+    "href": "fr/cv.html#réunions-scientifiques-et-séminaires",
+    "title": "Parcours académique",
+    "section": "Réunions scientifiques et séminaires",
+    "text": "Réunions scientifiques et séminaires\n\nRéunion du Réseau Imagerie des Sols 2024 · 4 heures\nRéseau Imagerie des Sols INRAE, Montpellier, France\nCommunication orale : « L’imagerie in situ du sol pour le suivi de l’activité biologique édaphique ».\n\n\n12es Journées scientifiques et techniques du réseau des microscopistes 2024 · 3 jours\nRéseau des microscopistes INRAE, Montpellier, France\nAnimation d’un atelier sur les techniques d’imagerie à l’unité de recherche Eco&Sols.\n\n\n12es Journées scientifiques du réseau TEBIS 2024 · 3 jours\nRéseau TEBIS, Montpellier, France\nCommunication orale : « Suivi de la phénologie de l’activité édaphique par imagerie in situ : vers des traits phénologiques pour la faune du sol ».\n\n\nSéminaire : télédétection pour la biodiversité 2023 · 2 jours\nMétaprogramme BIOSEFAIR INRAE, Castelnau-le-Lez, France\nParticipation à des ateliers techniques sur l’imagerie à haute résolution."
+  },
+  {
+    "objectID": "fr/publications.html",
+    "href": "fr/publications.html",
+    "title": "Productions académiques",
+    "section": "",
+    "text": "Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. https://doi.org/10.1007/s11104-026-08694-2\n\n\nGérard, S., Marsden, C., Belaud, E., Biryol, C., Capowiez, Y., Estopinan, J., Ferchaud, F., Forest, M., Ngao, J., Goury, R., Masson, A.-S., Orrière, S., & Hedde, M. (2026). Evaluating the delayed, causal effects of summer irrigation on winter earthworm communities in a Mediterranean agroforestry trial. Agriculture, Ecosystems & Environment, 408, 110455. https://doi.org/10.1016/j.agee.2026.110455\n\n\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. https://doi.org/10.1007/s00374-024-01851-8\n\n\nPruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, B., Jourdan, C., Belaud, E., & Hedde, M. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE, 1–6. http://dx.doi.org/10.1109/EUVIP53989.2022.9922675"
+  },
+  {
+    "objectID": "fr/publications.html#articles-publiés",
+    "href": "fr/publications.html#articles-publiés",
+    "title": "Productions académiques",
+    "section": "",
+    "text": "Belaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. https://doi.org/10.1007/s11104-026-08694-2\n\n\nGérard, S., Marsden, C., Belaud, E., Biryol, C., Capowiez, Y., Estopinan, J., Ferchaud, F., Forest, M., Ngao, J., Goury, R., Masson, A.-S., Orrière, S., & Hedde, M. (2026). Evaluating the delayed, causal effects of summer irrigation on winter earthworm communities in a Mediterranean agroforestry trial. Agriculture, Ecosystems & Environment, 408, 110455. https://doi.org/10.1016/j.agee.2026.110455\n\n\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. https://doi.org/10.1007/s00374-024-01851-8\n\n\nPruvost, E., Tulet, H., Delort, E., Sakhi Shokouh, G., Montesinos, P., Magnier, B., Jourdan, C., Belaud, E., & Hedde, M. (2022). Invertebrates Detection With YOLOv5: Towards Study of Soil Organisms Using Deep Learning. IEEE, 1–6. http://dx.doi.org/10.1109/EUVIP53989.2022.9922675"
+  },
+  {
+    "objectID": "fr/publications.html#manuscrits-soumis",
+    "href": "fr/publications.html#manuscrits-soumis",
+    "title": "Productions académiques",
+    "section": "Manuscrits soumis",
+    "text": "Manuscrits soumis\n\nBelaud, E.*, Hendrikx, H.*, Postic, F., Scalabrino, M., Lebeau, M., Le Maire, G., Jourdan, C., Gallet, P., Hedde, M. Linking automated image analysis to ecological inference: high-throughput monitoring of soil fauna. (*Contribution égale). Soumis à Methods in Ecology and Evolution.\n\n\nBelaud, E., Beugnon, R., Frangne, E., Gallet, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. Land-use effects on soil fauna are temporally unstable. Soumis à Global Change Biology.\n\n\nBoileau, R., Bonfanti, J., Aubert, M., Belaud, E., Biryol, C., Capowiez, Y., Cortet, J., Dubernet, M., Ganault, P., Joly, F.-X., Langridge, J., Marsden, C., Nahmani, J., Trap, J. & Hedde, M. From soil fauna traits to agroecosystem functioning: evidence gaps and a roadmap for predictive ecology. Agriculture, Ecosystems & Environment"
+  },
+  {
+    "objectID": "fr/publications.html#manuscrits-à-resoumettre",
+    "href": "fr/publications.html#manuscrits-à-resoumettre",
+    "title": "Productions académiques",
+    "section": "Manuscrits à resoumettre",
+    "text": "Manuscrits à resoumettre\n\nBelaud, E., Labrosse, J., Jourdan, C., Gallet, P., Hendrikx, H., Le Maire, G., Postic, F., Hedde, M. In situ scanner-based imaging to monitor soil mesofauna activity: trade-offs between spatial resolution and temporal frequency. Refusé par Methods in Ecology and Evolution ; à resoumettre à Ecography.\n\n\nBelaud, E., Dray, S., Gallet, P., Hinsinger, P., Hendrikx, H., Jourdan, C., Le Maire, G., Postic, F., Hedde, M. A new dimension of the rhizosphere: Microscale spatial organization of soil invertebrates around roots. Refusé par Ecology Letters ; à resoumettre à Journal of Ecology."
+  },
+  {
+    "objectID": "fr/soil_biodiversity_imaging.html",
+    "href": "fr/soil_biodiversity_imaging.html",
+    "title": "Observer les organismes du sol in situ ?",
+    "section": "",
+    "text": "Le sol est un immense réservoir de biodiversité : il abrite plus d’un quart de toutes les espèces terrestres (pour en savoir plus, voir la page organismes du sol). Pourtant, son opacité et le caractère discret des organismes qui y vivent en font un milieu particulièrement difficile à étudier. Pour relever ce défi, nous avons développé, à l’unité de recherche Eco&Sols, une méthode innovante de suivi de l’activité biologique du sol in situ par imagerie."
+  },
+  {
+    "objectID": "fr/soil_biodiversity_imaging.html#contexte",
+    "href": "fr/soil_biodiversity_imaging.html#contexte",
+    "title": "Observer les organismes du sol in situ ?",
+    "section": "",
+    "text": "Le sol est un immense réservoir de biodiversité : il abrite plus d’un quart de toutes les espèces terrestres (pour en savoir plus, voir la page organismes du sol). Pourtant, son opacité et le caractère discret des organismes qui y vivent en font un milieu particulièrement difficile à étudier. Pour relever ce défi, nous avons développé, à l’unité de recherche Eco&Sols, une méthode innovante de suivi de l’activité biologique du sol in situ par imagerie."
+  },
+  {
+    "objectID": "fr/soil_biodiversity_imaging.html#le-dispositif",
+    "href": "fr/soil_biodiversity_imaging.html#le-dispositif",
+    "title": "Observer les organismes du sol in situ ?",
+    "section": "Le dispositif",
+    "text": "Le dispositif\nLe système repose sur des scanners à plat de bureau, adaptés aux conditions de terrain et enterrés dans le sol. Sur le terrain, chaque scanner est associé à un module de contrôle automatisé basé sur un Raspberry Pi, qui pilote l’acquisition des images. Ce montage permet de mener des campagnes d’acquisition à haute résolution sur le long terme, avec un minimum d’intervention humaine.\n\n\n\n\n\n\nSchéma du dispositif de scanner enterré\n\n\n\n\n\n\n\nModule de contrôle automatisé basé sur un Raspberry Pi\n\n\n\n\n\n\n\n6 h entre deux images\n\n\n1200 dpi résolution des images\n\n\nA4 surface scannée\n\n\n&gt; 1 mm taille des organismes suivis"
+  },
+  {
+    "objectID": "fr/soil_biodiversity_imaging.html#ce-que-révèlent-les-images",
+    "href": "fr/soil_biodiversity_imaging.html#ce-que-révèlent-les-images",
+    "title": "Observer les organismes du sol in situ ?",
+    "section": "Ce que révèlent les images",
+    "text": "Ce que révèlent les images\nLes images sont acquises en routine toutes les six heures, à 1200 dpi, sur une surface A4. Cela permet de suivre l’activité des organismes de plus d’un millimètre, notamment les structures racinaires, certaines structures fongiques et de nombreux taxons d’invertébrés, et d’observer leur dynamique à fine échelle temporelle sur de longues périodes. Des exemples de photos et de vidéos de ce qu’il est possible d’observer sont disponibles sur la page organismes du sol."
+  },
+  {
+    "objectID": "fr/soil_biodiversity_imaging.html#des-images-aux-données",
+    "href": "fr/soil_biodiversity_imaging.html#des-images-aux-données",
+    "title": "Observer les organismes du sol in situ ?",
+    "section": "Des images aux données",
+    "text": "Des images aux données\nLe suivi automatisé à haute fréquence génère un volume de données qui rend rapidement impossible l’analyse manuelle par des experts, compte tenu des ressources humaines et du temps disponibles. Généraliser les approches par imagerie et, plus largement, évoluer vers une écologie du sol à grande échelle nécessite donc des chaînes d’analyse automatisées, capables de traiter de grands flux d’images avec une précision comparable à celle d’un expert humain. Nous travaillons à la conception de telles chaînes.\n\n\n\n\nStructures racinaires\nPour extraire des informations biologiques sur les structures racinaires, nous utilisons RootPainter, un outil basé sur l’apprentissage profond développé à l’Université de Copenhague. Le modèle nécessite une phase d’entraînement ; une fois entraîné, l’outil s’est révélé très efficace pour segmenter les structures racinaires dans nos images.\nPublication associée \n\n  \n\nL’interface d’annotation de RootPainter.\n\n\n\n\n\nInvertébrés du sol\nPour les invertébrés, nous développons actuellement notre propre outil, qui fonctionne en deux étapes : la détection des animaux, par des méthodes heuristiques comparant des images successives, puis leur classification, à l’aide d’un modèle d’apprentissage profond.\nPublication associée \n\n  \n\nL’interface Shiny utilisée pour annoter les invertébrés et entraîner le modèle."
+  },
+  {
+    "objectID": "fr/soil_biodiversity_imaging.html#personnes-impliquées",
+    "href": "fr/soil_biodiversity_imaging.html#personnes-impliquées",
+    "title": "Observer les organismes du sol in situ ?",
+    "section": "Personnes impliquées",
+    "text": "Personnes impliquées\n\nDidier Arnal, technicien (retraité), CIRAD\nPhilippe Gallet, ingénieur de recherche, CIRAD\nMickael Hedde, directeur de recherche, INRAE\nHadrien Hendrickx, chargé de recherche, INRIA\nChristophe Jourdan, directeur de recherche, CIRAD\nGuerric Le Maire, directeur de recherche, CIRAD\nFrançois Postic, chercheur postdoctoral, CIRAD"
+  },
+  {
+    "objectID": "fr/soil_biodiversity_imaging.html#publications-associées",
+    "href": "fr/soil_biodiversity_imaging.html#publications-associées",
+    "title": "Observer les organismes du sol in situ ?",
+    "section": "Publications associées",
+    "text": "Publications associées\n\nBelaud, E., Jourdan, C., Capowiez, Y., Hedde, M. (2026). Hearing and seeing through the soils: insights from new sensing technologies to monitor soil invertebrate activity. Plant and Soil. doi\nBelaud, E., Jourdan, C., Barry-Etienne, D., Marsden, C., Robin, A., Taschen, E., Hedde, M. (2024). In situ soil imaging, a tool for monitoring the hourly to monthly temporal dynamics of soil biota. Biology and Fertility of Soils, 60, 1055–1071. doi\nPruvost, E., et al. (2022). Invertebrates detection with YOLOv5: towards study of soil organisms using deep learning. IEEE. doi\n\nRetrouvez la liste complète sur la page Publications, et d’autres documents dans les Ressources."
   },
   {
     "objectID": "index.html",
