@@ -88,7 +88,8 @@ Each soil organism plays one or several roles in the ecosystem, which we call it
 
 ::: {.sf-split}
 ::: sf-text
-Decomposers feed on dead plants, dead animals and their droppings, and transform this organic matter step by step: **they are the recyclers of the soil**. Soil animals shred and mix the debris, and microorganisms then complete the job through mineralisation, which breaks matter down into simple molecules. These are the nutrients that plants can finally use to grow.
+Decomposers feed on dead plants, dead animals and their droppings, and transform this organic matter step by step: **they are the recyclers of the soil**. Decomposition is actually a succession of transformations of matter, whose ultimate stage is mineralization—meaning the conversion of matter into simple molecules, or nutrients. These are the nutrients that plants can finally use to grow.
+
 :::
 ```{=html}
 <div>
@@ -187,7 +188,7 @@ A well-structured soil is made of mineral and organic particles assembled into a
      ========================================================================== -->
 
 :::: {.sf-band .sf-red}
-## Fungi: underground highways
+## Fungi, underground highways
 
 ::: {.sf-split}
 ::: sf-text
@@ -219,29 +220,45 @@ Fungal hyphae can explore a volume of soil about 10 times larger than roots alon
 ::::
 
 :::: {.sf-band .sf-earth}
-## Ants and their aphid herds
+## Roots, an attractive resource
 
-Roots can also be attacked by soil animals. Root-feeding aphids, for example, use roots as their food source. They have developed a mutualistic relationship with ants: the ants protect the aphids from their many predators and, in return, feed on the sugary honeydew the aphids produce. When these populations become too dense, this partnership can threaten crops.
+Whether dead or alive, roots are a resource for a multitude of organisms. These organisms in turn become prey for other communities of species and, through their various activities, alter the conditions of the surrounding soil, often making it highly attractive to other belowground dwellers. Roots thus form a true *hotspot* of activity at the heart of the soil matrix.
+
+In the sequence below, a voracious insect larva makes short work of a root.
 
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/mutualism_aphids_ants.jpg" aria-label="Ants tending aphids on a root">
-    <source src="images/animation/mutualism_aphids_ants.mp4" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="../images/posters/insecta_larva_grazing.jpg" aria-label="An insect larva grazing on a root">
+    <source src="../images/animation/insecta_larva_grazing.mp4" type="video/mp4">
+  </video>
+  <p class="sf-caption">An insect larva grazing on a root.</p>
+</div>
+```
+
+
+### Ants and their herds of aphids
+
+Some animals have developed close relationships to make the most of available resources. Root aphids feed on roots but, being vulnerable to predators, have teamed up with ants in a mutualistic relationship: the ants protect them and, in return, feed on the sugary honeydew they produce. When these populations become too dense, however, this partnership can threaten crops.
+
+```{=html}
+<div>
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="../images/posters/mutualism_aphids_ants.jpg" aria-label="Ants tending aphids on a root">
+    <source src="../images/animation/mutualism_aphids_ants.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Ants tending aphids on a root.</p>
 </div>
 ```
-::::
 
-:::: {.sf-band .sf-brown}
-## When grazing helps roots grow
+### Grazing stimulates branching
 
-Root grazing by soil animals is not always bad news for crops. When herbivores halt the growth of the main root, the plant can respond by producing lateral roots. This increases the contact area between roots and soil, and therefore the plant's ability to absorb nutrients. These finer, slower-growing roots are also the ones most readily colonised by mycorrhizal fungi, which brings us back to the partnership described above.
+Grazing is not always detrimental: the mechanisms at play are more complex than they seem, and each individual event is part of a broader ecological balance.
+
+One example of this is the ecological dynamic observed in truffle orchards, where the outcome the human operator is aiming for is truffle production. In the sequence below, when herbivores halt the growth of the taproot, the plant responds by producing lateral roots. This increases the contact surface between roots and soil, and therefore the plant's capacity to absorb nutrients. These finer, slower-growing roots are also the ones most easily colonized by mycorrhizal fungi. Here, they can be recognized by the whitish structures appearing along the root: these are mycorrhizae, another form of mutualism in the soil, like the one described above.
 
 ```{=html}
 <div>
-  <video class="sf-video" muted loop playsinline preload="metadata" poster="images/posters/mycorhization_finebranchedroot.jpg" aria-label="Mycorrhization of a fine branched root">
-    <source src="images/animation/mycorhization_finebranchedroot.mp4" type="video/mp4">
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="../images/posters/mycorhization_finebranchedroot.jpg" aria-label="Mycorrhization of a fine, branched root">
+    <source src="../images/animation/mycorhization_finebranchedroot.mp4" type="video/mp4">
   </video>
   <p class="sf-caption">Mycorrhization of a fine, branched root.</p>
 </div>
@@ -251,7 +268,9 @@ Root grazing by soil animals is not always bad news for crops. When herbivores h
 :::: {.sf-band .sf-plum}
 ## Birth-day
 
-Soil life also begins underground. The sequence below shows Julida eggs hatching. Newly hatched millipedes have only a few pairs of legs and gain more segments with each moult.
+Soil life also begins underground. Each group of organisms has its own reproductive modes and cycles.
+
+Imaging has allowed us to observe, opportunistically, moments as discreet as the egg-laying and hatching of juilda (millipedes), as shown in the sequence below. This animation follows the development of the eggs, from laying to the hatching of young millipedes. At birth, they possess only a limited number of segments and legs, which they gradually acquire through successive molts.
 
 ```{=html}
 <div>
@@ -264,9 +283,13 @@ Soil life also begins underground. The sequence below shows Julida eggs hatching
 ::::
 
 :::: {.sf-band .sf-olive}
-## Soil life in harsh conditions?
+## Life in slow motion
 
-Life in soil can also face harsh conditions. Like better-known hibernating mammals, soil animals can slow down their activity in winter and wait for better conditions, a state known as dormancy. The animation below shows an earthworm remaining dormant for one month during winter:
+In rhythm with the seasons and environmental fluctuations, the soil is constantly changing. Faced with sometimes harsh conditions, its inhabitants deploy strategies to survive.
+
+Earthworms, for example, are extremely dependent on soil moisture. They shift to a slowed-down lifestyle when the soil dries out. To prevent desiccation, they coil their bodies into a tight knot to minimize their exposed surface area, then isolate themselves in a small chamber lined with their own mucus, thereby creating a more humid micro-refuge.
+
+This mechanism can be observed in the animation below, which follows an earthworm throughout the month of March.
 
 ```{=html}
 <div>

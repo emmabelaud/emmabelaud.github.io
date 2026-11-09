@@ -88,7 +88,8 @@ Chaque organisme du sol joue un ou plusieurs rôles dans l'écosystème, que l'o
 
 ::: {.sf-split}
 ::: sf-text
-Les décomposeurs se nourrissent de plantes mortes, d'animaux morts et de leurs déjections, et transforment cette matière organique étape par étape : **ce sont les recycleurs du sol**. Les animaux du sol fragmentent et mélangent les débris, puis les micro-organismes terminent le travail par la minéralisation, qui réduit la matière en molécules simples. Ce sont ces nutriments que les plantes peuvent enfin utiliser pour grandir.
+Les décomposeurs se nourrissent de plantes mortes, d'animaux morts et de leurs déjections, et transforment cette matière organique étape par étape : **ce sont les recycleurs du sol**. La décomposition est en réalité une succession de transformation de la matière, dont l’étape ultime est la minéralisation, c’est-à-dire la transformation de la matière en molécules simples, les nutriments. Ce sont ces nutriments que les plantes peuvent enfin utiliser pour grandir.
+
 :::
 ```{=html}
 <div>
@@ -220,9 +221,25 @@ Les hyphes fongiques peuvent explorer un volume de sol environ 10 fois plus gran
 ::::
 
 :::: {.sf-band .sf-earth}
-## Les fourmis et leurs troupeaux de pucerons
+## Les racines, une ressource attractive
 
-Les racines peuvent aussi être attaquées par des animaux du sol. Les pucerons des racines, par exemple, s'en nourrissent. Ils ont développé une relation de mutualisme avec les fourmis : celles-ci protègent les pucerons de leurs nombreux prédateurs et, en retour, se nourrissent du miellat sucré que les pucerons produisent. Lorsque ces populations deviennent trop denses, ce partenariat peut menacer les cultures.
+Qu'elles soient mortes ou vivantes, les racines constituent la ressource d'une multitude d'organismes. Ceux-ci deviennent à leur tour la proie d'autres cortèges d'espèces et, par leurs activités en tout genre, modifient les conditions du sol environnant, le rendant souvent très attractif pour d'autres habitants du sous-sol. Ainsi, les racines forment un véritable *hotspot* d'activité au cœur de la matrice du sol.
+
+Sur la séquence ci-dessous, on observe une larve d'insecte vorace ne faisant qu'une bouchée d'une racine.
+
+```{=html}
+<div>
+  <video class="sf-video" muted loop playsinline preload="metadata" poster="../images/posters/insecta_larva_grazing.jpg" aria-label="Broutage d'une racine par une larve d'insecte">
+    <source src="../images/animation/insecta_larva_grazing.mp4" type="video/mp4">
+  </video>
+  <p class="sf-caption">Broutage d'une racine par une larve d'insecte.</p>
+</div>
+```
+
+
+### Les fourmis et leurs troupeaux de pucerons
+
+Certains animaux ont développé des relations étroites pour optimiser l'exploitation des ressources. Les pucerons des racines s'en nourrissent mais, vulnérables face aux prédateurs, ils se sont associés aux fourmis dans une relation de mutualisme : les fourmis les protègent et, en retour, se nourrissent du miellat sucré qu'ils produisent. Lorsque ces populations deviennent trop denses, ce partenariat peut toutefois menacer les cultures.
 
 ```{=html}
 <div>
@@ -232,12 +249,12 @@ Les racines peuvent aussi être attaquées par des animaux du sol. Les pucerons 
   <p class="sf-caption">Des fourmis qui s'occupent de pucerons sur une racine.</p>
 </div>
 ```
-::::
 
-:::: {.sf-band .sf-brown}
-## Quand le broutage aide les racines à pousser
+### Le broutage stimule la ramification
 
-Le broutage des racines par les animaux du sol n'est pas toujours une mauvaise nouvelle pour les cultures. Lorsque des herbivores stoppent la croissance de la racine principale, la plante peut réagir en produisant des racines latérales. Cela augmente la surface de contact entre les racines et le sol, et donc la capacité de la plante à absorber les nutriments. Ces racines plus fines, à croissance plus lente, sont aussi celles qui sont le plus facilement colonisées par les champignons mycorhiziens, ce qui nous ramène au partenariat décrit plus haut.
+Le broutage n'est pas toujours défavorable aux racines : les mécanismes en jeu sont plus complexes qu'ils n'y paraissent, et chaque événement ponctuel s'insère dans un équilibre écologique plus large.
+
+Un exemple illustrant ce phénomène est la dynamique écologique observée en truffière, où la finalité attendue par l'opérateur humain est la production de truffes. Sur la séquence ci-dessous, lorsque des herbivores stoppent la croissance de la racine principale, la plante réagit en produisant des racines latérales. Cela augmente la surface de contact entre les racines et le sol, et donc la capacité de la plante à absorber les nutriments. Ces racines plus fines, à croissance plus lente, sont aussi celles qui sont le plus facilement colonisées par les champignons mycorhiziens. On les reconnaît ici aux structures blanchâtres qui apparaissent le long de la racine : ce sont les mycorhizes, autre forme de mutualisme dans le sol, comme celui décrit plus haut.
 
 ```{=html}
 <div>
@@ -252,7 +269,8 @@ Le broutage des racines par les animaux du sol n'est pas toujours une mauvaise n
 :::: {.sf-band .sf-plum}
 ## Birth-day
 
-La vie du sol commence elle aussi sous terre. La séquence ci-dessous montre l'éclosion d'œufs de Julida. Les mille-pattes tout juste éclos n'ont que quelques paires de pattes et gagnent des segments à chaque mue.
+La vie du sol commence elle aussi sous terre. Chaque groupe d'organismes possède ses propres modes et cycles de reproduction. 
+L'imagerie nous a permis d'observer, de manière opportuniste, des moments aussi discrets que la ponte et l'éclosion des iules, comme le montre la séquence ci-dessous. Cette animation permet de suivre le développement des œufs, de la ponte jusqu'à l'éclosion des jeunes iules. À leur naissance, ces derniers ne possèdent qu'un nombre restreint de segments et de pattes, qu'ils acquièrent progressivement au fil de leurs mues successives.
 
 ```{=html}
 <div>
@@ -265,9 +283,12 @@ La vie du sol commence elle aussi sous terre. La séquence ci-dessous montre l'�
 ::::
 
 :::: {.sf-band .sf-olive}
-## La vie du sol face aux conditions difficiles ?
+## Vie ralentie
 
-La vie dans le sol peut aussi affronter des conditions difficiles. Comme les mammifères hibernants, mieux connus, les animaux du sol peuvent ralentir leur activité en hiver et attendre des jours meilleurs, un état appelé dormance. L'animation ci-dessous montre un ver de terre resté en dormance pendant un mois en hiver :
+Au rythme des saisons et des fluctuations de l'environnement, le sol change constamment. Face à des conditions parfois rudes, ses habitants déploient ainsi des stratégies pour survivre.
+Les vers de terre, par exemple, sont extrêmement dépendants de l'humidité du sol. Ils adoptent ainsi un mode de vie au ralenti lorsque le sol s'assèche. Pour limiter leur dessèchement, ils enroulent leur corps en un nœud serré pour minimiser la surface exposée, puis s'isolent dans une logette tapissée de leur propre mucus, créant ainsi un micro-refuge plus humide.
+
+Ce mécanisme peut être observé dans l’animation ci-dessous, qui suit un ver de terre tout au long d’un mois de mars.
 
 ```{=html}
 <div>
@@ -278,9 +299,6 @@ La vie dans le sol peut aussi affronter des conditions difficiles. Comme les mam
 </div>
 ```
 :::: 
-
-
-
 
 <!--:::: {.sf-band .sf-raspberry}
 
