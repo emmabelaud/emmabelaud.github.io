@@ -23,8 +23,8 @@ pagetitle: "Organismes du sol | Emma Belaud"
 
 ## Un réservoir caché de biodiversité
 
-Le sol abrite près d'**un quart de toutes les espèces décrites sur Terre** (Anthony et al., 2023). 
-Cette vie, en grande partie cachée, **contribue au fonctionnement des écosystèmes** et, ainsi, soutient des services dont nous dépendons tous, de la production alimentaire au stockage du carbone. Si l'on veut désire parti de ces services, il faut comprendre les processus biologiques qui les sous-tendent.
+Le sol abrite environ **59 % de toutes les espèces vivant sur Terre** (Anthony et al., 2023). 
+Cette vie, en grande partie cachée, **contribue au fonctionnement des écosystèmes** et, ainsi, soutient des services dont nous dépendons tous, de la production alimentaire au stockage du carbone. Si l'on veut tirer parti de ces services, il faut comprendre les processus biologiques qui les sous-tendent.
 
 Pourtant, nous savons étonnamment peu de choses sur le fonctionnement de la vie du sol. Le sol est considéré comme l'une des **dernières frontières biotiques**, avec les profondeurs océaniques et la canopée des forêts (André et al., 1994). L'une des raisons est que le sol est opaque et que ses habitants sont petits et difficiles d'accès. Il existe, toutefois, un manque général de considération pour cette vie cachée.
 

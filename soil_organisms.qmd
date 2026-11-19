@@ -23,7 +23,7 @@ pagetitle: "Soil organisms | Emma Belaud"
 
 ## A hidden reservoir of biodiversity
 
-Soil hosts almost a **quarter of all the species described on Earth** (Anthony et al., 2023). 
+Soil hosts almost **approximately 59% of all the species on Earth** (Anthony et al., 2023). 
 This largely hidden life **keeps ecosystems running** and supports services we all depend on, from food production to carbon storage. To make the most of these services, we need to understand the biological processes behind them.
 
 Yet we still know surprisingly little about how soil life works. Soil has been considered as one of the **last biotic frontiers**, along with the deep ocean and the forest canopy (André et al., 1994). One reason is that soil is opaque, and its inhabitants are small and hard to reach. However, there is also a general lack of awareness and consideration regarding this hidden life.

@@ -7,16 +7,27 @@ format: html
 
 ## Contexte
 
-Le sol est un immense réservoir de biodiversité : il abrite plus d'un quart de toutes les espèces terrestres (pour en savoir plus, voir la page [organismes du sol](soil_organisms.qmd)). Pourtant, son opacité et le caractère discret des organismes qui y vivent en font un milieu particulièrement difficile à étudier. Pour relever ce défi, nous avons développé, à l'unité de recherche Eco&Sols, une **méthode innovante** de suivi de l'activité biologique du sol *in situ* par imagerie.
+Le sol est un immense réservoir de biodiversité : il abrite environ 59 % de toutes les espèces vivant sur Terre (pour en savoir plus, voir la page [organismes du sol](soil_organisms.qmd)). Pourtant, son opacité et le caractère discret des organismes qui y vivent en font un milieu particulièrement difficile à étudier. Pour relever ce défi, nous avons développé, à l'unité de recherche Eco&Sols, une **méthode innovante** de suivi de l'activité biologique du sol *in situ* par imagerie.
 
 ## Le dispositif
 
 Le système repose sur des scanners à plat de bureau, adaptés aux conditions de terrain et enterrés dans le sol. Sur le terrain, chaque scanner est associé à un module de contrôle automatisé basé sur un Raspberry Pi, qui pilote l'acquisition des images. Ce montage permet de mener des campagnes d'acquisition à haute résolution sur le long terme, avec un minimum d'intervention humaine.
 
-::: {layout-ncol=2}
+::: {.columns}
+
+::: {.column width="58%"}
 ![Schéma du dispositif de scanner enterré](../images/scanner_schema.png)
 
 ![Module de contrôle automatisé basé sur un Raspberry Pi](../images/control_module.png)
+:::
+
+::: {.column width="4%"}
+:::
+
+::: {.column width="38%"}
+![Positionnement du scanner sur le terrain](../images/scanner_buried.jpg)
+:::
+
 :::
 
 :::: key-facts
